@@ -1,3 +1,13 @@
+# Systemonebench
+
+## Build dockerfile
+
+```sh
+docker build -t systemonebench .
+docker run --rm --gpus all -p 8080:8080 systemonebench -hf ggml-org/Laya-GGUF
+docker run --rm --entrypoint /app/llama-quantize systemonebench --help
+```
+
 ## Models
 
 * [Laya GGUF](https://huggingface.co/ggml-org/Laya-GGUF)
