@@ -1,0 +1,40 @@
+x-server: &server
+  build: .
+  image: systemonebench
+  restart: unless-stopped
+  volumes:
+    - ./models:/models:ro
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+
+services:
+  laya:
+    <<: *server
+    ports: ["8081:8080"]
+    command: -m /models/Laya-BF16.gguf -ngl 99
+
+  kev-0.8b:
+    <<: *server
+    ports: ["8082:8080"]
+    command: -m /models/Kev-0.8B-BF16.gguf -ngl 99 -c 8192
+
+  kev-4b:
+    <<: *server
+    ports: ["8083:8080"]
+    command: -m /models/Kev-4B-BF16.gguf -ngl 99 -c 8192
+
+  kev-9b:
+    <<: *server
+    ports: ["8084:8080"]
+    command: -m /models/Kev-9B-BF16.gguf -ngl 99 -c 8192
+
+  # LLM reference (accuracy / latency baseline), OpenAI-compatible /v1/chat/completions
+  qwen-7b:
+    <<: *server
+    ports: ["8090:8080"]
+    command: -m /models/Qwen2.5-7B-Instruct-Q4_K_M.gguf -ngl 99 -c 8192

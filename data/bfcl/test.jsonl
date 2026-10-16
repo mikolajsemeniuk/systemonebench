@@ -1,0 +1,329 @@
+{"state": "I've just made a purchase of $59.99 in San Francisco, California. How much the sales tax will be for this amount?", "label": "calculate_tax", "id": 502}
+{"state": "Find the Greatest Common Divisor (GCD) of two numbers, say 36 and 48.", "label": "number_theory.gcd", "id": 21}
+{"state": "Calculate the area of a circle with a radius of 5 units.", "label": "geometry.calculate_area_circle", "id": 9}
+{"state": "Set the volume to 70", "label": "set_volume", "id": 644}
+{"state": "Create a histogram for student scores with the following data: 85, 90, 88, 92, 86, 89, 91 and set bin range to 5.", "label": "create_histogram", "id": 79}
+{"state": "What is the function of ATP synthase in mitochondria?", "label": "cell_biology.function_lookup", "id": 58}
+{"state": "Find all Patent lawsuit cases of Facebook in 2018.", "label": "get_lawsuit_cases", "id": 177}
+{"state": "What's the average review rating and the age range for the board game 'Catan'?", "label": "board_game_info", "id": 330}
+{"state": "I need Whopper also known old folks as the burger.", "label": "ChaFod", "id": 422}
+{"state": "I need to update my profile with my new email, john.doe@example.com, and my new age, 30. My user ID is 12345.", "label": "update_user_profile", "id": 514}
+{"state": "Check who is the winner in a game of blackjack given player having A and 10, dealer having 10 and 9. The Ace is considered 1.", "label": "blackjack.check_winner", "id": 334}
+{"state": "Predict the growth of forest in Yellowstone National Park for the next 5 years including human impact.", "label": "forest_growth_forecast", "id": 68}
+{"state": "Calculate the compound interest for an initial principal amount of $10000, with an annual interest rate of 5% and the number of times interest applied per time period is 4 and the time the money is invested for 10 years.", "label": "calculate_compound_interest", "id": 131}
+{"state": "Calculate the molecular weight of Glucose (C6H12O6) in grams/mole.", "label": "calculate_molecular_weight", "id": 59}
+{"state": "Provide key war events in German history from 1871 to 1945.", "label": "history.get_key_events", "id": 231}
+{"state": "Calculate the Compound Annual Growth Rate (CAGR) for an initial investment of $2000, final value of $3000 in a period of 4 years.", "label": "calculate_cagr", "id": 140}
+{"state": "What is the area of a triangle with base of 10 units and height of 5 units?", "label": "calculate_triangle_area", "id": 11}
+{"state": "I'd like to modify my order by making the dish called 'chicken dish' to a new spice level 'extra spicy', please.", "label": "change_food", "id": 421}
+{"state": "What's the ranking of Barcelona in the 2021 La Liga season?", "label": "sports_ranking", "id": 321}
+{"state": "Can you find me the latest information about air quality index and pollution data for Chicago?", "label": "get_air_quality", "id": 203}
+{"state": "Who discovered the neutron? Give me detail information.", "label": "get_discoverer", "id": 243}
+{"state": "I want to establish a connection with my Bluetooth speaker called 'JBL Flip 4'.", "label": "connectBluetooth", "id": 500}
+{"state": "How to generate a RESTful API request on Cisco Nexus Dashboard?\nversion:3.1.0\nIP:192.168.11.33\nAPI name: get nodes list\nParameter_fabricName:PEK-ACI", "label": "requests.get", "id": 528}
+{"state": "Switch air conditioner to air dry mode with a medium wind strength", "label": "ThinQ_Connect", "id": 441}
+{"state": "Please classify the following queries:\n[\n  \"Can I use bonuses or commissions as part of my income for a loan application?\",\n  \"Can I schedule automatic withdrawals for different dates?\",\n  \"How much do I owe on my home equity loan?\",\n  \"Will my income be verified during the loan application process?\",\n  \"Is there a minimum income threshold for loan approval?\"\n]", "label": "record", "id": 509}
+{"state": "Can you arrange a flight for me from New York, NY to Paris with a departure on the 20th of June 2022 at 5 in the afternoon?", "label": "book_flight", "id": 634}
+{"state": "I'm planning a picnic on the 4th march 2023 and would like to know the forecast for Campbell on that day. Could you provide that information?", "label": "Weather_1_GetWeather", "id": 601}
+{"state": "Find me the detailed profile of basketball player Lebron James", "label": "sports_db.find_athlete", "id": 311}
+{"state": "Can you analyze this audio file to determine the timing of significant beats, using a capture percentage of 90 and a confidence window size of 0.25 seconds?", "label": "detect_beats_and_filter", "id": 473}
+{"state": "play Johnny Johnny Yes papa", "label": "play_spotify_song", "id": 641}
+{"state": "What is the change in entropy in Joules per Kelvin of a 1kg ice block at 0\u00b0C if it is heated to 100\u00b0C under 1 atmosphere of pressure?", "label": "entropy_change.calculate", "id": 50}
+{"state": "What's the total worth in euro of Messi according to latest data?", "label": "celebrity_net_worth.get", "id": 313}
+{"state": "Calculate the current cost in British Pounds if I need to convert 200 US dollars.", "label": "currency_converter", "id": 389}
+{"state": "Find the value of a vintage Super Mario Bros. game from 1985 like new.", "label": "game_valuation", "id": 345}
+{"state": "I want to order five 'burgers' and six 'chicken wings' from uber pitada", "label": "uber.eat.order", "id": 427}
+{"state": "I want to buy apples, rice, and 12 pack of bottled water from a Walmart near San Jose. Show me the product information and stock availability.", "label": "walmart.purchase", "id": 373}
+{"state": "Generate a random forest model with 100 trees and a depth of 5 on the provided data my_data.", "label": "random_forest.train", "id": 109}
+{"state": "Find me a list of Offbeat genre movies directed by Tim Burton?", "label": "Movies_3_FindMovies", "id": 613}
+{"state": "Find out the possible punishments for the crime of theft in California in detail.", "label": "crime_statute_lookup", "id": 161}
+{"state": "Book a direct flight from San Francisco to London for 2022-04-27 afternoon", "label": "flight.book", "id": 213}
+{"state": "Get me the details of the last game played by Liverpool F.C. Include its statistics.", "label": "soccer.get_last_match", "id": 347}
+{"state": "What are the current weather conditions in Tel Aviv, and could you provide that in Fahrenheit, please?", "label": "get_current_weather", "id": 404}
+{"state": "What is the circumference of a circle with a radius of 4 inches?", "label": "calculate_circumference", "id": 7}
+{"state": "Get me data on average precipitation in the Amazon rainforest for the last six months.", "label": "ecology_data.precipitation_stats", "id": 66}
+{"state": "Check the price of tomatoes and lettuce at the Whole Foods in Los Angeles.", "label": "whole_foods.check_price", "id": 371}
+{"state": "Calculate the resonant frequency of an LC circuit given capacitance of 100\u00b5F and inductance of 50mH.", "label": "calculate_resonant_frequency", "id": 42}
+{"state": "call HANDOVER function to transfer the request if user asks a question.", "label": "answer_question", "id": 656}
+{"state": "Find an acoustic instrument within my budget of $1000.", "label": "find_instrument", "id": 280}
+{"state": "Find records in database in user table where age is greater than 25 and job is 'engineer'.", "label": "database.query", "id": 96}
+{"state": "Can you tell me the weather in fahrenheit so that I decide if I need to wear a jacket today? San Francisco", "label": "get_current_weather", "id": 406}
+{"state": "Calculate the final velocity of an object falling from a 150 meter building, assuming initial velocity is zero.", "label": "calculate_final_velocity", "id": 25}
+{"state": "I purchased a new laptop for $999 in California, but I'm not sure how much tax I need to pay. What's the total amount including tax?", "label": "calculate_tax", "id": 503}
+{"state": "\nYou are an AI chatbot who helps users in providing information related to movies, cinema halls and booking movie tickets for them.  \nAs a system bot, consider / calculate / default the movie date to current date (today's date) in India. \n", "label": "get_movies", "id": 459}
+{"state": "Find a lawyer specializing in divorce cases and charge fee less than 400 dollars per hour in Chicago.", "label": "lawyer.find_nearby", "id": 166}
+{"state": "Retrieve the full historyof Buddhism", "label": "retrieve_religion_info", "id": 253}
+{"state": "Calculate the greatest common divisor of two numbers: 40 and 50", "label": "math.gcd", "id": 19}
+{"state": "I would like to order a burger with the following modification verbatim: no onions, extra cheese", "label": "change_food", "id": 420}
+{"state": "Find me the record of Tom Brady in the 2020 NFL season.", "label": "nfl_data.player_record", "id": 309}
+{"state": "Change the settings of my air conditioner. Set it to cool mode with a target temperature of 22 degrees Celsius. Enable the power save mode and set the high wind strength. Start in 1 hour and 30 minutes from now? For everything else", "label": "ThinQ_Connect", "id": 451}
+{"state": "My friend and I want to go see a movie but we can't find one we like. We really want to see a Drama.", "label": "Movies_3_FindMovies", "id": 610}
+{"state": "Can you give me the height and width of Empire State building in feet?", "label": "building.get_dimensions", "id": 270}
+{"state": "get list of nodes for fabric fab-ed and ip is 3.321.3232.2", "label": "requests.get", "id": 529}
+{"state": "I want to find 5 restaurants nearby my location, Manhattan, offering Thai food and a vegan menu.", "label": "find_restaurants", "id": 80}
+{"state": "I need to add a new article to our Sitefinity CMS. The article is a 'NewsItem' with the title 'Julian is testing12'. Can you set this up for me?", "label": "sitefinity_create_contentitem", "id": 481}
+{"state": "Calculate the company's return on equity given its net income of $2,000,000, shareholder's equity of $10,000,000, and dividends paid of $200,000.", "label": "calculate_return_on_equity", "id": 132}
+{"state": "Calculate the final speed of an object dropped from 100 m without air resistance.", "label": "calculate_final_speed", "id": 32}
+{"state": "Find three personality traits of people who like jogging.", "label": "get_personality_traits", "id": 228}
+{"state": "open youtube and play rickroll using the command start https://www.youtube.com/watch?v=dQw4w9WgXcQ", "label": "cmd_controller.execute", "id": 554}
+{"state": "set cool mode with a temp of 24 oC and the high wind strength.", "label": "ThinQ_Connect", "id": 443}
+{"state": "What's weather in Hyderabad in Fahrenheit", "label": "get_current_weather", "id": 409}
+{"state": "What is the probability of getting a full house in poker?", "label": "poker_probability.full_house", "id": 339}
+{"state": "Find the nearest parking lot within 2 miles of Central Park in New York.", "label": "parking_lot.find_nearest", "id": 395}
+{"state": "Search for upcoming month rock concerts in New York.", "label": "event_finder.find_upcoming", "id": 214}
+{"state": "Im at Riga, Latvia, Can you tell me the current temperature?", "label": "get_current_weather", "id": 407}
+{"state": "Give me a recipe for a vegetarian pasta with cheese for 2 servings.", "label": "recipe_search", "id": 359}
+{"state": "Find out the current traffic situation from Boston driving to New York.", "label": "get_traffic_info", "id": 205}
+{"state": "remove the timer.exe that i have been set earlier using the taskkill command", "label": "cmd_controller.execute", "id": 547}
+{"state": "Order me pizza", "label": "ChaFod", "id": 423}
+{"state": "What's the timing and location for The Weeknd's concert happening in December?", "label": "concert.find_details", "id": 290}
+{"state": "Sure, here is the answer to the question:\\n\\n**Logistic regression is not present in the text, therefore I cannot answer this question.**", "label": "answer.string", "id": 433}
+{"state": "Find the closest sushi restaurant with a patio in Boston.", "label": "restaurant_search.find_closest", "id": 363}
+{"state": "How to generate a RESTful API request on Cisco Nexus Dashboard?\nVersion: 6.3.1\nIP: 192.120.45.67\nAPI name: get information of an interface\nParameter_fabricName: Network1\nParameter_nodeId: 12\nParameter_podId: 10\nParameter_interfaceType: Ethernet\nParameter_infoType: Speed", "label": "requests.get", "id": 531}
+{"state": "What's my Big Five Personality trait scores given that I am efficient, organized, easy going and compassionate?", "label": "get_bigfive_scores", "id": 229}
+{"state": "Get the latest game score and statistics for Los Angeles Lakers in NBA.", "label": "get_team_score", "id": 326}
+{"state": "Find the probability of getting exactly 5 heads in 10 fair coin tosses.", "label": "prob_dist.binomial", "id": 114}
+{"state": "Could you provide me with the hourly forecast for temperature, wind speed, and precipitation for the next 10 days at the coordinates 37.8651 N, 119.5383 W?", "label": "fetch_weather_data", "id": 439}
+{"state": "You are an AI programming assistant, utilizing the Gorilla LLM model, developed by Gorilla LLM, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer. <<question>>Find hotels in San Diego\n", "label": "search_hotels", "id": 479}
+{"state": "It's sooo hot. set the air conditioner to 'COOL' mode, temp to 20 degrees oC, while air cleaning on?", "label": "ThinQ_Connect", "id": 445}
+{"state": "I need the numbers [1, 54, 3, 1, 76, 2343, 21] arranged from the smallest to the largest.", "label": "sort_array", "id": 486}
+{"state": "What will be the angle between the hour and minute hands of a clock at 6:30 PM?", "label": "calculate_clock_angle", "id": 98}
+{"state": "Get point and rebound stats for player 'LeBron James' from last basketball game", "label": "player_stats.getLastGame", "id": 304}
+{"state": "Find the area of a triangle with a base of 10 units and height of 5 units.", "label": "calculate_triangle_area", "id": 0}
+{"state": "Get the list of active mandates for the user with ID U123456?", "label": "user.mandates", "id": 655}
+{"state": "I wish to see the movie which is directed by David Leitch and acted by Lori Pelenise Tuisano.", "label": "Movies_3_FindMovies", "id": 609}
+{"state": "Give me detail information about stocks of Apple Inc.", "label": "get_stock_info", "id": 212}
+{"state": "I would like to book a single room for two nights at The Plaza hotel.", "label": "book_room", "id": 383}
+{"state": "delete todo with content - go to gym", "label": "todo_manager.handle_action", "id": 456}
+{"state": "Find the information of criminal cases of Mr. X in New York between 2012 and 2015.", "label": "get_criminal_records", "id": 158}
+{"state": "What are the active root projects of the TEAM with UUID '12'?", "label": "acl_api.AclApi.retrieve_projects", "id": 648}
+{"state": "Identify a small green bird in forest.", "label": "identify_bird", "id": 67}
+{"state": "Play the song 'Friends' by Marshmello", "label": "play_spotify_song", "id": 635}
+{"state": "Hi, could you tell me the forecast for London, England on the 5th of march 2023?", "label": "Weather_1_GetWeather", "id": 606}
+{"state": "Calculate the batting average for a baseball player who has 180 hits and 600 at-bats. Round to 3 decimals.", "label": "calculate_batting_average", "id": 302}
+{"state": "I have a list of numerical values: [2.5, 3.6, 4.1, 5.2], and I need to apply normalization to them. Also, I have these categories: ['red', 'blue', 'green'] that I'd like to be one-hot encoded. Could you process this data for me?", "label": "process_data", "id": 495}
+{"state": "Could you tell me the current temperature in Berkeley using latitude 37.8715 and longitude -122.2730?", "label": "open_meteo_api.fetch_weather_data", "id": 485}
+{"state": "Retrieve stock prices of Microsoft and Google for the last 2 weeks.", "label": "get_stock_prices", "id": 147}
+{"state": "What are the statistics of Ronaldo's matches in 2021?", "label": "player_statistic", "id": 312}
+{"state": "Find the lawsuits filed against the company Google in California in the year 2020.", "label": "lawsuits_search", "id": 180}
+{"state": "Who discovered Gravity and what was the method used?", "label": "science_history.get_discovery_details", "id": 246}
+{"state": "Convert 150 Euros to Canadian dollars.", "label": "currency_conversion.convert", "id": 390}
+{"state": "Could you retrieve the Ethernet interface statistics from the node with ID 12 in pod 10 of the Network1 fabric, using the IP 192.120.45.67?", "label": "requests.get", "id": 530}
+{"state": "Find out the population and species of turtles in Mississippi river in 2020.", "label": "ecology.get_turtle_population", "id": 69}
+{"state": "Make the volume 20", "label": "set_volume", "id": 642}
+{"state": "Find me the average price and ratings of piano from Yamaha.", "label": "get_instrument_details", "id": 278}
+{"state": "Reverse say hi", "label": "reverse_input", "id": 517}
+{"state": "Convert time 3pm from New York time zone to London time zone.", "label": "timezone.convert", "id": 378}
+{"state": "Fetch details of a law case with number 43403 in New York court for year 2018.", "label": "fetch_law_case_details", "id": 171}
+{"state": "Calculate the magnetic field produced at the center of a circular loop carrying current of 5 Ampere with a radius of 4 meters", "label": "calculate_magnetic_field", "id": 40}
+{"state": "Can you retrieve the status information for an ethernet interface in the fabric named 'test-de', on node 5, pod 1?", "label": "telemetry.flowrules.interfaceInfo.get", "id": 527}
+{"state": "Find important Wars in European history during the 19th century.", "label": "history_eu.fetch_events", "id": 234}
+{"state": "Quiero calcular el pago mensual para un cr\u00e9dito de auto de 1,000,000 de pesos a 12 meses, para un veh\u00edculo del a\u00f1o 2024, con un enganche del 20%.", "label": "obtener_cotizacion_de_creditos", "id": 467}
+{"state": "What are some gluten-free recipes for dinner?", "label": "find_recipes", "id": 353}
+{"state": "Find me a classical concert this weekend in Los Angeles with cheap tickets.", "label": "concert.search", "id": 287}
+{"state": "Get the average temperature in Austin for the next 3 days in Celsius.", "label": "average_temperature", "id": 78}
+{"state": "I have an audio file that I'd like to analyze. Could you identify significant beats for me if I set the capture percentage to 70 and the confidence window size to 0.8 seconds?", "label": "detect_beats_and_filter", "id": 474}
+{"state": "Shuffle a deck of cards, and draw 3 cards from the top.", "label": "cards.shuffle_and_draw", "id": 336}
+{"state": "\u6211\u60f3\u5728\u80af\u5fb7\u57fa\u4e7010\u4e2a\u9ea6\u8fa3\u9e21\u817f\u5821\uff0c50\u676f\u53ef\u53e3\u53ef\u4e50\uff0c30\u4e2a\u6cb9\u70b8\u9e21\u7fc5\uff0c90\u6839\u85af\u6761", "label": "uber.eat.order", "id": 428}
+{"state": "Calculate the required water daily intake for a person with weight 70 kg.", "label": "calculate_daily_water_intake", "id": 198}
+{"state": "Retrieve all the lawsuit details for case number XYZ123.", "label": "lawsuit_info", "id": 182}
+{"state": "I need to know the current time on my machine, using the command echo %time%", "label": "cmd_controller.execute", "id": 566}
+{"state": "Give me the details of Criminal Law Amendment Act of 2013.", "label": "get_act_details", "id": 159}
+{"state": "Calculate how many gallons of paint is required to paint a wall with width of 20ft and height of 12ft, assuming 1 gallon covers approximately 350 sq.ft. Don't include window area of 15 sq.ft.", "label": "paint_requirement.calculate", "id": 260}
+{"state": "What is the multiplication of 3 and 2", "label": "multiply", "id": 447}
+{"state": "I like to watch a movie. will you find me a movie which has sterling K. Brown as a actor and it should be directed by Thurop Van Orman", "label": "Movies_3_FindMovies", "id": 622}
+{"state": "I've completed the task 'Submit monthly financial report'. Mark it as completed on my to-do list?", "label": "todo", "id": 460}
+{"state": "Could you suggest some Offbeat genre movies directed by Tim Burton with Johnny Depp in the cast?", "label": "Movies_3_FindMovies", "id": 624}
+{"state": "Create a new player profile for the game with name 'StarPlayer' and character class 'Mage', set the starting level to 5.", "label": "create_player_profile", "id": 348}
+{"state": "Let me enjoy movie directed by Nitesh Tiwari, is there any one?", "label": "Movies_3_FindMovies", "id": 617}
+{"state": "What are the roots of the quadratic equation where a=2, b=5 and c=3 ?", "label": "solve_quadratic", "id": 6}
+{"state": "Fetch all records for students studying Science in 'Bluebird High School' from the StudentDB.", "label": "db_fetch_records", "id": 89}
+{"state": "check whether the docker is installed using docker --version", "label": "cmd_controller.execute", "id": 541}
+{"state": "I have a query: 'what is the weather like'. Could you classify it appropriately?", "label": "record", "id": 512}
+{"state": "How have millennials views of Apple changed since July 2022?'", "label": "extract_parameters_v1", "id": 471}
+{"state": "Could you provide the forecast for Alameda on the upcoming Wednesday, today is Monday April 25th 2023?", "label": "Weather_1_GetWeather", "id": 596}
+{"state": "Find the type of gene mutation based on SNP (Single Nucleotide Polymorphism) ID rs6034464.", "label": "mutation_type.find", "id": 60}
+{"state": "What's the quarterly dividend per share of a company with 100 million outstanding shares and total dividend payout of 50 million USD?", "label": "finance.calculate_quarterly_dividend_per_share", "id": 128}
+{"state": "What is the structural dynamic analysis of the building with building Id B1004 for 2nd, 3rd and 4th floors?", "label": "analyze_structure", "id": 271}
+{"state": "How many months of experience a Lawyer John Doe has on handling Bankruptcy cases.", "label": "lawyer.get_experience", "id": 175}
+{"state": "is vs code running, using the command tasklist /FI \"IMAGENAME eq Code.exe\"", "label": "cmd_controller.execute", "id": 567}
+{"state": "Sure, here is the answer to the question:\\n\\n**Logistic regression is not present in the text, therefore I cannot answer this question.**", "label": "answer.string", "id": 432}
+{"state": "Find the fastest route from San Francisco to Los Angeles with toll roads avoided.", "label": "map_routing.fastest_route", "id": 81}
+{"state": "Get all collectable items from the game 'Animal Crossing: New Horizons' during the Spring season.", "label": "get_collectables_in_season", "id": 346}
+{"state": "I need a 'Plus' type Uber from 221B Baker Street, Berkeley, CA, USA, and I can wait up to 600 seconds for it. ", "label": "uber.ride", "id": 403}
+{"state": "What is the final speed of an object dropped from rest after falling for 5 seconds if we neglect air resistance?", "label": "calculate_final_speed", "id": 29}
+{"state": "Get me the latest exchange rate from British Pounds to Japanese Yen.", "label": "latest_exchange_rate", "id": 392}
+{"state": "Calculate the area of a triangle with base 6 and height 10.", "label": "geometry.area_triangle", "id": 104}
+{"state": "What's the power rating for the Weapon 'Guardian Sword+' in the game 'Legend of Zelda: Breath of the Wild'?", "label": "get_game_item_stats", "id": 344}
+{"state": "Get the recipe for vegan chocolate cake including the steps for preparation.", "label": "get_recipe", "id": 357}
+{"state": "Find the shortest distance between two cities, New York and Los Angeles, through the train and you can transfer.", "label": "city_distance.find_shortest", "id": 86}
+{"state": "Generate a melody in C major scale, starting with the note C4, 16 measures long, at 120 beats per minute.", "label": "music_generator.generate_melody", "id": 291}
+{"state": "Can you retrieve the list of today's alerts for the sensor with serial number Q3CC-CRT3-SZ2G, showing a maximum of 10 alerts per page?", "label": "get_sensor_alerts", "id": 470}
+{"state": "what is the time in pc, using the command echo %time%", "label": "cmd_controller.execute", "id": 557}
+{"state": "set a timer for 10 seconds using the timeout command. You should use timeout 10.", "label": "cmd_controller.execute", "id": 559}
+{"state": "Who was the President of the United States in 1940?", "label": "history_api.get_president_by_year", "id": 240}
+{"state": "Check the amount of protein, calories and carbs in an avocado from Walmart.", "label": "grocery_info.nutritional_info", "id": 374}
+{"state": "add todo with content go to sleep at 9 pm", "label": "todo", "id": 463}
+{"state": "Search for current lawsuits filed against Apple in Santa Clara County.", "label": "lawsuit_search", "id": 183}
+{"state": "list c drive", "label": "cmd_controller.execute", "id": 570}
+{"state": "What's the distance in milesfrom the Earth to the Moon?", "label": "calculate_distance", "id": 102}
+{"state": "How much CO2 is produced annually by a gas-fueled car that travels 12,000 miles per year, with fuel efficiency of 25 MPG ?", "label": "calculate_emissions", "id": 200}
+{"state": "Find a gluten-free cookie recipe that takes less than 30 minutes to prepare.", "label": "recipe_search", "id": 358}
+{"state": "Calculate the entropy change for a certain process given an initial temperature of 300K, a final temperature of 400K, and a heat capacity of 5J/K.", "label": "calculate_entropy_change", "id": 51}
+{"state": "Calculate the overall goal and assist of soccer player Messi in La Liga 2020-2021 season", "label": "sports_stats.get_performance", "id": 305}
+{"state": "Find the highest common factor of 36 and 24.", "label": "math.hcf", "id": 20}
+{"state": "Who was the full name of the president of the United States in 1861?", "label": "US_president.in_year", "id": 239}
+{"state": "Can you help me identify the basic RGB value of Sea Green color?", "label": "identify_color_rgb", "id": 257}
+{"state": "Calculate the final velocity of an object, knowing that it started from rest, accelerated at a rate of 9.8 m/s^2 for a duration of 5 seconds.", "label": "calculate_final_velocity", "id": 31}
+{"state": "Find all movies starring Leonardo DiCaprio in the year 2010 from IMDB database.", "label": "imdb.find_movies_by_actor", "id": 92}
+{"state": "Can you arrange a flight for me departing from New York on the 15th of March, 2024?", "label": "book_flight", "id": 646}
+{"state": "Find the latest court case between Apple and Samsung occured in USA.", "label": "find_latest_court_case", "id": 179}
+{"state": "Calculate the Future Value of a $5000 investment made today for a term of 10 years at an annual interest rate of 5%", "label": "calculate_future_value", "id": 154}
+{"state": "Find the top chess players in New York with a rating above 2300.", "label": "board_game.chess.get_top_players", "id": 331}
+{"state": "What's the projected population growth in United States in the next 20 years?", "label": "population_projections", "id": 73}
+{"state": "Find the compatibility score in percentage of Aries with Gemini.", "label": "get_zodiac_compatibility", "id": 226}
+{"state": "Generate a DNA sequence with 100 bases including more G (Guanine) and C (Cytosine).", "label": "generate_DNA_sequence", "id": 71}
+{"state": "\u0e09\u0e31\u0e19\u0e15\u0e49\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e23\u0e2b\u0e31\u0e2a\u0e1a\u0e23\u0e34\u0e01\u0e32\u0e23\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e1a\u0e23\u0e34\u0e01\u0e32\u0e23\u0e23\u0e35\u0e14\u0e1c\u0e49\u0e32, \u0e04\u0e38\u0e13\u0e0a\u0e48\u0e27\u0e22\u0e2b\u0e32\u0e21\u0e32\u0e43\u0e2b\u0e49\u0e09\u0e31\u0e19\u0e44\u0e14\u0e49\u0e44\u0e2b\u0e21?", "label": "get_service_id", "id": 574}
+{"state": "Reschedule event 'Bob-123' to November 1, 2023 at 6pm CEST", "label": "reschedule", "id": 538}
+{"state": "What is logistic regression? \\n Sure, here is the answer to the question:\\n\\n**Logistic regression is not present in the text, therefore I cannot answer this question.**", "label": "answer.string", "id": 435}
+{"state": "What is the prime factorization of the number 60? Return them in the form of dictionary", "label": "prime_factorize", "id": 23}
+{"state": "Analyze the DNA sequence 'AGTCGATCGAACGTACGTACG' for any potential substitution mutations based on a reference sequence 'AGTCCATCGAACGTACGTACG'.", "label": "analyze_dna_sequence", "id": 62}
+{"state": "Give me a brief on movie 'Interstellar'", "label": "movie_details.brief", "id": 215}
+{"state": "Can you tell me the current temperature in Paris, France?", "label": "temperature", "id": 490}
+{"state": "What is the coefficient of determination (R-squared) for a model using engine size and fuel economy variables to predict car_price with a dataset in path C:/data/cars.csv?", "label": "linear_regression.get_r_squared", "id": 126}
+{"state": "Get weather information for New York, USA for the next 3 days with details.", "label": "weather_forecast_detailed", "id": 189}
+{"state": "Find air quality index in San Jose for next three days.", "label": "environmental_data.air_quality_index", "id": 199}
+{"state": "Calculate the greatest common divisor of two given numbers, for example 12 and 15.", "label": "math.gcd", "id": 22}
+{"state": "Find the estimated travel time by car from San Francisco to Los Angeles with stops at Santa Barbara and Monterey.", "label": "route.estimate_time", "id": 37}
+{"state": "list file in d drive and make file called testing.txt. This can be achieved through dir D:\\\\ && echo testing.txt.", "label": "cmd_controller.execute", "id": 552}
+{"state": "What's the current time in Sydney, Australia?", "label": "get_current_time", "id": 379}
+{"state": "Please act like the current date is 2024/02/21", "label": "getDataForProfessional", "id": 583}
+{"state": "I would like to find a movie to watch in the Imaginative fiction genre, as I have started to watch a lot of fantasy-type movies lately, you know!!!!!!", "label": "Movies_3_FindMovies", "id": 623}
+{"state": "Perform a Chi-Squared test for independence on a 2x2 contingency table [ [10, 20], [30, 40] ]", "label": "chi_squared_test", "id": 122}
+{"state": "Help me find service provider who provide cleaning service.", "label": "get_service_id", "id": 577}
+{"state": "retrieve just the specifications for part with the MPN identifier 3pak7?", "label": "raptor.mpn.specs", "id": 591}
+{"state": "Calculate the final velocity of a vehicle after accelerating at 2 meters/second^2 for a duration of 5 seconds, starting from a speed of 10 meters/second.", "label": "final_velocity", "id": 27}
+{"state": "Can you search for 'Baby Shark'?", "label": "play_spotify_song", "id": 640}
+{"state": "Calculate the final temperature when 20 kg of water at 30 degree Celsius is mixed with 15 kg of water at 60 degree Celsius.", "label": "calculate_final_temperature", "id": 46}
+{"state": "Find the most followed person on twitter who tweets about psychology related to behaviour and group dynamics.", "label": "social_media_analytics.most_followed", "id": 224}
+{"state": "What's the current stock price of Apple and Microsoft?", "label": "get_stock_price", "id": 149}
+{"state": "Retrieve the list of Business Unit products that are associated with me?", "label": "requests.get", "id": 629}
+{"state": "I'm at home alone and it is awfully quiet, so it's the perfect time to sit back and watch a movie. Can you find me a movie with Michaela Watkins starring in it and preferably directed by Paul Downs Colaizzo?", "label": "Movies_3_FindMovies", "id": 618}
+{"state": "Sure, here is the answer to the question:\\n\\nThe text does not define logistic regression, therefore I cannot answer this question.", "label": "parseAnswer", "id": 436}
+{"state": "You are a top-tier algorithm for extracting information from text. Only extract information that is relevant to the provided text. If no information is relevant, use the schema and output an empty list where appropriate.", "label": "extractor.extract_information", "id": 589}
+{"state": "Get me the top 10 landmark cases in constitutional law in China.", "label": "get_top_cases", "id": 174}
+{"state": "Book a single room at a pet friendly hotel near Manhattan, New York for 3 nights starting from March 10th, 2023.", "label": "hotel_booking", "id": 380}
+{"state": "What is the percentage of population preferring digital reading over physical books?", "label": "psych_research.get_preference", "id": 225}
+{"state": "Perform a hypothesis test for two independent samples with scores of Sample1: [22,33,42,12,34] and Sample2: [23,45,44,14,38] at a significance level of 0.05.", "label": "hypothesis_testing.ttest_ind", "id": 119}
+{"state": "Find the working hours and ticket price of The British Museum for this weekend, Jun.20,2023.", "label": "museum_info", "id": 277}
+{"state": "Calculate the derivative of the function 2x^2 at x = 1.", "label": "calculus.derivative", "id": 16}
+{"state": "Who invented the theory of relativity and in which year?", "label": "science_history.get_invention", "id": 248}
+{"state": "What are the top three plants suitable for a hill slope in terms of erosion prevention?", "label": "get_plants_for_slope", "id": 194}
+{"state": "Fetch player statistics of 'Zelda' on Switch for user 'Sam'.", "label": "game_stats.fetch_player_statistics", "id": 343}
+{"state": "Can you tell me the current weather in Chennai? I believe the latitude is around 13.0827 and the longitude is approximately 80.2707.", "label": "get_weather_by_coordinates", "id": 498}
+{"state": "Perform a two-sample t-test on my experiment data of Control [10, 15, 12, 14, 11] and Treated [18, 16, 17, 20, 22] group with alpha equals to 0.05", "label": "stats.t_test", "id": 118}
+{"state": "What's the chess classical rating of Magnus Carlsen?", "label": "chess.rating", "id": 332}
+{"state": "Calculate the Body Mass Index (BMI) of a person with a weight of 85 kilograms and height of 180 cm.", "label": "calculate_bmi", "id": 84}
+{"state": "How many ounces in 2 pounds of butter?", "label": "cooking_conversion.convert", "id": 365}
+{"state": "I made a purchase for $250 in New York. How much the sales tax will be?", "label": "calculate_tax", "id": 504}
+{"state": "add a todo 'go to gym tomorrow.'", "label": "todo", "id": 461}
+{"state": "Find the details about the musical instrument 'Violin' from 'Stradivarius' maker, made in the year 1721.", "label": "get_instrument_info", "id": 281}
+{"state": "I want to go to McDonald's and buy a pizza.", "label": "uber.eat.order", "id": 429}
+{"state": "Calculate the neuronal activity based on synaptic input rate of 200 and weight 0.5 and decay rate of 0.1.", "label": "calculate_neuronal_activity", "id": 220}
+{"state": "Who was the U.S. president during the Civil War?", "label": "US_President_During_Event", "id": 241}
+{"state": "Could you retrieve the Insights Groups Information for the nodes from the following URL: 'https://api.insights.com/groups'? I'd like to see a maximum of 20 results, sorted in descending order.", "label": "requests.get", "id": 534}
+{"state": "Find a Yamaha flute with the specifications of open hole, C foot, and silver headjoint available for sale.", "label": "find_flute", "id": 282}
+{"state": "Reschedule event 'Alice-One-one-One' to November 1, 2023 at 10pm CEST", "label": "reschedule", "id": 537}
+{"state": "Can you retrieve the details for the user with the ID 7890, who has black as their special request?", "label": "get_user_info", "id": 400}
+{"state": "Please act like the current date is 2024/02/21", "label": "getDataForProfessional", "id": 588}
+{"state": "Could you tell me the weather forecast for Marshall, MN on March 5th 2023?", "label": "Weather_1_GetWeather", "id": 599}
+{"state": "Calculate the electric field at a point 3 meters away from a charge of 2 coulombs.", "label": "calculate_electric_field", "id": 39}
+{"state": "Calculate the compounded interest on an initial deposit of $5000 at an annual interest rate of 3% for 5 years, compounded quarterly.", "label": "calculate_compounded_interest", "id": 153}
+{"state": "Predict the future value of a $5000 investment with an annual interest rate of 5% in 3 years with monthly compounding.", "label": "finance.predict_future_value", "id": 133}
+{"state": "Get the highest rated sushi restaurant in Boston, that opens on Sundays.", "label": "get_restaurant", "id": 91}
+{"state": "What is the carbon footprint of a gas-powered vehicle driving 1500 miles in a year?", "label": "calculate_vehicle_emission", "id": 70}
+{"state": "Can you tell me the current geographical coordinates of my device in DMS format, including altitude?", "label": "get_current_loc", "id": 487}
+{"state": "I want to watch a McKinley Belcher III movie. I want something directed by Simon Curtis. It should be a drama.", "label": "Movies_3_FindMovies", "id": 619}
+{"state": "Get directions from Sydney to Melbourne using the fastest route.", "label": "get_directions", "id": 33}
+{"state": "Find me the 5 tallest mountains within 50km of Denver, Colorado.", "label": "locate_tallest_mountains", "id": 191}
+{"state": "Find the best local nurseries in Toronto with a good variety of annual plants.", "label": "local_nursery.find", "id": 193}
+{"state": "What is the humidity level in Miami, Florida in the upcoming 7 days?", "label": "weather.humidity_forecast", "id": 188}
+{"state": "music.theory.chordProgression(progression=['I', 'V', 'vi', 'IV'])", "label": "music.theory.chordProgression", "id": 297}
+{"state": "What was Albert Einstein's contribution to science on March 17, 1915?", "label": "historical_contrib.get_contrib", "id": 247}
+{"state": "Find the score of last game for Los Angeles Lakers including its opponent name.", "label": "team_score.get_latest", "id": 324}
+{"state": "call HANDOVER function to transfer the request if user asks a question.", "label": "answer_question", "id": 657}
+{"state": "I want to check the weather condition in Fremont on March 1st 2023. ", "label": "Weather_1_GetWeather", "id": 600}
+{"state": "can you create todo for 'go for shopping at 9 pm'", "label": "todo", "id": 455}
+{"state": "Generate a major chord progression in C key with four chords.", "label": "music_generation.create_chord_progression", "id": 294}
+{"state": "what is the specs ACHD of type MPN. I want to see images.", "label": "raptor.mpn.specs", "id": 590}
+{"state": "Get me the directions from New York to Los Angeles avoiding highways and toll roads.", "label": "map_service.get_directions", "id": 208}
+{"state": "remove shortcut of putty from desktop, using the instruction del \"%userprofile%\\Desktop\\putty.lnk\"", "label": "cmd_controller.execute", "id": 553}
+{"state": "Determine the winner in a Poker game with John having a Hand of 8\u2665, 10\u2665, J\u2665, Q\u2665, K\u2665 and Mike having 9\u2660, J\u2660, 10\u2660, Q\u2660, K\u2660.", "label": "card_games.poker_determine_winner", "id": 340}
+{"state": "open camera, using the start microsoft.windows.camera: command", "label": "cmd_controller.execute", "id": 560}
+{"state": "Find the Net Present Value (NPV) of an investment, given cash_flows=[200,300,400,500], a discount rate of 10%, and an initial investment of $2000.", "label": "calculate_NPV", "id": 127}
+{"state": "What key signature does C# major have?", "label": "music_theory.key_signature", "id": 298}
+{"state": "The image contains the Coca-Cola logo, which is a registered trademark of The Coca-Cola Company. The Coca-Cola Company is a multinational beverage corporation headquartered in Atlanta, Georgia, United States. The company is the world's largest beverage company, refreshing consumers with more than 500 sparkling and still brands. Led by Coca-Cola, one of the world's most valuable brands, our company's portfolio features 20 billion-dollar brands, 19 of which are available in more than 200 countries. These brands include Diet Coke, Fanta, Sprite, Coca-Cola Zero, vitaminwater, Powerade, Minute Maid, Simply, Dasani, FUZE TEA and Del Valle.\\n\\nI am 100% confident that the image contains copyrighted content.", "label": "get_copyright_info", "id": 564}
+{"state": "What are the next five matches for Manchester United and who are they playing against in the English Premier League?", "label": "sports.match_schedule", "id": 308}
+{"state": "Generate a random number from a normal distribution with mean 0 and standard deviation 1.", "label": "random.normalvariate", "id": 111}
+{"state": "I'm trying to connect to a new Wi-Fi network but I forgot the name. Could you ask me for the SSID with a message saying 'Please enter the Wi-Fi network name you wish to connect to:'?", "label": "askForSSID", "id": 501}
+{"state": "Could you tell me what the weather will be like in Paris, France from April 3rd to April 5th 2023. For temperature use Celsius?", "label": "weather.forecast", "id": 520}
+{"state": "Give me the schedule of Manchester United for the next 6 games in Premier League.", "label": "sports_team.get_schedule", "id": 327}
+{"state": "Calculate the average of list of integers [12, 15, 18, 20, 21, 26, 30].", "label": "calculate_average", "id": 82}
+{"state": "Fetch me the list of IMAX movie releases in theaters near LA for the next week.", "label": "get_theater_movie_releases", "id": 93}
+{"state": "\nYou are an AI chatbot who helps users in providing information related to movies, cinema halls and booking movie tickets for them.  \nAs a system bot, consider / calculate / default the movie date to current date (today's date) in India. \n", "label": "get_movies", "id": 458}
+{"state": "u have the full control of command prompt if the task need to execute and coommand just do it list c drive", "label": "cmd_controller.execute", "id": 556}
+{"state": "Calculate the compounded interest for an initial principal of $5000, annual interest rate of 5%, and compounding period of 10 years.", "label": "calculate_compounded_interest", "id": 145}
+{"state": "What year was the law of universal gravitation published by Isaac Newton?", "label": "publication_year.find", "id": 244}
+{"state": "Get me strength and weakness traits for ENFJ personality type.", "label": "get_personality_traits", "id": 227}
+{"state": "Help find a housekeeper who provides ironing services in Bangkok, Chatuchak District, with a review score of 4.5 stars or more.", "label": "get_service_id", "id": 581}
+{"state": "Calculate the carbon footprint of my lifestyle, assuming I drive 20 miles a day, consume 3 meat meals a week, and produce 500 lbs of trash in a year.", "label": "calculate_carbon_footprint", "id": 195}
+{"state": "What is the genotype frequency of AA genotype in a population, given that allele frequency of A is 0.3?", "label": "calculate_genotype_frequency", "id": 64}
+{"state": "Find the high and low temperatures, humidity, and precipitation for London, United Kingdom for the next 3 days.", "label": "detailed_weather_forecast", "id": 333}
+{"state": "Tell me more about Christianity and its history till the 14th century", "label": "religion.history_info", "id": 249}
+{"state": "What are the odds of drawing a heart card from a deck without joker?", "label": "deck_of_cards.odds", "id": 341}
+{"state": "classify these sentences\\nlink my account\\nconnect my accounts\\nhello", "label": "classify", "id": 505}
+{"state": "Calculate the factorial of 5 using math functions.", "label": "math.factorial", "id": 1}
+{"state": "I want to know weather conditions? I'm at London, UK in fahr", "label": "get_current_weather", "id": 408}
+{"state": "Calculate the area of a triangle with base 5m and height 3m.", "label": "calc_area_triangle", "id": 95}
+{"state": "Calculate the derivative of the function 3x^2 + 2x - 1.", "label": "calculate_derivative", "id": 14}
+{"state": "{\n    \"response\": \" The image contains four logos of superheroes from DC Comics and Marvel Comics. They are Superman, Iron Man, Hulk, and Batman. The logos are all in different colors and shapes. Superman's logo is a red and yellow \\\"S\\\" on a blue background. Iron Man's logo is a red and yellow circle with a black face mask. Hulk's logo is a green fist with a black outline. Batman's logo is a black bat on a yellow background.\\n\\nHere is a list of objects that could contain copyrighted material:\\n\\n* Blue square\\n* Red square\\n* Green square\\n* Yellow square\\n* Superman logo\\n* Iron Man logo\\n* Hulk logo\\n* Batman logo\\n* Fist\\n* Bat\\n* Face mask\\n* Outline\"\n}\n", "label": "get_items", "id": 561}
+{"state": "Find out how genetically similar a human and a chimp are in percentage.", "label": "genetics.calculate_similarity", "id": 63}
+{"state": "What is the value of the sculpture 'The Thinker' by Rodin?", "label": "get_sculpture_value", "id": 266}
+{"state": "Could you retrieve the recommendation details for the advisory with the identifier 'dac' from the following URL: 'https://api.example.com/recommendations'?", "label": "requests.get", "id": 533}
+{"state": "can you create todo with the following words verbatim: go for shopping at 9 pm", "label": "todo_add", "id": 453}
+{"state": "Hey bunny, How are you doing", "label": "chat_with_friend", "id": 649}
+{"state": "You are a top-tier algorithm for extracting information from text. Only extract information that is relevant to the provided text. If no information is relevant, use the schema and output an empty list where appropriate.\n\nUse information about the person from the given user input.", "label": "extractor.extract_information", "id": 565}
+{"state": "Locate the nearest public library in Boston, Massachusetts with English fiction section and free Wi-Fi.", "label": "public_library.find_nearby", "id": 209}
+{"state": "I have some leisure time so that i could watch a movie. Will you find me a movie directed by Kirill Mikhanovsky and find something like Comedy-drama genre?", "label": "Movies_3_FindMovies", "id": 625}
+{"state": "Who is ranked as the top player in woman tennis?", "label": "sports_ranking.get_top_player", "id": 323}
+{"state": "the air conditioner turned on with cool mode.", "label": "ThinQ_Connect", "id": 444}
+{"state": "What are the top five sushi restaurants with high reviews i.e. above 4/5 in Tokyo?", "label": "get_best_sushi_places", "id": 362}
+{"state": "Calculate the area under the curve y=3x^2 + 2x - 4, between x = -1 and x = 2.", "label": "mathematics.calculate_area_under_curve", "id": 103}
+{"state": "open calculator app using the command called start calc", "label": "cmd_controller.execute", "id": 573}
+{"state": "I want to publish a news article titled 'Julian is Testing' with 'a detailed analysis on the impact of sleep patterns on productivity' as content. Could you set up the meta title to be 'Productivity and Sleep Patterns' and the URL to 'julian-testing-productivity'? Let's also add a brief meta description saying 'Exploring how sleep affects work efficiency'.", "label": "sitefinity_create_contentitem", "id": 483}
+{"state": "What is the probability of drawing a heart card from a deck of 52 cards?", "label": "card_game_probability.calculate", "id": 338}
+{"state": "Estimate the population size of elephants of 35000 in the next 5 years given the current growth rate of 0.015.", "label": "elephant_population_estimate", "id": 75}
+{"state": "Calculate the speed of an object in km/h if it traveled 450 meters in 20 seconds.", "label": "calculate_speed", "id": 101}
+{"state": "Find the ranking of LA Lakers in the NBA 2021 regular season.", "label": "get_team_rank", "id": 317}
+{"state": "Calculate the return of investment of a bank's savings account with a deposit of $1000, annual interest rate of 3% for 1 year.", "label": "calculate_roi", "id": 150}
+{"state": "Find me action movies that have David Leitch as the director and include Alex King in the cast?", "label": "Movies_3_FindMovies", "id": 616}
+{"state": "LIST C DRIIVE", "label": "cmd_controller.execute", "id": 545}
+{"state": "Generate an image of a circle with a radius of 50 pixels and color 'Red'.", "label": "generate_circle_image", "id": 256}
+{"state": "Can you book a flight for me departing from Paris, France, on the 12th of March 2023 at 3 in the afternoon?", "label": "book_flight", "id": 633}
+{"state": "Calculate the factorial of the number 5", "label": "math.factorial", "id": 97}
+{"state": "'Get stock price of Apple for the last 5 days in NASDAQ.'", "label": "get_stock_price", "id": 143}
+{"state": "Get me two tickets for next Eminem concert in New York City.", "label": "concert_booking.book_ticket", "id": 288}
+{"state": "Find the NASDAQ stock price for the company Amazon at closing March.11, 2022.", "label": "get_stock_price", "id": 142}
+{"state": "What is the sum of 133 and 34?", "label": "sum_numbers", "id": 516}
+{"state": "Find social behaviors and patterns in a group size of 50 with extroverted members being 15 and introverted members being 35.", "label": "group_dynamics.pattern", "id": 223}
+{"state": "Could you provide me with the weather forecast for Stinson Beach on April 5th, 2023?", "label": "Weather_1_GetWeather", "id": 597}
+{"state": "How many teaspoons are in 2 tablespoons for measurement in my recipe?", "label": "recipe.unit_conversion", "id": 366}
+{"state": "I just enjoyed a large cup of chai tea with half and half for my morning snack. Could you record that I drank 16 ounces of chai tea as a snack?", "label": "log_food", "id": 488}
+{"state": "What are the career stats of basketball player LeBron James?", "label": "get_career_stats", "id": 310}
+{"state": "I have a busy day today. Can you tell me what the temperature is going to be in Bangkok, Thailand. I prefer the fahrenheit unit.", "label": "get_current_weather", "id": 414}
+{"state": "Could you tell me the current weather conditions in El Gastor, Andalusia?", "label": "get_current_weather", "id": 497}
+{"state": "Could you analyze the image at http://www.thewowstyle.com/wp-content/uploads/2015/01/Home-Interior-Design-Hd-Wallpaper-Hd-Background-With-Simple-Staircase-And-Plasma-TV-Also-Nice-Laminate-Flooring-Ideas-With-Modern-Furniture-Interior-Minimalist-Design.jpg and provide a detailed description based on the question, 'How does the arrangement of furniture contribute to the minimalist design of the interior?'", "label": "pipeline", "id": 523}
+{"state": "Find me sculptures near Chicago that were made in the 19th century.", "label": "sculpture_search", "id": 265}
+{"state": "Calculate the electromagnetic force between two charges of 5C and 7C placed 3 meters apart.", "label": "electromagnetic_force", "id": 41}
+{"state": "Could you help me retrieve the list of exports for my bot using the identifier 'my-bot-id' and focusing on version 'v2' sort in ascending? I want max 50 results", "label": "aws.lexv2_models.list_exports", "id": 430}
+{"state": "Get me the travel distance and duration from the Eiffel Tower to the Louvre Museum", "label": "maps.get_distance_duration", "id": 394}

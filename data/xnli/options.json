@@ -1,0 +1,5 @@
+{
+ "entailment": "the hypothesis is definitely true given the premise",
+ "neutral": "the hypothesis might be true given the premise",
+ "contradiction": "the hypothesis is definitely false given the premise"
+}

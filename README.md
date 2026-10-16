@@ -1,18 +1,44 @@
 # Systemonebench
 
-## Build dockerfile
+## Run all models
 
 ```sh
-docker build -t systemonebench .
-docker run --rm --gpus all -p 8080:8080 systemonebench -hf ggml-org/Laya-GGUF
-docker run --rm --entrypoint /app/llama-quantize systemonebench --help
+mkdir -p models
+curl -L -o models/Laya-BF16.gguf https://huggingface.co/ggml-org/Laya-GGUF/resolve/main/Laya-BF16.gguf
+curl -L -o models/Kev-0.8B-BF16.gguf https://huggingface.co/ggml-org/Kev-0.8B-GGUF/resolve/main/Kev-0.8B-BF16.gguf
+curl -L -o models/Kev-4B-BF16.gguf https://huggingface.co/ggml-org/Kev-4B-GGUF/resolve/main/Kev-4B-BF16.gguf
+curl -L -o models/Kev-9B-BF16.gguf https://huggingface.co/ggml-org/Kev-9B-GGUF/resolve/main/Kev-9B-BF16.gguf
+curl -L -o models/Qwen2.5-7B-Instruct-Q4_K_M.gguf https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf
+docker compose up -d --build
+curl localhost:8081/health   # laya
+curl localhost:8082/health   # kev-0.8b
+curl localhost:8083/health   # kev-4b
+curl localhost:8084/health   # kev-9b
+curl localhost:8090/health   # qwen-7b (LLM baseline)
 ```
+
+## Datasets
+
+```sh
+python3 scripts/fetch_data.py   # -> data/<name>/{options.json,calibration.jsonl,test.jsonl}, 50/50 split, seed 0
+```
+
+| name | source | rows | options |
+|---|---|---|---|
+| emotion | dair-ai/emotion test | 2000 | 6 |
+| xnli | facebook/xnli en test | 5010 | 3 |
+| massive | mteb/amazon_massive_intent en test | 2974 | 59 |
+| banking77 | mteb/banking77 test | 3076 | 77 |
+| clinc150 | DeepPavlov/clinc150 test (out-of-scope rows skipped) | 4500 | 150 |
+| bfcl | BFCL v3 simple + live_simple (tool pool as options) | 658 | 453 |
 
 ## Models
 
 * [Laya GGUF](https://huggingface.co/ggml-org/Laya-GGUF)
 * [Laya](https://huggingface.co/convaiinnovations/laya)
+* [Kev-0.8B GGUF](https://huggingface.co/ggml-org/Kev-0.8B-GGUF)
 * [Kev-4B GGUF](https://huggingface.co/ggml-org/Kev-4B-GGUF)
+* [Kev-9B GGUF](https://huggingface.co/ggml-org/Kev-9B-GGUF)
 * [Kev-4B](https://huggingface.co/jaredpalmer/kev-4b)
 * [llama.cpp /v1/systemone support](https://github.com/ggml-org/llama.cpp/pull/29818)
 

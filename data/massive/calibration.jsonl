@@ -1,0 +1,1487 @@
+{"state": "make a coffee", "label": "iot_coffee", "id": 695}
+{"state": "remind me to pick up mark at the airport at six p. m.", "label": "calendar_set", "id": 1493}
+{"state": "remind me to get the oil changed", "label": "calendar_set", "id": 1401}
+{"state": "change volume to thirty five percent", "label": "audio_volume_other", "id": 712}
+{"state": "play some good song from my play list", "label": "play_music", "id": 1023}
+{"state": "schedule a meeting with the accounting department on two thirty p. m. on friday", "label": "calendar_set", "id": 1214}
+{"state": "show me the contents of the list", "label": "lists_query", "id": 1850}
+{"state": "i need some rap", "label": "play_music", "id": 199}
+{"state": "reply to email", "label": "email_sendemail", "id": 2761}
+{"state": "if it's sunrise in stockholm what time is it in okinawa", "label": "datetime_convert", "id": 207}
+{"state": "find an oscar nominee movie", "label": "recommendation_movies", "id": 2060}
+{"state": "turn off the socket", "label": "iot_wemo_off", "id": 452}
+{"state": "is it going to be sunny next tuesday", "label": "weather_query", "id": 267}
+{"state": "check new emails", "label": "email_query", "id": 2953}
+{"state": "what is the chance of precipitation in todays weather", "label": "weather_query", "id": 595}
+{"state": "hey olly i missed you", "label": "general_quirky", "id": 1077}
+{"state": "erase that from my calendar", "label": "calendar_remove", "id": 1495}
+{"state": "facebook", "label": "social_query", "id": 2620}
+{"state": "should i bring a jacket with me tonight", "label": "weather_query", "id": 748}
+{"state": "tell me today's date", "label": "datetime_query", "id": 16}
+{"state": "remind me to contact old friends that i have not talked with in six months before they pass", "label": "calendar_set", "id": 2267}
+{"state": "show me nearby musical events", "label": "recommendation_events", "id": 2108}
+{"state": "what is the date for next tuesday", "label": "datetime_query", "id": 566}
+{"state": "what sound does a dog make", "label": "general_quirky", "id": 1121}
+{"state": "don't talk until i ask you to", "label": "audio_volume_mute", "id": 134}
+{"state": "remove my appointment with my doctor on saturday please", "label": "calendar_remove", "id": 1384}
+{"state": "list me the stock of apple right now", "label": "qa_stock", "id": 2383}
+{"state": "olly tweet apple that the iphone doesn't work", "label": "social_post", "id": 2635}
+{"state": "turn off the bathroom light please", "label": "iot_hue_lightoff", "id": 650}
+{"state": "who mailed me yesterday", "label": "email_query", "id": 2779}
+{"state": "olly if any new news comes out about the flood can you let me know right away", "label": "news_query", "id": 641}
+{"state": "if it's five am in berlin what time is it here", "label": "datetime_convert", "id": 217}
+{"state": "have i received new emails in the last ten minutes", "label": "email_query", "id": 2766}
+{"state": "what time is it in london", "label": "datetime_query", "id": 473}
+{"state": "play my playlist party songs", "label": "play_music", "id": 993}
+{"state": "olly what is the weather forecast for today", "label": "weather_query", "id": 788}
+{"state": "add a meeting at the office with brian for three p. m. on tuesday", "label": "calendar_set", "id": 1464}
+{"state": "mention event in calendar with others", "label": "calendar_set", "id": 1540}
+{"state": "i helped a poor needy today olly", "label": "general_quirky", "id": 1087}
+{"state": "how do i make pizza", "label": "cooking_recipe", "id": 1749}
+{"state": "do i have anything set for the fourth of july this year", "label": "calendar_query", "id": 1528}
+{"state": "clear data", "label": "audio_volume_mute", "id": 831}
+{"state": "make a repeating reminder for this calendar event", "label": "calendar_set", "id": 1578}
+{"state": "what day of the week was december four one thousand nine hundred and eighty two", "label": "datetime_query", "id": 364}
+{"state": "music", "label": "play_music", "id": 942}
+{"state": "what's this week's weather", "label": "weather_query", "id": 20}
+{"state": "play", "label": "play_radio", "id": 1620}
+{"state": "find out what song this is and tell me the name", "label": "music_query", "id": 1067}
+{"state": "could you please play the classical music for me", "label": "play_music", "id": 1686}
+{"state": "delete event from calendar", "label": "calendar_remove", "id": 1366}
+{"state": "please remind me to call mom in half an hour", "label": "calendar_set", "id": 1280}
+{"state": "can you please order some food for me", "label": "takeaway_order", "id": 1028}
+{"state": "what's ten percent off forty dollars", "label": "qa_maths", "id": 2302}
+{"state": "can you remind my next meeting with my boss one hour before it will happen", "label": "calendar_set", "id": 1231}
+{"state": "new gadgets", "label": "general_quirky", "id": 1142}
+{"state": "tell me the funniest joke that was ever told", "label": "general_joke", "id": 727}
+{"state": "remind me to call mom every tuesday at ten am", "label": "calendar_set", "id": 1533}
+{"state": "brighten up the lighting", "label": "iot_hue_lightup", "id": 665}
+{"state": "what are the headlines on c. n. n.", "label": "news_query", "id": 766}
+{"state": "olly what day of the week is halloween", "label": "datetime_query", "id": 680}
+{"state": "book a cab to office for me", "label": "transport_taxi", "id": 2216}
+{"state": "what is going on on december fourth", "label": "calendar_query", "id": 1451}
+{"state": "please modify my calendar with this event", "label": "calendar_set", "id": 1469}
+{"state": "play radio with nonstop songs", "label": "play_radio", "id": 1653}
+{"state": "please show me marathon nearby me", "label": "recommendation_events", "id": 2047}
+{"state": "switch off the lights", "label": "iot_hue_lightoff", "id": 72}
+{"state": "play the song major tom by david bowie", "label": "play_music", "id": 750}
+{"state": "olly set alarm for reminder", "label": "alarm_set", "id": 1532}
+{"state": "look up the number of people living in miami florida", "label": "qa_factoid", "id": 2587}
+{"state": "on monday the twentieth i need to have a conversation with greg about our weekend trip", "label": "calendar_set", "id": 1397}
+{"state": "could you please play the song from the artist madonna", "label": "play_music", "id": 899}
+{"state": "please compose a new email to coworker", "label": "email_sendemail", "id": 2753}
+{"state": "yes or no tomorrow's temperature is to be hot", "label": "weather_query", "id": 287}
+{"state": "alexa turn the lights down to seven", "label": "iot_hue_lightdim", "id": 387}
+{"state": "august fifteenth is what day of the week", "label": "datetime_query", "id": 992}
+{"state": "play next episode of podcast", "label": "play_podcasts", "id": 1985}
+{"state": "i want to listen to a sports podcast", "label": "play_podcasts", "id": 2009}
+{"state": "turn up the brightness", "label": "iot_hue_lightup", "id": 438}
+{"state": "what is the latest update on the new york bridge proposal", "label": "news_query", "id": 1021}
+{"state": "can you change the volume at", "label": "audio_volume_other", "id": 974}
+{"state": "email naty for her birthday", "label": "email_sendemail", "id": 2906}
+{"state": "go to the washington post website", "label": "news_query", "id": 190}
+{"state": "can you please make a coffee", "label": "iot_coffee", "id": 872}
+{"state": "stop start the juice", "label": "iot_wemo_on", "id": 538}
+{"state": "find naty from my contacts and send her an email", "label": "email_sendemail", "id": 2905}
+{"state": "tell me about this week's weather", "label": "weather_query", "id": 1011}
+{"state": "elections in up", "label": "news_query", "id": 1181}
+{"state": "please play some jazz music", "label": "play_music", "id": 469}
+{"state": "do not talk", "label": "audio_volume_mute", "id": 806}
+{"state": "send email to new contact", "label": "email_sendemail", "id": 2926}
+{"state": "open games", "label": "play_game", "id": 1816}
+{"state": "add this person's email", "label": "email_addcontact", "id": 2703}
+{"state": "check most current emails", "label": "email_query", "id": 2860}
+{"state": "send me a reminder of my meeting with tom next friday", "label": "calendar_set", "id": 1526}
+{"state": "open a reminder about next weeks managers meeting on tuesday", "label": "calendar_set", "id": 1441}
+{"state": "tune in to eight hundred and ninety seven f. m.", "label": "play_radio", "id": 1606}
+{"state": "song title", "label": "music_query", "id": 310}
+{"state": "suffering consequences", "label": "qa_definition", "id": 2402}
+{"state": "how have megatel shares done last week", "label": "qa_stock", "id": 2565}
+{"state": "f. m. ninety three point five radio songs", "label": "play_radio", "id": 1659}
+{"state": "hey siri what's the time", "label": "datetime_query", "id": 722}
+{"state": "what is the weather in pittsburgh", "label": "weather_query", "id": 592}
+{"state": "what is a work phone number of emilia", "label": "email_querycontact", "id": 2715}
+{"state": "send mom an email now", "label": "email_sendemail", "id": 2816}
+{"state": "could you please find me the latest news from a source that i do not usually go to", "label": "news_query", "id": 138}
+{"state": "what date is it today", "label": "datetime_query", "id": 17}
+{"state": "can i get delilah on the radio in the bedroom", "label": "play_radio", "id": 1663}
+{"state": "please let me know the dog shows events going on in my home town", "label": "recommendation_events", "id": 2030}
+{"state": "create a playlist", "label": "lists_createoradd", "id": 1891}
+{"state": "i want you to go to hot one hundred and five on the radio", "label": "play_radio", "id": 1629}
+{"state": "is it going to rain on monday", "label": "weather_query", "id": 818}
+{"state": "what are my pending tasks", "label": "calendar_query", "id": 1283}
+{"state": "compose a reply to last email", "label": "email_sendemail", "id": 2938}
+{"state": "what's jlo up to", "label": "general_quirky", "id": 2425}
+{"state": "what kind of music do you think i like", "label": "music_query", "id": 623}
+{"state": "make the light in here redder", "label": "iot_hue_lightchange", "id": 749}
+{"state": "what is the current time in chennai", "label": "datetime_query", "id": 605}
+{"state": "get rid of all events with jeff", "label": "calendar_remove", "id": 1286}
+{"state": "when is my brunch with jennifer", "label": "calendar_query", "id": 1448}
+{"state": "how to get somewhere", "label": "transport_query", "id": 1120}
+{"state": "get me the popular news from b. b. c.", "label": "news_query", "id": 923}
+{"state": "turn off the porch light", "label": "iot_hue_lightoff", "id": 436}
+{"state": "can you play rock music for the next hour", "label": "play_music", "id": 81}
+{"state": "tell me something to remind this week", "label": "calendar_set", "id": 1551}
+{"state": "what times are my alarms set for", "label": "alarm_query", "id": 867}
+{"state": "turn off the bathroom lights", "label": "iot_hue_lightoff", "id": 87}
+{"state": "add my car payment on the twelfth in my calendar", "label": "calendar_set", "id": 1255}
+{"state": "let's play music hits", "label": "play_radio", "id": 1628}
+{"state": "tell me what the weather is doing in grand rapids mi right now", "label": "weather_query", "id": 380}
+{"state": "title of song", "label": "music_query", "id": 914}
+{"state": "what is googs current price", "label": "qa_stock", "id": 2431}
+{"state": "turn off the alarm", "label": "alarm_remove", "id": 301}
+{"state": "did you place the reminder about the meeting for tomorrow", "label": "calendar_query", "id": 1277}
+{"state": "make it brighter in here", "label": "iot_hue_lightup", "id": 1074}
+{"state": "i never want to hear that song again", "label": "music_dislikeness", "id": 340}
+{"state": "what information do i have on reminders", "label": "calendar_query", "id": 1569}
+{"state": "make a grocery list please", "label": "lists_createoradd", "id": 1906}
+{"state": "email my appointments to reschedule", "label": "email_sendemail", "id": 1413}
+{"state": "how is it outside today", "label": "weather_query", "id": 763}
+{"state": "how would you describe a ball", "label": "qa_definition", "id": 2544}
+{"state": "mute for fifteen minutes", "label": "audio_volume_mute", "id": 652}
+{"state": "please activate my coffee pot for me", "label": "iot_coffee", "id": 557}
+{"state": "new pop music", "label": "play_music", "id": 580}
+{"state": "quick reply to jack so please send a mail", "label": "email_sendemail", "id": 2775}
+{"state": "tell me something i can do to help my community today", "label": "general_quirky", "id": 2339}
+{"state": "news from c. n. n.", "label": "news_query", "id": 621}
+{"state": "set a reminder to notify me one hour before lunch meeting", "label": "calendar_set", "id": 1262}
+{"state": "start the next episode", "label": "play_podcasts", "id": 1994}
+{"state": "speaker volume increase", "label": "audio_volume_up", "id": 830}
+{"state": "what events are upcoming today", "label": "calendar_query", "id": 1399}
+{"state": "i need to buy gas", "label": "general_quirky", "id": 1109}
+{"state": "please find a contact number of jayesh and tell me", "label": "email_querycontact", "id": 2929}
+{"state": "i have my clothes list", "label": "lists_query", "id": 1955}
+{"state": "no lights in the kitchen", "label": "iot_hue_lightoff", "id": 568}
+{"state": "what artist is this", "label": "music_query", "id": 1036}
+{"state": "list current set alarms", "label": "alarm_query", "id": 666}
+{"state": "please begin clash of clans", "label": "play_game", "id": 1791}
+{"state": "when was the bolshoi theater constructed", "label": "qa_factoid", "id": 2496}
+{"state": "delete all the events in my calendar", "label": "calendar_remove", "id": 1544}
+{"state": "what mistakes do you usually make", "label": "general_quirky", "id": 98}
+{"state": "shut off the socket", "label": "iot_wemo_off", "id": 515}
+{"state": "display the local time of london at this moment", "label": "datetime_query", "id": 392}
+{"state": "turn off the sounds", "label": "audio_volume_mute", "id": 659}
+{"state": "and the darkness has fallen", "label": "iot_hue_lighton", "id": 3}
+{"state": "i would like it to be able to compute answer from search results like wolfram alpha does", "label": "general_quirky", "id": 2291}
+{"state": "set first week of june as holiday in my calendar", "label": "calendar_set", "id": 1196}
+{"state": "play the oldies station", "label": "play_radio", "id": 1612}
+{"state": "list items on my work list", "label": "lists_query", "id": 1939}
+{"state": "don't play this song again", "label": "music_dislikeness", "id": 522}
+{"state": "i want to hear the last news from c. n. n.", "label": "news_query", "id": 130}
+{"state": "show me the train schedules to the metropolitan opera house", "label": "transport_query", "id": 2139}
+{"state": "start music app and play a song for me", "label": "play_music", "id": 223}
+{"state": "i want to make a note on my calendar for the event tomorrow at the library", "label": "calendar_set", "id": 1497}
+{"state": "book a ticket to ny by train", "label": "transport_ticket", "id": 2207}
+{"state": "hey cancel all my other meetings and calls for second march as it is jim's birthday tag it as an event in your calendar", "label": "calendar_set", "id": 1344}
+{"state": "play my favorites", "label": "play_music", "id": 796}
+{"state": "start celine dion songs", "label": "play_music", "id": 405}
+{"state": "play ping pong", "label": "play_game", "id": 1796}
+{"state": "please turn up the screen brightness all the way", "label": "iot_hue_lightup", "id": 186}
+{"state": "can you make some coffee", "label": "iot_coffee", "id": 792}
+{"state": "disable alarm for three p. m.", "label": "alarm_remove", "id": 209}
+{"state": "play game with me", "label": "play_game", "id": 1793}
+{"state": "please say to the email that sent me george i need the money now it's urgent", "label": "email_sendemail", "id": 2932}
+{"state": "what's the easiest way to cook pasta", "label": "cooking_recipe", "id": 1731}
+{"state": "describe what a sphere is", "label": "qa_definition", "id": 2522}
+{"state": "start a pot of coffee please", "label": "iot_coffee", "id": 461}
+{"state": "answer for three times four", "label": "qa_maths", "id": 2445}
+{"state": "remind me to pick up linda at five in the evening on seventh", "label": "calendar_set", "id": 1217}
+{"state": "remind me on fifth march of every year to arrange wedding anniversary presents", "label": "calendar_set", "id": 1305}
+{"state": "save this song to playlist", "label": "music_likeness", "id": 915}
+{"state": "remove that item", "label": "lists_remove", "id": 1873}
+{"state": "turn on an alarm for three thirty p. m. today", "label": "alarm_set", "id": 850}
+{"state": "tell me if i have any new messages in my inbox", "label": "email_query", "id": 2750}
+{"state": "tell me the current price of exxon mobil stock", "label": "qa_stock", "id": 2366}
+{"state": "new updates", "label": "social_query", "id": 2606}
+{"state": "is there any news about the presidency", "label": "news_query", "id": 719}
+{"state": "make sure there is no events on my calendar", "label": "calendar_remove", "id": 1228}
+{"state": "search nandy", "label": "email_query", "id": 2944}
+{"state": "check emails from john", "label": "email_query", "id": 2837}
+{"state": "reply this mail", "label": "email_sendemail", "id": 2910}
+{"state": "is dinner ready yet", "label": "takeaway_query", "id": 358}
+{"state": "are there any free events on in my area today", "label": "recommendation_events", "id": 2340}
+{"state": "coordinate all pop song genres", "label": "play_music", "id": 193}
+{"state": "i want to see the news", "label": "news_query", "id": 561}
+{"state": "the definition of life", "label": "qa_definition", "id": 2392}
+{"state": "read what is on my list", "label": "lists_query", "id": 1871}
+{"state": "get me a uber", "label": "transport_taxi", "id": 2152}
+{"state": "what's happening around me", "label": "recommendation_events", "id": 2069}
+{"state": "make an alarm for the meeting with bob at seven today", "label": "alarm_set", "id": 1535}
+{"state": "should i wear sandals or shoes with socks", "label": "weather_query", "id": 812}
+{"state": "what reminders do i still have", "label": "calendar_query", "id": 1420}
+{"state": "play me this mornings show from one hundred and one point nine", "label": "play_radio", "id": 1661}
+{"state": "what i like today", "label": "general_quirky", "id": 1139}
+{"state": "can i get a recipe for tuna", "label": "cooking_recipe", "id": 1758}
+{"state": "what is the weather in beijing", "label": "weather_query", "id": 611}
+{"state": "how do i get to the mall", "label": "transport_query", "id": 2210}
+{"state": "check for me new emails received from sara", "label": "email_query", "id": 2949}
+{"state": "check for emails from my employer", "label": "email_query", "id": 2809}
+{"state": "anything interesting from bob's news", "label": "news_query", "id": 430}
+{"state": "any mail from amazon today", "label": "email_query", "id": 2784}
+{"state": "start b. b. c. radio", "label": "play_radio", "id": 1596}
+{"state": "remember this email", "label": "email_addcontact", "id": 2777}
+{"state": "delete events from calendar", "label": "calendar_remove", "id": 1221}
+{"state": "cancel alarm", "label": "alarm_remove", "id": 500}
+{"state": "please set the alarm for next friday at six thirty am", "label": "alarm_set", "id": 433}
+{"state": "find a description about a samsung t. v.", "label": "qa_definition", "id": 2586}
+{"state": "get me up in half an hour", "label": "alarm_set", "id": 360}
+{"state": "what are the trending articles on the new york times", "label": "news_query", "id": 767}
+{"state": "my day was extremely hard", "label": "general_quirky", "id": 1105}
+{"state": "what day of the week does christmas fall on this year", "label": "datetime_query", "id": 548}
+{"state": "set lunch every day at twelve thirty", "label": "calendar_set", "id": 1265}
+{"state": "who won the presidential election this year", "label": "qa_factoid", "id": 859}
+{"state": "hey reply a mail which i received", "label": "email_sendemail", "id": 2919}
+{"state": "any lighting news emails", "label": "email_query", "id": 2961}
+{"state": "which pole is colder south or north", "label": "qa_factoid", "id": 2582}
+{"state": "my trip to goa photo post it on instagram", "label": "social_post", "id": 2614}
+{"state": "please add list of things to buy for party", "label": "lists_createoradd", "id": 1908}
+{"state": "how much is a train ticket to chicago", "label": "transport_query", "id": 2211}
+{"state": "check to see if i have any new emails from my dad", "label": "email_query", "id": 2727}
+{"state": "should i take my raincoat with me now", "label": "weather_query", "id": 990}
+{"state": "tweet complain at comcast", "label": "social_post", "id": 2675}
+{"state": "start a game and play with me", "label": "play_game", "id": 1805}
+{"state": "do i have any new friend requests", "label": "social_query", "id": 2599}
+{"state": "i'd like some red lighting", "label": "iot_hue_lightchange", "id": 240}
+{"state": "can you make the room brighter", "label": "iot_hue_lightup", "id": 870}
+{"state": "does my company worker have a home phone number", "label": "email_querycontact", "id": 2850}
+{"state": "let's play hits on the radio", "label": "play_radio", "id": 1627}
+{"state": "thanksgiving turkey cooking procedure in five sentences is what", "label": "cooking_recipe", "id": 1740}
+{"state": "what time are the hockey games tonight", "label": "general_quirky", "id": 2300}
+{"state": "erase all", "label": "lists_remove", "id": 1895}
+{"state": "mute volume", "label": "audio_volume_mute", "id": 38}
+{"state": "did anyone like my photo i just posted", "label": "social_query", "id": 2615}
+{"state": "read back my grocery list to me", "label": "lists_query", "id": 1960}
+{"state": "remind me after ten minutes", "label": "calendar_set", "id": 615}
+{"state": "how many phone numbers do i have for brenden", "label": "email_querycontact", "id": 2907}
+{"state": "train ticket", "label": "transport_ticket", "id": 2222}
+{"state": "what's on your list right now", "label": "lists_query", "id": 1921}
+{"state": "i'd like you to turn turn on the t. v.", "label": "iot_wemo_on", "id": 2328}
+{"state": "what is eastern standard time right noe", "label": "datetime_query", "id": 526}
+{"state": "please check the trending topics on twitter", "label": "social_query", "id": 2632}
+{"state": "lower the speaker volume", "label": "audio_volume_down", "id": 180}
+{"state": "how long do i cook maccoroni", "label": "cooking_recipe", "id": 1770}
+{"state": "hold", "label": "play_audiobook", "id": 1690}
+{"state": "how long does it take to make vegetable lasagna", "label": "cooking_recipe", "id": 1724}
+{"state": "remove anniversary event from my calendar", "label": "calendar_remove", "id": 1558}
+{"state": "do not speak today", "label": "audio_volume_mute", "id": 59}
+{"state": "please rate current song as five stars", "label": "music_likeness", "id": 653}
+{"state": "olly put dark colors instead of light ones in the house", "label": "iot_hue_lightchange", "id": 397}
+{"state": "tell me billy crytals address", "label": "qa_factoid", "id": 2250}
+{"state": "do i have anything planned for the twenty first", "label": "calendar_query", "id": 1342}
+{"state": "hey send a meeting invite to mr. ross for this friday's meeting and block my calendar for friday afternoon", "label": "calendar_set", "id": 1346}
+{"state": "remove cereal from my shopping list", "label": "lists_remove", "id": 1880}
+{"state": "can you give me the movie schedule", "label": "calendar_query", "id": 1216}
+{"state": "how about you", "label": "general_quirky", "id": 614}
+{"state": "make coffee at three", "label": "iot_coffee", "id": 773}
+{"state": "what's in the news", "label": "news_query", "id": 684}
+{"state": "play kiss f. m. for me", "label": "play_radio", "id": 1614}
+{"state": "tweet at", "label": "social_post", "id": 2695}
+{"state": "what events are going in my town this week", "label": "recommendation_events", "id": 1245}
+{"state": "where is volume setting", "label": "audio_volume_other", "id": 184}
+{"state": "tell me more about my events", "label": "general_quirky", "id": 1458}
+{"state": "show me recipes", "label": "cooking_recipe", "id": 2239}
+{"state": "what store is having sales tomorrow", "label": "general_quirky", "id": 2304}
+{"state": "what size is a sperm whale", "label": "qa_factoid", "id": 2290}
+{"state": "how are you feeling today", "label": "general_quirky", "id": 1100}
+{"state": "how do i set my coffee machine to make coffee", "label": "iot_coffee", "id": 423}
+{"state": "when does the f. train run today", "label": "transport_query", "id": 2178}
+{"state": "start playing my most recent podcast", "label": "play_podcasts", "id": 1996}
+{"state": "send a twitter complaint", "label": "social_post", "id": 2651}
+{"state": "put on the vacuum on now and clean the living room", "label": "iot_cleaning", "id": 930}
+{"state": "here is a new email address to be added to the contacts", "label": "email_sendemail", "id": 2717}
+{"state": "info on lisa ann please", "label": "qa_factoid", "id": 2584}
+{"state": "i want coffee everyday", "label": "iot_coffee", "id": 824}
+{"state": "post this to my facebook l. o. l.", "label": "social_post", "id": 2616}
+{"state": "order pizza for delivery", "label": "takeaway_order", "id": 955}
+{"state": "i want a meeting till three o'clock", "label": "calendar_set", "id": 1317}
+{"state": "today i saw a bulldog", "label": "general_quirky", "id": 1102}
+{"state": "where jackie chan currently live", "label": "qa_factoid", "id": 2422}
+{"state": "what's shakin bacon", "label": "general_quirky", "id": 1099}
+{"state": "call city cab to airport", "label": "transport_taxi", "id": 2120}
+{"state": "get rid of the list google", "label": "lists_remove", "id": 1932}
+{"state": "show me the dim color", "label": "iot_hue_lightdim", "id": 378}
+{"state": "weekly weather report", "label": "weather_query", "id": 489}
+{"state": "turn my lights down to a lower level of brightness", "label": "iot_hue_lightdim", "id": 906}
+{"state": "give me a cooking tutorial", "label": "cooking_recipe", "id": 1725}
+{"state": "i want reggae", "label": "play_music", "id": 967}
+{"state": "turn off the lamps", "label": "iot_hue_lightoff", "id": 263}
+{"state": "do i have any new email", "label": "email_query", "id": 2878}
+{"state": "compose a new email to ray", "label": "email_sendemail", "id": 2720}
+{"state": "delete item from list", "label": "lists_remove", "id": 1884}
+{"state": "two by two is", "label": "qa_maths", "id": 2370}
+{"state": "what is the increase in stock value over the past week of disney", "label": "qa_stock", "id": 2344}
+{"state": "what are the top stories on c. n. n.", "label": "news_query", "id": 945}
+{"state": "will the weather be less than ten degree in paris", "label": "weather_query", "id": 752}
+{"state": "send a reply to mike with the answer four hundred and thirty from his email he sent this morning", "label": "email_sendemail", "id": 2847}
+{"state": "off all type of active devices", "label": "iot_wemo_off", "id": 880}
+{"state": "what's the weather next wednesday", "label": "weather_query", "id": 1123}
+{"state": "b. b. c. world headlines", "label": "news_query", "id": 366}
+{"state": "define elaborate", "label": "qa_definition", "id": 2230}
+{"state": "display recent email from john", "label": "email_query", "id": 2764}
+{"state": "do i have emails from this sender", "label": "email_query", "id": 2918}
+{"state": "can you delete the dentist appointment", "label": "calendar_remove", "id": 1425}
+{"state": "start the robot roomba", "label": "iot_cleaning", "id": 151}
+{"state": "go to contacts and enter a new email address", "label": "email_sendemail", "id": 2718}
+{"state": "please book a ticket form jaipur to mumbai on tuesday", "label": "transport_ticket", "id": 2209}
+{"state": "take me to layfayette saint and canal", "label": "transport_query", "id": 2215}
+{"state": "play my playlist starting from the bottom", "label": "play_music", "id": 633}
+{"state": "what is the event agenda", "label": "calendar_query", "id": 1411}
+{"state": "get me a person a. s. a. p.", "label": "social_post", "id": 2644}
+{"state": "kung fu panda three", "label": "recommendation_movies", "id": 2109}
+{"state": "title", "label": "music_query", "id": 311}
+{"state": "let's play my most played song list", "label": "play_music", "id": 591}
+{"state": "play netflix on my p. s. four", "label": "play_radio", "id": 1669}
+{"state": "what causes osteoperosis", "label": "general_quirky", "id": 2305}
+{"state": "delete alarm", "label": "alarm_remove", "id": 1071}
+{"state": "tell me what i wore yesterday", "label": "general_quirky", "id": 2420}
+{"state": "remove the appointment with george adams from my calendar", "label": "calendar_remove", "id": 1290}
+{"state": "please check my gmail for new mail", "label": "email_query", "id": 2920}
+{"state": "remind me of how many lists i have", "label": "lists_query", "id": 1918}
+{"state": "check new email", "label": "email_query", "id": 2890}
+{"state": "my choice to play an audio from first", "label": "play_audiobook", "id": 1704}
+{"state": "hey tell me more about my meetings today", "label": "general_quirky", "id": 1081}
+{"state": "when will the world end", "label": "general_quirky", "id": 2298}
+{"state": "please show today meeting with clients", "label": "calendar_query", "id": 1297}
+{"state": "will trump visit russia anytime soon", "label": "news_query", "id": 306}
+{"state": "have i received any emails from jeffrey burnette", "label": "email_query", "id": 2915}
+{"state": "get me latest updates from facebook", "label": "social_query", "id": 2605}
+{"state": "is this song ed sheeran", "label": "music_query", "id": 966}
+{"state": "what month is today", "label": "datetime_query", "id": 320}
+{"state": "who was the current prime minister of britain", "label": "qa_factoid", "id": 2252}
+{"state": "tell me the largest ocean in the world", "label": "qa_factoid", "id": 2545}
+{"state": "i want you to make alert in the evening about upcoming meeting", "label": "calendar_set", "id": 1549}
+{"state": "olly i am taking day off tomorrow", "label": "general_quirky", "id": 1194}
+{"state": "what is the exchange rate of euro and dollar", "label": "qa_currency", "id": 2527}
+{"state": "enable smart socket", "label": "iot_wemo_on", "id": 801}
+{"state": "display the seven day forecast for this week", "label": "weather_query", "id": 1000}
+{"state": "play a game of contra as a second player", "label": "play_game", "id": 1812}
+{"state": "divide seventy six in two parts", "label": "qa_maths", "id": 2540}
+{"state": "is this program is scheduled", "label": "calendar_query", "id": 1263}
+{"state": "time between us and canada", "label": "datetime_convert", "id": 931}
+{"state": "please add sugar to my grocery list", "label": "lists_createoradd", "id": 1914}
+{"state": "did i email tom on the subject of gun control", "label": "email_query", "id": 2810}
+{"state": "let's play you'll be the keeper and never change position", "label": "play_game", "id": 1806}
+{"state": "please give me todays forecast for new york city", "label": "weather_query", "id": 411}
+{"state": "please play only music of pop mix", "label": "play_music", "id": 918}
+{"state": "set a notification for three two and one hours before next week's english final", "label": "calendar_set", "id": 1274}
+{"state": "post a new status on facebook saying that i am enjoying the nice weather", "label": "social_post", "id": 2619}
+{"state": "play songs by the band the beatles", "label": "play_music", "id": 502}
+{"state": "dim the lights in the living room", "label": "iot_hue_lightdim", "id": 176}
+{"state": "send an email to jake to tell him thank you", "label": "email_sendemail", "id": 2803}
+{"state": "are there morning shows available", "label": "calendar_query", "id": 1215}
+{"state": "what is the weather for this week", "label": "weather_query", "id": 876}
+{"state": "say a good joke for me right now", "label": "general_joke", "id": 1024}
+{"state": "make my usual", "label": "iot_coffee", "id": 869}
+{"state": "please remove remainder", "label": "calendar_remove", "id": 1547}
+{"state": "do i need a sweater today", "label": "weather_query", "id": 377}
+{"state": "please send a mail to my friend divya how are you", "label": "email_sendemail", "id": 2839}
+{"state": "i need to order some food from papa john's", "label": "takeaway_order", "id": 1012}
+{"state": "send an email to my brother and say wedding anniversary", "label": "email_sendemail", "id": 2770}
+{"state": "go on sweet talk me", "label": "general_quirky", "id": 1180}
+{"state": "give the stock price details of motorolla", "label": "qa_stock", "id": 2477}
+{"state": "when is my friend's birthday coming up", "label": "general_quirky", "id": 1082}
+{"state": "can you write an email to chelsea", "label": "email_sendemail", "id": 2846}
+{"state": "i have a function at washington tomorrow remind it", "label": "calendar_set", "id": 1235}
+{"state": "raise the volume of the current music", "label": "audio_volume_up", "id": 273}
+{"state": "are there any meetings set for next wednesday", "label": "calendar_query", "id": 1227}
+{"state": "remove this list from the others", "label": "lists_remove", "id": 1899}
+{"state": "convert eight am manila time to new york time", "label": "datetime_convert", "id": 907}
+{"state": "the sun is shinning bright will we have this weather for the rest of the day", "label": "weather_query", "id": 258}
+{"state": "play lady by kenny roger", "label": "play_music", "id": 195}
+{"state": "do we have morgan's office's number", "label": "email_querycontact", "id": 2930}
+{"state": "olly change the lighting to blue", "label": "iot_hue_lightchange", "id": 210}
+{"state": "hey olly chance the current light settings", "label": "iot_hue_lightchange", "id": 717}
+{"state": "what's a good joke", "label": "general_joke", "id": 102}
+{"state": "has anyone commented on my status", "label": "social_query", "id": 2628}
+{"state": "post hey everyone on facebook", "label": "social_post", "id": 2608}
+{"state": "play my most watched podcast", "label": "play_podcasts", "id": 1981}
+{"state": "info of the upcoming events", "label": "recommendation_events", "id": 1524}
+{"state": "i had a problem with my burger can you tweet bk", "label": "social_post", "id": 2650}
+{"state": "alarm settings", "label": "alarm_query", "id": 153}
+{"state": "put dark colors instead of light ones in the house", "label": "iot_hue_lightchange", "id": 396}
+{"state": "is soft cheese better than hard", "label": "cooking_recipe", "id": 1151}
+{"state": "give the list of theaters in the vicinity", "label": "recommendation_locations", "id": 2032}
+{"state": "play the song i listen to the most", "label": "play_music", "id": 688}
+{"state": "set a new alarm for that time", "label": "alarm_set", "id": 545}
+{"state": "hey siri start an email to coworker", "label": "email_sendemail", "id": 2752}
+{"state": "turn off all lights", "label": "iot_hue_lightoff", "id": 297}
+{"state": "i want to send an email to my family do you help me", "label": "email_sendemail", "id": 2758}
+{"state": "which contact haven't i called in twelve months", "label": "email_querycontact", "id": 2791}
+{"state": "please tell me what alarms are on", "label": "alarm_query", "id": 821}
+{"state": "current time in japan", "label": "datetime_query", "id": 124}
+{"state": "remove my next event", "label": "calendar_remove", "id": 1204}
+{"state": "i am having a meeting on tomorrow set it", "label": "calendar_set", "id": 1272}
+{"state": "how is the weather likely to be this week", "label": "weather_query", "id": 213}
+{"state": "i would need to be notified of church services on sundays at eleven am", "label": "calendar_set", "id": 1431}
+{"state": "what reminders do i have scheduled before noon tomorrow", "label": "calendar_query", "id": 1391}
+{"state": "play me in tic tac toe", "label": "play_game", "id": 1797}
+{"state": "i would like to reply to sarah's email", "label": "email_sendemail", "id": 2874}
+{"state": "play britney spears live concert series", "label": "play_radio", "id": 1654}
+{"state": "what is the time now in new york", "label": "datetime_query", "id": 128}
+{"state": "respond to the email from john doe", "label": "email_sendemail", "id": 2735}
+{"state": "please find out the share price of microsoft in nasdaq", "label": "qa_stock", "id": 2505}
+{"state": "tell me about the cheapest flight fares to nj today", "label": "transport_ticket", "id": 2524}
+{"state": "how much mehta willing to invest in my company in meeting which held today at five hundred and twenty p. m.", "label": "calendar_query", "id": 1312}
+{"state": "what is denzel washington's next movie", "label": "qa_factoid", "id": 2576}
+{"state": "could you tell me the time in london", "label": "datetime_query", "id": 409}
+{"state": "what's the capital of kazakhstan", "label": "qa_factoid", "id": 2539}
+{"state": "play a retro song in my playlist", "label": "play_music", "id": 77}
+{"state": "lets hear the united states of anxiety podcast", "label": "play_podcasts", "id": 2019}
+{"state": "open songs from major lazer", "label": "play_music", "id": 103}
+{"state": "delete my list", "label": "lists_remove", "id": 1905}
+{"state": "how much is the us dollar worth in canada", "label": "qa_currency", "id": 2446}
+{"state": "who is the music director of this song", "label": "music_query", "id": 963}
+{"state": "open audio book history of rome", "label": "play_audiobook", "id": 1677}
+{"state": "are you aware this joke", "label": "general_joke", "id": 846}
+{"state": "tweet my current location", "label": "social_post", "id": 2639}
+{"state": "add podcast favorites to playlist and start", "label": "play_podcasts", "id": 2022}
+{"state": "where is the nearest walmart", "label": "recommendation_locations", "id": 2092}
+{"state": "play and shuffle all slow music songs", "label": "play_music", "id": 1980}
+{"state": "take out available louies", "label": "takeaway_query", "id": 506}
+{"state": "alexa please send an email to mom", "label": "email_sendemail", "id": 2815}
+{"state": "where did amal clooney go to college", "label": "qa_factoid", "id": 2439}
+{"state": "i want two burgers and one coke order it fast", "label": "takeaway_order", "id": 126}
+{"state": "i'd like to know what time it is right now", "label": "datetime_query", "id": 853}
+{"state": "lets play battleship", "label": "play_game", "id": 1789}
+{"state": "pandora", "label": "play_music", "id": 211}
+{"state": "replay the musics", "label": "music_settings", "id": 1018}
+{"state": "what time should i go for a hike", "label": "weather_query", "id": 961}
+{"state": "tell me my schedule for later this afternoon", "label": "calendar_query", "id": 1513}
+{"state": "search my calendar for my next event and notify me before it occurs", "label": "calendar_set", "id": 1252}
+{"state": "respond to email", "label": "email_sendemail", "id": 2806}
+{"state": "i wish to know the weather in san fransico", "label": "weather_query", "id": 65}
+{"state": "send a replay email", "label": "email_sendemail", "id": 2838}
+{"state": "who are your developers", "label": "general_quirky", "id": 1171}
+{"state": "i need to go to dundee at five am on sunday by train", "label": "transport_ticket", "id": 2111}
+{"state": "android", "label": "lists_query", "id": 1847}
+{"state": "please play the latest song from the album abbas", "label": "play_music", "id": 898}
+{"state": "hey what has been happening interesting in sports lately", "label": "general_quirky", "id": 1116}
+{"state": "what is an electronic emissions system", "label": "qa_definition", "id": 2356}
+{"state": "check time of ten thousand eight hundred and eighty seven train from luni station on tuesday", "label": "transport_query", "id": 2147}
+{"state": "can you book a train ticket", "label": "transport_ticket", "id": 2116}
+{"state": "give me the description of a television circuit", "label": "qa_definition", "id": 2513}
+{"state": "boiling", "label": "cooking_recipe", "id": 1738}
+{"state": "resume harry potter book four", "label": "play_audiobook", "id": 1683}
+{"state": "can you please book train tickets for two for this friday", "label": "transport_ticket", "id": 2146}
+{"state": "what is the current day month and year", "label": "datetime_query", "id": 266}
+{"state": "play music playlist", "label": "play_music", "id": 535}
+{"state": "can you play my favorite audio book of tarzan", "label": "play_audiobook", "id": 1672}
+{"state": "is my alarm set for tomorrow morning", "label": "alarm_query", "id": 216}
+{"state": "add detergent to the list of things i need to buy", "label": "lists_createoradd", "id": 1856}
+{"state": "play football with me", "label": "play_game", "id": 1798}
+{"state": "review all alarms", "label": "alarm_query", "id": 762}
+{"state": "olly i feel like dancing play me some rock north roll", "label": "play_music", "id": 455}
+{"state": "where was president madison born", "label": "qa_factoid", "id": 2563}
+{"state": "is there a connecting train from london to paris and what time", "label": "transport_query", "id": 2149}
+{"state": "send reply", "label": "email_sendemail", "id": 2778}
+{"state": "discontinue use of lights", "label": "iot_hue_lightoff", "id": 466}
+{"state": "shadi special podcast play it", "label": "play_podcasts", "id": 1988}
+{"state": "has my calendar been updated in the last ten minutes", "label": "calendar_query", "id": 1588}
+{"state": "were the stocks rising or declining", "label": "qa_stock", "id": 2562}
+{"state": "play the most popular song by given artist", "label": "play_music", "id": 588}
+{"state": "can you book an uber tomorrow", "label": "transport_taxi", "id": 2114}
+{"state": "remind me about", "label": "calendar_set", "id": 1484}
+{"state": "play all songs on shuffle", "label": "play_music", "id": 198}
+{"state": "what's happening around the world", "label": "news_query", "id": 402}
+{"state": "show me painting exhibition in bay area", "label": "recommendation_events", "id": 2051}
+{"state": "switch off the master's bedroom", "label": "iot_hue_lightoff", "id": 305}
+{"state": "set my alarm for twelve p. m.", "label": "alarm_set", "id": 878}
+{"state": "stock price", "label": "qa_stock", "id": 2523}
+{"state": "what is the highest rated movie now out", "label": "recommendation_movies", "id": 2075}
+{"state": "general health tips", "label": "general_quirky", "id": 1184}
+{"state": "how much is the average house", "label": "qa_factoid", "id": 2405}
+{"state": "turn off my wemo socket", "label": "iot_wemo_off", "id": 434}
+{"state": "what movies are out this week", "label": "recommendation_movies", "id": 2087}
+{"state": "video games", "label": "play_game", "id": 1172}
+{"state": "please describe that object for me", "label": "qa_definition", "id": 2560}
+{"state": "can you put on love playlist", "label": "play_music", "id": 603}
+{"state": "please tell me what is the definition of cylinder", "label": "qa_definition", "id": 2432}
+{"state": "how is rice prepared", "label": "cooking_recipe", "id": 1776}
+{"state": "show me reviews of my nearest location food court", "label": "recommendation_locations", "id": 2050}
+{"state": "open up and play music from my jogging playlist", "label": "play_music", "id": 162}
+{"state": "show me a video on cooking fried chicken", "label": "cooking_recipe", "id": 1726}
+{"state": "current song playing what is it", "label": "music_query", "id": 338}
+{"state": "change volume level to maximum", "label": "audio_volume_other", "id": 713}
+{"state": "is calendar event true", "label": "calendar_query", "id": 1527}
+{"state": "remind me the day before my car is due", "label": "calendar_set", "id": 1256}
+{"state": "start radio play", "label": "play_radio", "id": 1634}
+{"state": "please check new email from andy", "label": "email_query", "id": 2883}
+{"state": "when was the us got freedom", "label": "qa_factoid", "id": 2315}
+{"state": "i want to order chinese take-out", "label": "takeaway_order", "id": 657}
+{"state": "give me an update on the election in one hour", "label": "calendar_set", "id": 1374}
+{"state": "find the recipe for sambar in cookingforu application", "label": "cooking_recipe", "id": 1780}
+{"state": "play only my list", "label": "play_music", "id": 594}
+{"state": "clean the floor", "label": "iot_cleaning", "id": 1070}
+{"state": "latest news from the area", "label": "news_query", "id": 447}
+{"state": "what does oscillate mean", "label": "qa_definition", "id": 2262}
+{"state": "i need this email sent now", "label": "email_sendemail", "id": 2830}
+{"state": "call the nearest thai restaurant with delivery", "label": "takeaway_order", "id": 178}
+{"state": "remind me everyday at two p. m. for lunch", "label": "calendar_set", "id": 1311}
+{"state": "play next podcast", "label": "play_podcasts", "id": 1967}
+{"state": "directions to disney land", "label": "transport_query", "id": 2492}
+{"state": "what is your name", "label": "general_quirky", "id": 1090}
+{"state": "is the time currently correct for where i am located", "label": "datetime_query", "id": 418}
+{"state": "is the song by shakira", "label": "music_query", "id": 916}
+{"state": "schedule taxi pickup for monday at noon", "label": "transport_taxi", "id": 2183}
+{"state": "what's the latest news from xinhua", "label": "news_query", "id": 616}
+{"state": "what is the factorial of ten", "label": "qa_maths", "id": 2256}
+{"state": "tell me all events for today in my city", "label": "recommendation_events", "id": 2098}
+{"state": "delete the shopping trip i have scheduled march twenty third", "label": "calendar_remove", "id": 1518}
+{"state": "activate the roomba", "label": "iot_cleaning", "id": 660}
+{"state": "olly play poker with me", "label": "play_game", "id": 1802}
+{"state": "news articles on a particular subject", "label": "news_query", "id": 170}
+{"state": "did i tell you to remind me something", "label": "calendar_query", "id": 1387}
+{"state": "can you make dinner for me", "label": "general_quirky", "id": 2286}
+{"state": "olly get me the popular news from b. b. c.", "label": "news_query", "id": 922}
+{"state": "turn off the lights in the bathroom", "label": "iot_hue_lightoff", "id": 86}
+{"state": "i want it to be able to tell me statistics about things it's done for me like how often i've eaten out this month", "label": "general_quirky", "id": 2293}
+{"state": "set alarm at six thirty am", "label": "alarm_set", "id": 331}
+{"state": "add toothpaste to my shopping list", "label": "lists_createoradd", "id": 1890}
+{"state": "say the list", "label": "lists_query", "id": 1927}
+{"state": "if it is from a very familiar place mark it as important", "label": "email_query", "id": 2739}
+{"state": "playback tom clancy splinter cell", "label": "play_audiobook", "id": 1712}
+{"state": "hey i am having a bad day today what can i watch to cheer me up", "label": "general_quirky", "id": 1183}
+{"state": "let's tweet a complaint", "label": "social_post", "id": 2667}
+{"state": "lets send a tweet", "label": "social_post", "id": 2696}
+{"state": "what is the capital of mexico", "label": "qa_factoid", "id": 2485}
+{"state": "do you have any suggestion action movies", "label": "recommendation_movies", "id": 2049}
+{"state": "please read my new mails", "label": "email_query", "id": 2962}
+{"state": "start a gossip", "label": "general_quirky", "id": 1162}
+{"state": "is this true about this date", "label": "calendar_query", "id": 1358}
+{"state": "can you remove this item from the list", "label": "lists_remove", "id": 1870}
+{"state": "explain the geographical location of india", "label": "qa_factoid", "id": 2457}
+{"state": "what's the next event at the library", "label": "recommendation_events", "id": 2064}
+{"state": "nobody knows", "label": "play_music", "id": 888}
+{"state": "how big is the empire state building", "label": "qa_factoid", "id": 2475}
+{"state": "can i please have the weather for tomorrow here in costa mesa", "label": "weather_query", "id": 235}
+{"state": "set a reminder for this", "label": "calendar_set", "id": 1343}
+{"state": "get todays climate forecast here", "label": "weather_query", "id": 222}
+{"state": "give me the list of circus shows going on in the city right now", "label": "recommendation_events", "id": 2033}
+{"state": "will you mark that i have a meeting with tom at three tomorrow", "label": "calendar_set", "id": 1338}
+{"state": "what do we have on new york time's front page", "label": "news_query", "id": 228}
+{"state": "add this song for the next playing song", "label": "play_music", "id": 866}
+{"state": "tell me international news", "label": "news_query", "id": 35}
+{"state": "i need you to mark next monday", "label": "calendar_set", "id": 1348}
+{"state": "what features do you have planned to release in the future", "label": "general_quirky", "id": 1117}
+{"state": "two thumbs down at companyname", "label": "social_post", "id": 2645}
+{"state": "get rid of tax list from nineteen ninety", "label": "lists_remove", "id": 1937}
+{"state": "do you know how to cook risotto", "label": "cooking_recipe", "id": 1761}
+{"state": "please check email contain job listing", "label": "email_query", "id": 2769}
+{"state": "how many people are attending my next meeting", "label": "calendar_query", "id": 1403}
+{"state": "play the last doctor who radio broadcast", "label": "play_radio", "id": 1644}
+{"state": "check recent to do list", "label": "lists_query", "id": 1945}
+{"state": "could you please play the song of michael jackson", "label": "play_music", "id": 900}
+{"state": "iphone seven description", "label": "qa_definition", "id": 2575}
+{"state": "check any mail from amazon", "label": "email_query", "id": 2959}
+{"state": "let me know the list", "label": "lists_query", "id": 1922}
+{"state": "play my station", "label": "play_radio", "id": 1598}
+{"state": "shall i change my car tires to snow tires soon", "label": "weather_query", "id": 1002}
+{"state": "i need to make a list", "label": "lists_createoradd", "id": 1885}
+{"state": "technology", "label": "general_quirky", "id": 1126}
+{"state": "what is the definition of forensic", "label": "qa_definition", "id": 2232}
+{"state": "can you contact samsung and say my washer is on fire", "label": "social_post", "id": 2638}
+{"state": "what day is the fifth", "label": "datetime_query", "id": 692}
+{"state": "where do most celebrities hang out", "label": "qa_factoid", "id": 2338}
+{"state": "does the weather call for rain saturday", "label": "weather_query", "id": 585}
+{"state": "power off the wemo plug", "label": "iot_wemo_off", "id": 554}
+{"state": "is there any special in politic", "label": "news_query", "id": 194}
+{"state": "tell me about jaipur", "label": "qa_factoid", "id": 2455}
+{"state": "what is the definition of subjegant", "label": "qa_definition", "id": 2376}
+{"state": "please tell me how to i bake twelve oatmeal cookies", "label": "cooking_recipe", "id": 1741}
+{"state": "any events this weekend in pondichery", "label": "recommendation_events", "id": 2059}
+{"state": "hey google play some jazz music for me", "label": "play_music", "id": 622}
+{"state": "what's the latest news on c. n. n.", "label": "news_query", "id": 617}
+{"state": "what is the interview time from yesterday's email", "label": "email_query", "id": 2889}
+{"state": "please continue reading audiobook", "label": "play_audiobook", "id": 1693}
+{"state": "what's the temperature outside", "label": "weather_query", "id": 253}
+{"state": "play my favorite music now", "label": "play_music", "id": 440}
+{"state": "what is a neutral density filter and would i want a gradient one or a solid one also which would be better in style between the screw on one and the square ones", "label": "qa_factoid", "id": 2553}
+{"state": "begin a new list", "label": "lists_createoradd", "id": 1910}
+{"state": "google what are the basic things humans need", "label": "general_quirky", "id": 2467}
+{"state": "play me a game of tic tac toe", "label": "play_game", "id": 1792}
+{"state": "please put all the lights", "label": "iot_hue_lightup", "id": 957}
+{"state": "read my grocery list", "label": "lists_query", "id": 1886}
+{"state": "time now", "label": "datetime_query", "id": 997}
+{"state": "noodles one pack make it as takeaway", "label": "takeaway_order", "id": 394}
+{"state": "do not wake me up tomorrow", "label": "alarm_remove", "id": 817}
+{"state": "what region is miami located", "label": "qa_factoid", "id": 2588}
+{"state": "do i have any new emails in the last hour", "label": "email_query", "id": 2812}
+{"state": "rate five", "label": "music_likeness", "id": 539}
+{"state": "what is the weather condition in new york", "label": "weather_query", "id": 64}
+{"state": "please skip to the next podcast episode", "label": "play_podcasts", "id": 1993}
+{"state": "look up the map to stores near me", "label": "transport_query", "id": 2227}
+{"state": "please play shake it off by taylor swiftm", "label": "play_music", "id": 598}
+{"state": "give me petey's telephone number", "label": "email_querycontact", "id": 2742}
+{"state": "i need to ask you how many angels can dance on a pinhead", "label": "general_quirky", "id": 2295}
+{"state": "i just got an email from bill i need to answer it right now", "label": "email_sendemail", "id": 2852}
+{"state": "what events are happening soon", "label": "recommendation_events", "id": 2040}
+{"state": "can you give me the details of upcoming annual function on twenty sixth march", "label": "general_quirky", "id": 1267}
+{"state": "what is the traffic like on my commute home at five", "label": "transport_query", "id": 2124}
+{"state": "do i have a sales meeting today", "label": "calendar_query", "id": 1408}
+{"state": "house lights blue", "label": "iot_hue_lightchange", "id": 737}
+{"state": "how's the weather like in new jersey", "label": "weather_query", "id": 518}
+{"state": "show weather", "label": "weather_query", "id": 927}
+{"state": "give me the schedule for today's events", "label": "calendar_query", "id": 1243}
+{"state": "i like the songs of yeshudas please play it", "label": "music_likeness", "id": 224}
+{"state": "what music is currently playing on", "label": "music_query", "id": 285}
+{"state": "do you know recipe for risotto", "label": "cooking_recipe", "id": 1762}
+{"state": "who is this on the radio", "label": "music_query", "id": 1035}
+{"state": "hello my item which i bought from some one has gone out of order", "label": "social_post", "id": 2691}
+{"state": "start the vacuum cleaner", "label": "iot_cleaning", "id": 264}
+{"state": "what day is december thirteenth", "label": "datetime_query", "id": 476}
+{"state": "are there any fun events in la today", "label": "recommendation_events", "id": 2100}
+{"state": "delete the last phrase", "label": "lists_remove", "id": 1920}
+{"state": "play my favorite song from last year", "label": "play_music", "id": 524}
+{"state": "put on some led zeppelin", "label": "play_music", "id": 602}
+{"state": "what is the forecast for saturday", "label": "weather_query", "id": 885}
+{"state": "what is twelve divided by four", "label": "qa_maths", "id": 2311}
+{"state": "set the alarm off", "label": "alarm_remove", "id": 244}
+{"state": "olly tell me a joke", "label": "general_joke", "id": 23}
+{"state": "tell me everything you know about sloths", "label": "qa_factoid", "id": 2407}
+{"state": "listen to radio", "label": "play_radio", "id": 1625}
+{"state": "show me my events", "label": "calendar_query", "id": 1472}
+{"state": "lights at percent", "label": "iot_hue_lightchange", "id": 631}
+{"state": "what's the currency exchange rate for china", "label": "qa_currency", "id": 2363}
+{"state": "my day was full of work olly", "label": "general_quirky", "id": 1080}
+{"state": "recommend a movie playing in my area", "label": "recommendation_movies", "id": 2078}
+{"state": "when was last academy award winning movie", "label": "qa_factoid", "id": 2332}
+{"state": "calendar event send invite bill malinda", "label": "calendar_set", "id": 1379}
+{"state": "please mute for five minutes", "label": "audio_volume_mute", "id": 1072}
+{"state": "email my boss that i will be late today because of an emergency and apologize to him for missing the meeting", "label": "email_sendemail", "id": 2763}
+{"state": "should i open the sun roof", "label": "weather_query", "id": 1058}
+{"state": "play the romantic songs", "label": "play_music", "id": 1694}
+{"state": "i need a ride home", "label": "transport_taxi", "id": 2175}
+{"state": "play coldplay album", "label": "play_music", "id": 316}
+{"state": "please tell me news related to the stock market", "label": "qa_stock", "id": 501}
+{"state": "olly anything else left on the list", "label": "lists_query", "id": 1904}
+{"state": "remove the list", "label": "lists_remove", "id": 1840}
+{"state": "alexa please turn down the lights in the house", "label": "iot_hue_lightdim", "id": 879}
+{"state": "power on wemo", "label": "iot_wemo_on", "id": 724}
+{"state": "reply to dad write i will be late", "label": "email_sendemail", "id": 2716}
+{"state": "a good first impression", "label": "general_quirky", "id": 1276}
+{"state": "start some music play the radio", "label": "play_radio", "id": 1623}
+{"state": "how is the traffic presently near central park road", "label": "transport_traffic", "id": 2131}
+{"state": "what's the exchange rates between u. s. a. and china", "label": "qa_currency", "id": 2362}
+{"state": "check definition of capricious", "label": "qa_definition", "id": 2235}
+{"state": "make a reminder of location a on calendar", "label": "calendar_set", "id": 1319}
+{"state": "tell me the time in this time zone", "label": "datetime_query", "id": 820}
+{"state": "remind me to water my plants every tuesday thursday and saturday", "label": "calendar_set", "id": 1494}
+{"state": "olly i just cleaned my car", "label": "general_quirky", "id": 1097}
+{"state": "i can barely hear you", "label": "audio_volume_up", "id": 47}
+{"state": "tweet that product sucks", "label": "social_post", "id": 2642}
+{"state": "olly what is the capital of california", "label": "qa_factoid", "id": 2317}
+{"state": "does the nearby dominoes have delivery", "label": "takeaway_query", "id": 553}
+{"state": "please turn socket off", "label": "iot_wemo_off", "id": 941}
+{"state": "are there any crafts fairs happening in this area", "label": "recommendation_events", "id": 2070}
+{"state": "i am going to work today", "label": "general_quirky", "id": 1085}
+{"state": "did i set an alarm to have tablets in the noon", "label": "alarm_query", "id": 1030}
+{"state": "i'd like to set a date for this week", "label": "calendar_set", "id": 1412}
+{"state": "what are the b. b. c. poll predictions for the upcoming us elections", "label": "news_query", "id": 150}
+{"state": "prepare a cup of coffee for me", "label": "iot_coffee", "id": 863}
+{"state": "increase the brightness in this room", "label": "iot_hue_lightup", "id": 747}
+{"state": "how many lists do i have", "label": "lists_query", "id": 1934}
+{"state": "add event for meeting with james", "label": "calendar_set", "id": 1546}
+{"state": "is it raining tonight", "label": "weather_query", "id": 449}
+{"state": "what's in my inbox since we last looked", "label": "email_query", "id": 2964}
+{"state": "did i remember to set a reminder alarm for my next doctor's appointment", "label": "alarm_query", "id": 448}
+{"state": "c. n. n. headlines", "label": "news_query", "id": 365}
+{"state": "most viewed list", "label": "lists_query", "id": 1999}
+{"state": "please play songs i've purchased and favorited", "label": "play_music", "id": 381}
+{"state": "increase the brightness of the lights", "label": "iot_hue_lightup", "id": 167}
+{"state": "what would you recommend for me to read", "label": "general_quirky", "id": 1095}
+{"state": "what should i make for dinner", "label": "cooking_recipe", "id": 1751}
+{"state": "alexa how much do you know about me", "label": "general_quirky", "id": 1176}
+{"state": "what is the minimum temperature of london", "label": "weather_query", "id": 293}
+{"state": "give me a weather report for las vegas", "label": "weather_query", "id": 649}
+{"state": "what is the largest active volcano on earth", "label": "qa_factoid", "id": 2511}
+{"state": "play my spotify dance play list", "label": "play_music", "id": 435}
+{"state": "alert me at the time of the event", "label": "calendar_set", "id": 1568}
+{"state": "turn off eight am alarm", "label": "alarm_remove", "id": 111}
+{"state": "please play shape of you by said sheeran", "label": "play_music", "id": 676}
+{"state": "tell interesting news", "label": "news_query", "id": 1169}
+{"state": "send email to jessica", "label": "email_sendemail", "id": 2934}
+{"state": "please find out of charley's steakhouse delivers", "label": "takeaway_query", "id": 690}
+{"state": "delete to do list", "label": "lists_remove", "id": 1929}
+{"state": "please check the weather in kansas", "label": "weather_query", "id": 714}
+{"state": "clear the list", "label": "lists_remove", "id": 1893}
+{"state": "detail for stock price", "label": "qa_stock", "id": 2494}
+{"state": "look up movies near me", "label": "recommendation_movies", "id": 2096}
+{"state": "news of the train wreck", "label": "news_query", "id": 854}
+{"state": "give me the time of the events", "label": "calendar_query", "id": 1304}
+{"state": "turn down the lights to medium", "label": "iot_hue_lightoff", "id": 569}
+{"state": "where are the rocky mountains", "label": "qa_factoid", "id": 2424}
+{"state": "post the message now", "label": "social_post", "id": 2621}
+{"state": "remove set alarm", "label": "alarm_remove", "id": 499}
+{"state": "what alarms did i set", "label": "alarm_query", "id": 248}
+{"state": "find an interesting podcast about last pritzker price winners", "label": "play_podcasts", "id": 1966}
+{"state": "what are the traffic conditions on the one hundred and one", "label": "transport_traffic", "id": 2118}
+{"state": "what is the trending now", "label": "news_query", "id": 2609}
+{"state": "directions please", "label": "transport_query", "id": 2219}
+{"state": "find the latest disney podcast", "label": "play_podcasts", "id": 1983}
+{"state": "please tweet at pizzahut i've been waiting for my delivery for now number nothappy", "label": "social_post", "id": 2656}
+{"state": "olly i need directions to madison street", "label": "transport_query", "id": 2228}
+{"state": "delete upcoming event", "label": "calendar_remove", "id": 1517}
+{"state": "list all train times to ny", "label": "transport_query", "id": 2212}
+{"state": "what's been happening for the last two months", "label": "news_query", "id": 1367}
+{"state": "meaning of", "label": "qa_definition", "id": 2558}
+{"state": "when is the birth date of taylor lautner", "label": "qa_factoid", "id": 2258}
+{"state": "play songs by barenaked ladies", "label": "play_music", "id": 845}
+{"state": "what is the latest story from fox news", "label": "news_query", "id": 608}
+{"state": "remove events from calendar", "label": "calendar_remove", "id": 1503}
+{"state": "what is the weather this week for miami", "label": "weather_query", "id": 555}
+{"state": "post in twitter my visit to japan", "label": "social_post", "id": 2603}
+{"state": "what was the subject of the last email from mom", "label": "email_query", "id": 2740}
+{"state": "do i have anything planned", "label": "calendar_query", "id": 1271}
+{"state": "it's my mother's birthday today send me a notification every year on this date", "label": "calendar_set", "id": 1268}
+{"state": "give the definition of motivation", "label": "qa_definition", "id": 2319}
+{"state": "add new email to my contacts macs at gmail dot com", "label": "email_addcontact", "id": 2832}
+{"state": "i will need warm socks in winter in morning", "label": "weather_query", "id": 973}
+{"state": "remind me of rita's birthday twenty four hours in advance", "label": "calendar_set", "id": 1284}
+{"state": "play the previous podcast", "label": "play_podcasts", "id": 2013}
+{"state": "what time is it in new york now", "label": "datetime_query", "id": 171}
+{"state": "can you delete the next event", "label": "calendar_remove", "id": 1308}
+{"state": "i love this song", "label": "music_likeness", "id": 508}
+{"state": "today is what date", "label": "datetime_query", "id": 421}
+{"state": "what kinds of sunglasses are considered aviators", "label": "qa_factoid", "id": 2436}
+{"state": "i want to set an alarm when i'm driving home tomorrow to remember to stop at the store and get food", "label": "alarm_set", "id": 694}
+{"state": "which film the music comes from what is the name of the music", "label": "music_query", "id": 399}
+{"state": "do i have any new emails from my contact q.", "label": "email_query", "id": 2835}
+{"state": "make new schedule for tomorrow meeting", "label": "calendar_set", "id": 1307}
+{"state": "open chess app and begin game", "label": "play_game", "id": 1787}
+{"state": "his hardword is properly quead", "label": "general_quirky", "id": 2550}
+{"state": "turn on my playlist and play third song in the queue", "label": "play_music", "id": 37}
+{"state": "play my favorite book", "label": "play_audiobook", "id": 1705}
+{"state": "how is the stock going in general", "label": "qa_stock", "id": 2398}
+{"state": "remind me the wedding on time to buy a present", "label": "calendar_set", "id": 1388}
+{"state": "search the item", "label": "lists_createoradd", "id": 1853}
+{"state": "where on earth has the most volcanoes", "label": "qa_factoid", "id": 2380}
+{"state": "i want the smart socket off now", "label": "iot_wemo_off", "id": 646}
+{"state": "i like music", "label": "music_likeness", "id": 911}
+{"state": "tell me the recipe of", "label": "cooking_recipe", "id": 1718}
+{"state": "play biography of jackie kennedy", "label": "play_audiobook", "id": 1679}
+{"state": "please load new email for bruce and send message now", "label": "email_sendemail", "id": 2786}
+{"state": "what is the date next wednesday", "label": "datetime_query", "id": 910}
+{"state": "what are the coordinates of the equator", "label": "qa_factoid", "id": 2409}
+{"state": "my set alarms", "label": "alarm_query", "id": 152}
+{"state": "brighter", "label": "iot_hue_lightup", "id": 613}
+{"state": "can you tell me how many stomachs a cow has", "label": "qa_factoid", "id": 2346}
+{"state": "read that back", "label": "play_audiobook", "id": 668}
+{"state": "from now on mute", "label": "audio_volume_mute", "id": 368}
+{"state": "is the thanks giving event on fourteenth of this month true", "label": "calendar_query", "id": 1559}
+{"state": "is the last order is ready", "label": "takeaway_query", "id": 451}
+{"state": "tell me what clothing stores are within five miles of me", "label": "recommendation_locations", "id": 2102}
+{"state": "facebook current stock rate", "label": "qa_stock", "id": 2423}
+{"state": "what lists do i have queried", "label": "lists_query", "id": 1864}
+{"state": "dorothy needs to talk to me about our divorce can you please set up a meeting as soon as i am available", "label": "calendar_set", "id": 1396}
+{"state": "delete calendar item", "label": "calendar_remove", "id": 1480}
+{"state": "how long will it take to get to the airport", "label": "transport_query", "id": 2161}
+{"state": "tell me about the latest environmental news", "label": "news_query", "id": 439}
+{"state": "does allearsnet have a new podcast", "label": "play_podcasts", "id": 1982}
+{"state": "call taxi", "label": "transport_taxi", "id": 2194}
+{"state": "send tech news", "label": "news_query", "id": 414}
+{"state": "show me my calendar event this friday afternoon", "label": "calendar_query", "id": 1206}
+{"state": "find a recipe for dinner tonight", "label": "cooking_recipe", "id": 1754}
+{"state": "what time is it on the east coast of the united states", "label": "datetime_query", "id": 740}
+{"state": "shut the lights off", "label": "iot_hue_lightoff", "id": 457}
+{"state": "can you substitute baking soda for baking powder", "label": "cooking_recipe", "id": 1753}
+{"state": "what is four plus five", "label": "qa_maths", "id": 2307}
+{"state": "open temperature", "label": "weather_query", "id": 976}
+{"state": "set an alarm for tomorrow at six in the morning", "label": "alarm_set", "id": 359}
+{"state": "please sent this email to my friend", "label": "email_sendemail", "id": 2829}
+{"state": "turn on favorite songs", "label": "play_music", "id": 1041}
+{"state": "new message to newmail at gmail dot com", "label": "email_sendemail", "id": 2833}
+{"state": "i want more light", "label": "iot_hue_lightup", "id": 343}
+{"state": "clear my next activity", "label": "calendar_remove", "id": 1529}
+{"state": "can you set my coffee machine to make me coffee at seven am", "label": "iot_coffee", "id": 578}
+{"state": "put hamburger on my grocery list", "label": "lists_createoradd", "id": 1923}
+{"state": "it is seven am in pacific standard time", "label": "datetime_convert", "id": 386}
+{"state": "tell me the local events", "label": "recommendation_events", "id": 2074}
+{"state": "is there any upcoming events", "label": "calendar_query", "id": 1212}
+{"state": "where is a good wine bar near me", "label": "recommendation_locations", "id": 2061}
+{"state": "please place my new email address to the contact", "label": "email_addcontact", "id": 2917}
+{"state": "turn the plug off", "label": "iot_wemo_off", "id": 560}
+{"state": "shut off lights", "label": "iot_hue_lightoff", "id": 465}
+{"state": "can you tell me the contact information of jo", "label": "email_querycontact", "id": 2843}
+{"state": "clear my activities list for today", "label": "lists_remove", "id": 1883}
+{"state": "i want to hear purple haze", "label": "play_music", "id": 458}
+{"state": "listen to my favorites", "label": "play_music", "id": 998}
+{"state": "remind me what i am doing on sunday afternoon", "label": "calendar_set", "id": 1356}
+{"state": "what day of the week is the twenty third of this month", "label": "datetime_query", "id": 856}
+{"state": "give me all my lists", "label": "lists_query", "id": 1848}
+{"state": "set an alarm for nine am", "label": "alarm_set", "id": 108}
+{"state": "play the most popular elton john song", "label": "play_music", "id": 573}
+{"state": "i want to hear a station that plays r. & b.", "label": "play_radio", "id": 1635}
+{"state": "the song in background is cool", "label": "music_likeness", "id": 962}
+{"state": "can you let delta know i'm never using them again", "label": "social_post", "id": 2672}
+{"state": "has jane doe emailed me", "label": "email_query", "id": 2933}
+{"state": "find today's wapo articles about trump", "label": "news_query", "id": 206}
+{"state": "play the song title", "label": "play_music", "id": 327}
+{"state": "please remind me about this tomorrow", "label": "calendar_set", "id": 1316}
+{"state": "tell me where steve jobs was born", "label": "qa_factoid", "id": 2336}
+{"state": "play nineties hip hop", "label": "play_music", "id": 1638}
+{"state": "read list of new emails", "label": "email_query", "id": 2957}
+{"state": "tell me about the latest political news", "label": "news_query", "id": 139}
+{"state": "olly let's hear wgrr one hundred and three point five", "label": "play_radio", "id": 1641}
+{"state": "turn on some n. p. r. and play them out of my speakers", "label": "play_radio", "id": 1646}
+{"state": "i would like to hear aretha franklin's call me after this song", "label": "play_music", "id": 635}
+{"state": "train times from near me to location", "label": "transport_query", "id": 2205}
+{"state": "could you please confirm if paradise does takeaway", "label": "takeaway_query", "id": 708}
+{"state": "what's the date", "label": "datetime_query", "id": 24}
+{"state": "when is the next time it will rain", "label": "weather_query", "id": 279}
+{"state": "can you make this event repetitive", "label": "calendar_set", "id": 1386}
+{"state": "remove the second row from the list", "label": "lists_remove", "id": 1851}
+{"state": "remove my next scheduled appointment please", "label": "calendar_remove", "id": 1437}
+{"state": "just play nine hundred and thirty seven f. m.", "label": "play_radio", "id": 1607}
+{"state": "send john smith and email", "label": "email_sendemail", "id": 2913}
+{"state": "google train tickets to washington d. c.", "label": "transport_ticket", "id": 2122}
+{"state": "mute please", "label": "audio_volume_mute", "id": 610}
+{"state": "send an email to juanpedro at gmail dot com", "label": "email_sendemail", "id": 2893}
+{"state": "turn down lights", "label": "iot_hue_lightdim", "id": 656}
+{"state": "how much wood could a woodchuck chuck if a woodchuck could chuck wood", "label": "general_quirky", "id": 2369}
+{"state": "help is to be sent only to jane", "label": "email_sendemail", "id": 2771}
+{"state": "next button", "label": "play_podcasts", "id": 2016}
+{"state": "switch wemo plug socket off", "label": "iot_wemo_off", "id": 988}
+{"state": "current time new york", "label": "datetime_query", "id": 720}
+{"state": "cut the songs in this musics", "label": "music_settings", "id": 1019}
+{"state": "do i need to do anything today", "label": "calendar_query", "id": 1376}
+{"state": "details on person", "label": "qa_factoid", "id": 2450}
+{"state": "show me the latest news from the guardian", "label": "news_query", "id": 275}
+{"state": "how much money did bill gates make", "label": "qa_factoid", "id": 2282}
+{"state": "could you please help me in listening to the radio", "label": "play_radio", "id": 1664}
+{"state": "what's the recipe for fish soup", "label": "cooking_recipe", "id": 1772}
+{"state": "will it be a sticky night", "label": "weather_query", "id": 1038}
+{"state": "what's going on around here this weekend", "label": "recommendation_events", "id": 2081}
+{"state": "find the list", "label": "lists_query", "id": 1956}
+{"state": "can you do nine plus two", "label": "qa_maths", "id": 2453}
+{"state": "birthday", "label": "calendar_set", "id": 1323}
+{"state": "what do i need to make lamb pathia", "label": "cooking_recipe", "id": 1742}
+{"state": "olly please list the best clothing shops near me", "label": "recommendation_locations", "id": 2099}
+{"state": "turn off sockets", "label": "iot_wemo_off", "id": 864}
+{"state": "show me the best recipe for spaghetti", "label": "cooking_recipe", "id": 1775}
+{"state": "show me the answer for this problem two hundred and forty six plus six hundred and fifty four", "label": "qa_maths", "id": 2306}
+{"state": "olly what events are happening in pondichery this weekend", "label": "recommendation_events", "id": 2058}
+{"state": "should we expect rain this afternoon", "label": "weather_query", "id": 549}
+{"state": "what day of the week is first april", "label": "datetime_query", "id": 68}
+{"state": "play classic rock", "label": "play_music", "id": 425}
+{"state": "my friend john has sent me a invitation card to his newly bought home say thanks to him in his mail id", "label": "email_sendemail", "id": 2969}
+{"state": "open parcheese game for you and i", "label": "play_game", "id": 1817}
+{"state": "olly hit me up with some exciting events in the bay area", "label": "recommendation_events", "id": 2072}
+{"state": "what do i have planned for this week", "label": "calendar_query", "id": 1593}
+{"state": "olly play next recording", "label": "play_podcasts", "id": 1961}
+{"state": "send me an alert and hour before my next appointment", "label": "calendar_set", "id": 1435}
+{"state": "cease operating lights", "label": "iot_hue_lightoff", "id": 758}
+{"state": "hey what's a book", "label": "qa_definition", "id": 2454}
+{"state": "please look up local restaurants that are open now", "label": "recommendation_locations", "id": 2088}
+{"state": "how tall is hulk hogan", "label": "qa_factoid", "id": 2416}
+{"state": "play rap music", "label": "play_music", "id": 1048}
+{"state": "what is the size of the united states", "label": "qa_factoid", "id": 2461}
+{"state": "play papa pear saga", "label": "play_game", "id": 1808}
+{"state": "turn off porch light", "label": "iot_hue_lightoff", "id": 1054}
+{"state": "send an email to grandma saying we are dropping by on saturday see you then", "label": "email_sendemail", "id": 2923}
+{"state": "i want a lower light", "label": "iot_hue_lightdim", "id": 547}
+{"state": "delete from playlist my old english songs list", "label": "lists_remove", "id": 1838}
+{"state": "what's up olly", "label": "general_greet", "id": 8}
+{"state": "remind me about the meeting tomorrow at six", "label": "calendar_set", "id": 1209}
+{"state": "change the lights to blue olly", "label": "iot_hue_lightchange", "id": 239}
+{"state": "lower the lights", "label": "iot_hue_lightdim", "id": 28}
+{"state": "can you cook something special for me and my wife", "label": "general_quirky", "id": 2260}
+{"state": "describe hell", "label": "qa_definition", "id": 2410}
+{"state": "check meeting schedule in todays mail", "label": "email_query", "id": 2776}
+{"state": "please tweet a complaint to comcast for bad customer service", "label": "social_post", "id": 2679}
+{"state": "what is new news for today", "label": "news_query", "id": 115}
+{"state": "where is yosemite park", "label": "qa_factoid", "id": 2385}
+{"state": "describe rock sand", "label": "qa_definition", "id": 2427}
+{"state": "what is todays weather", "label": "weather_query", "id": 742}
+{"state": "put my dinner at red lobster on the calendar for today at nine", "label": "calendar_set", "id": 1514}
+{"state": "look up", "label": "general_quirky", "id": 2571}
+{"state": "just set me reminders about pending bill payments", "label": "calendar_set", "id": 1553}
+{"state": "i feel like having soup for lunch order from wangs kitchen restaurant a chicken manchow soup", "label": "takeaway_order", "id": 416}
+{"state": "find john smith in contacts", "label": "email_querycontact", "id": 2733}
+{"state": "definition of velocity", "label": "qa_definition", "id": 2474}
+{"state": "is there a groomer in town for cats only", "label": "general_quirky", "id": 1133}
+{"state": "what is scheduled on my calendar today", "label": "calendar_query", "id": 1475}
+{"state": "i've canceled the order placed at mcd did it go through", "label": "takeaway_query", "id": 441}
+{"state": "add a reminder to my calendar every year on this date", "label": "calendar_set", "id": 1241}
+{"state": "i'm unhappy with tesco please help me", "label": "social_post", "id": 2634}
+{"state": "give me the latest news", "label": "news_query", "id": 403}
+{"state": "send a reply to the last email", "label": "email_sendemail", "id": 2861}
+{"state": "uber me to the airport", "label": "transport_taxi", "id": 2165}
+{"state": "get me the latest stock price for costco", "label": "news_query", "id": 94}
+{"state": "remind me to check the stew at six o'clock", "label": "calendar_set", "id": 1296}
+{"state": "remove from calendar my medical appointment for today", "label": "calendar_remove", "id": 1563}
+{"state": "swimming", "label": "recommendation_events", "id": 2053}
+{"state": "please add dinner with mary to my calendar on saturday", "label": "calendar_set", "id": 1585}
+{"state": "let me know when you hear about france", "label": "news_query", "id": 238}
+{"state": "please change the light colors to red", "label": "iot_hue_lightchange", "id": 498}
+{"state": "should i wear raincoat before getting out", "label": "weather_query", "id": 1006}
+{"state": "what is the news from that newsource", "label": "news_query", "id": 514}
+{"state": "search for more songs from the band", "label": "play_music", "id": 408}
+{"state": "show me the events in my work calendar for next week", "label": "calendar_set", "id": 1581}
+{"state": "for every odd numbered sunday set a reminder for", "label": "calendar_set", "id": 1264}
+{"state": "please remove the following list", "label": "lists_remove", "id": 1860}
+{"state": "what is the hobby of ajay devgn", "label": "qa_factoid", "id": 2531}
+{"state": "what degree is it outside", "label": "weather_query", "id": 579}
+{"state": "check mom's number", "label": "email_querycontact", "id": 2844}
+{"state": "play something from keane's hopes and fears album", "label": "play_music", "id": 525}
+{"state": "explain quantum physics to me in language i understand", "label": "general_quirky", "id": 2245}
+{"state": "set repeating reminder for every sunday", "label": "calendar_set", "id": 1537}
+{"state": "what are my plans for the month of may", "label": "calendar_query", "id": 1473}
+{"state": "what do you know about fringe in edinburgh next year", "label": "general_quirky", "id": 1188}
+{"state": "change light color", "label": "iot_hue_lightchange", "id": 112}
+{"state": "weather at the moment", "label": "weather_query", "id": 959}
+{"state": "what's on my to-do list", "label": "lists_query", "id": 1826}
+{"state": "social media", "label": "social_query", "id": 1143}
+{"state": "please check for new emails", "label": "email_query", "id": 2705}
+{"state": "give me a reminder notification on tomorrow's meeting at ten am", "label": "calendar_set", "id": 1211}
+{"state": "add business contacts to contact list", "label": "lists_createoradd", "id": 1944}
+{"state": "will there any events downtown this weekend", "label": "calendar_query", "id": 1258}
+{"state": "show all emails regarding the breach", "label": "email_query", "id": 2891}
+{"state": "olly i need to hear some sad songs today", "label": "play_music", "id": 456}
+{"state": "what color are chairs", "label": "qa_factoid", "id": 2353}
+{"state": "brighten the lights", "label": "iot_hue_lightup", "id": 298}
+{"state": "is it twentieth march today", "label": "datetime_query", "id": 925}
+{"state": "i want to know more about the fair this weekend", "label": "general_quirky", "id": 1447}
+{"state": "do you know any jokes", "label": "general_joke", "id": 107}
+{"state": "i don't want any alarms", "label": "alarm_remove", "id": 887}
+{"state": "what time is the black tie gala dinner supposed to begin", "label": "calendar_query", "id": 1584}
+{"state": "ask trivia questions", "label": "general_quirky", "id": 1145}
+{"state": "what are the latest crime statistics for me area", "label": "news_query", "id": 784}
+{"state": "what did vogue post today", "label": "news_query", "id": 785}
+{"state": "is it friday", "label": "calendar_query", "id": 1223}
+{"state": "any breaking news from the huffington post", "label": "news_query", "id": 1022}
+{"state": "remove tuesday alarm of nine am", "label": "alarm_remove", "id": 284}
+{"state": "current weather forecast", "label": "weather_query", "id": 442}
+{"state": "i will require full cover jacket if it is too stormy in evening", "label": "weather_query", "id": 972}
+{"state": "update to current time", "label": "datetime_query", "id": 937}
+{"state": "send an email to peter and ask him how is he now can i do something to help him", "label": "email_sendemail", "id": 2765}
+{"state": "how many square miles is the average country on earth", "label": "qa_factoid", "id": 2375}
+{"state": "how many euros can i get for one dollar", "label": "qa_currency", "id": 2591}
+{"state": "create a meeting event in my calendar", "label": "calendar_set", "id": 1418}
+{"state": "i occasionally pay attention", "label": "weather_query", "id": 234}
+{"state": "please show me any articles related to weather in the morning news", "label": "news_query", "id": 482}
+{"state": "to compare in people", "label": "qa_factoid", "id": 2552}
+{"state": "how many states have the death penalty", "label": "qa_factoid", "id": 2301}
+{"state": "can you find me a furniture store near me", "label": "recommendation_locations", "id": 2090}
+{"state": "olly tweet walmart and tell them their customer service is horrible", "label": "social_post", "id": 2662}
+{"state": "i need you to tweet a complaint", "label": "social_post", "id": 2668}
+{"state": "book a train ticket from here to charleston west virginia at eight am today", "label": "transport_ticket", "id": 2191}
+{"state": "how much is the euro worth versus u. s. dollar", "label": "qa_currency", "id": 2449}
+{"state": "delete my to do's for this week", "label": "lists_remove", "id": 1924}
+{"state": "what is a good iranian film from two thousand and sixteen", "label": "recommendation_movies", "id": 1114}
+{"state": "add an alarm for tomorrow morning at six am", "label": "alarm_set", "id": 393}
+{"state": "my vacuum cleaner should start between ten to eleven am everyday", "label": "iot_cleaning", "id": 289}
+{"state": "locate the email to giant eagle and put it into my contact list", "label": "email_addcontact", "id": 2872}
+{"state": "what is the difference between roman and grigorean calendar", "label": "qa_factoid", "id": 2546}
+{"state": "start next podcast", "label": "play_podcasts", "id": 2023}
+{"state": "write an email to my family saying i love you all", "label": "email_sendemail", "id": 2795}
+{"state": "i would be happy if you update me the events going on our area", "label": "recommendation_events", "id": 2048}
+{"state": "read me the latest headlines from nytimescom", "label": "news_query", "id": 794}
+{"state": "give me some good sounds", "label": "play_music", "id": 760}
+{"state": "send a complaint tweet", "label": "social_post", "id": 2688}
+{"state": "when does panama city mall open", "label": "recommendation_events", "id": 2106}
+{"state": "do i have any remainder about birthday party", "label": "calendar_query", "id": 1423}
+{"state": "find me the cheapest train ticket to spain", "label": "transport_ticket", "id": 2174}
+{"state": "what exactly is a resin tooth filling", "label": "qa_definition", "id": 2534}
+{"state": "play songs", "label": "play_music", "id": 776}
+{"state": "include mike and jack to festival calendar", "label": "calendar_set", "id": 1340}
+{"state": "mark april twenty as my brother's birthday", "label": "calendar_set", "id": 1333}
+{"state": "display date", "label": "datetime_query", "id": 986}
+{"state": "can i order take out from licari's", "label": "takeaway_order", "id": 376}
+{"state": "what is the time in china", "label": "datetime_query", "id": 756}
+{"state": "please turn off the light of my son's room", "label": "iot_hue_lightoff", "id": 231}
+{"state": "play random music", "label": "play_music", "id": 432}
+{"state": "are their any new emails for me today", "label": "email_query", "id": 2885}
+{"state": "how many legs does a dog have", "label": "qa_factoid", "id": 2321}
+{"state": "schedule a sales meeting for wednesday at eleven am", "label": "calendar_set", "id": 1409}
+{"state": "how do i reach sarah", "label": "email_querycontact", "id": 2797}
+{"state": "where is the public library", "label": "transport_query", "id": 2206}
+{"state": "wake me at six am thursday so i have time for the meeting", "label": "calendar_set", "id": 1269}
+{"state": "i would like to know the best rating pubs in the local area", "label": "recommendation_locations", "id": 2046}
+{"state": "what new email says", "label": "email_query", "id": 2912}
+{"state": "send an email to john asking him what time works for the meeting", "label": "email_sendemail", "id": 2745}
+{"state": "what is the current weather condition in my place", "label": "weather_query", "id": 363}
+{"state": "could you reschedule my meeting", "label": "calendar_query", "id": 1579}
+{"state": "tell me current events between yesterday and this morning", "label": "calendar_query", "id": 1465}
+{"state": "economic affairs", "label": "news_query", "id": 1182}
+{"state": "move to the next episode of hipsterhood", "label": "play_podcasts", "id": 1984}
+{"state": "ok google delete eric's b. day from the calendar", "label": "calendar_remove", "id": 1555}
+{"state": "set the default audio setting", "label": "audio_volume_other", "id": 1007}
+{"state": "open gallery post picture name", "label": "social_post", "id": 2673}
+{"state": "important house information", "label": "lists_query", "id": 1957}
+{"state": "does pizza hut have delivery", "label": "takeaway_query", "id": 232}
+{"state": "what are today's sports news", "label": "news_query", "id": 247}
+{"state": "what lists are in my notebook", "label": "lists_query", "id": 1935}
+{"state": "what i am going to do today", "label": "lists_query", "id": 1825}
+{"state": "turn on a country music station", "label": "play_radio", "id": 1639}
+{"state": "what is the geology of this location", "label": "general_quirky", "id": 2590}
+{"state": "color of light should be dimmed bright", "label": "iot_hue_lightdim", "id": 351}
+{"state": "write and send email to my boss", "label": "email_sendemail", "id": 2855}
+{"state": "please scan my social media and tell me what's happening", "label": "social_query", "id": 2617}
+{"state": "i'm going to sleep now", "label": "iot_hue_lightoff", "id": 355}
+{"state": "display list of recent emails", "label": "email_query", "id": 2958}
+{"state": "trash my list", "label": "lists_remove", "id": 1950}
+{"state": "where seth lives", "label": "email_querycontact", "id": 2711}
+{"state": "olly start the podcast over that i started last night", "label": "play_podcasts", "id": 1986}
+{"state": "add bananas to my shopping list", "label": "lists_createoradd", "id": 1889}
+{"state": "who is the contact that last called me", "label": "email_querycontact", "id": 2851}
+{"state": "invite people to the calendar event", "label": "calendar_set", "id": 1302}
+{"state": "i like senatra songs", "label": "music_likeness", "id": 14}
+{"state": "list exchange rate information for the day for u. s. d. to jpy", "label": "qa_currency", "id": 2360}
+{"state": "will it snow tomorrow at noon", "label": "weather_query", "id": 280}
+{"state": "what is the current weather", "label": "weather_query", "id": 116}
+{"state": "start podcasts on n. f. l.", "label": "play_podcasts", "id": 2005}
+{"state": "what was elvis presley's birthday", "label": "qa_factoid", "id": 2419}
+{"state": "house change all lights to blue", "label": "iot_hue_lightchange", "id": 736}
+{"state": "play an f. m.", "label": "play_radio", "id": 1611}
+{"state": "what are todays top podcasts", "label": "play_podcasts", "id": 1977}
+{"state": "do you think i should go to the theater today", "label": "general_quirky", "id": 1103}
+{"state": "bring up papa pear saga", "label": "play_game", "id": 1809}
+{"state": "locate me the amazon restaurants", "label": "recommendation_locations", "id": 2045}
+{"state": "how many minutes do i need to wait to pick up my food from china on the go", "label": "takeaway_query", "id": 1053}
+{"state": "user friendly", "label": "news_query", "id": 188}
+{"state": "plant based news", "label": "news_query", "id": 1113}
+{"state": "which bar has the most affordable drinks near sixth street", "label": "recommendation_locations", "id": 2063}
+{"state": "reduce volume", "label": "audio_volume_down", "id": 979}
+{"state": "olly what do i have planned next", "label": "calendar_query", "id": 1896}
+{"state": "i want to hear snow by red hot chili peppers", "label": "play_music", "id": 140}
+{"state": "show me my meeting for the next month", "label": "calendar_query", "id": 1398}
+{"state": "open contacts", "label": "email_addcontact", "id": 2789}
+{"state": "foreign exchange rates", "label": "qa_currency", "id": 2521}
+{"state": "tell me the info about india's geography", "label": "qa_factoid", "id": 2569}
+{"state": "tweet about cold pizza to papa johns", "label": "social_post", "id": 2663}
+{"state": "how do i get home from here", "label": "transport_query", "id": 2169}
+{"state": "add a lunch with mike", "label": "calendar_set", "id": 1337}
+{"state": "tell me about mary s.", "label": "email_querycontact", "id": 2788}
+{"state": "sticking to diet", "label": "general_quirky", "id": 1177}
+{"state": "could you explain the meaning of exorbitant for me please", "label": "qa_definition", "id": 2554}
+{"state": "how's the weather in the capital city", "label": "weather_query", "id": 1004}
+{"state": "who am i meeting today", "label": "calendar_query", "id": 2710}
+{"state": "what is the traffic like right now", "label": "transport_traffic", "id": 2190}
+{"state": "present time in new york", "label": "datetime_query", "id": 208}
+{"state": "play previous song", "label": "play_music", "id": 982}
+{"state": "start the gilmore guys", "label": "play_podcasts", "id": 2000}
+{"state": "time difference between u. k. and us", "label": "datetime_convert", "id": 932}
+{"state": "decrease brightness of lights", "label": "iot_hue_lightdim", "id": 1037}
+{"state": "the second of next mont lands on what day", "label": "datetime_query", "id": 477}
+{"state": "please power down", "label": "iot_wemo_off", "id": 685}
+{"state": "should i wear a jacket", "label": "weather_query", "id": 1076}
+{"state": "open the folder app please", "label": "takeaway_order", "id": 177}
+{"state": "hi you there", "label": "general_quirky", "id": 1161}
+{"state": "when did elvis die", "label": "qa_factoid", "id": 2381}
+{"state": "remove events from my list", "label": "lists_remove", "id": 1823}
+{"state": "what should i cook for supper", "label": "cooking_recipe", "id": 1755}
+{"state": "what is the time in chicago", "label": "datetime_query", "id": 795}
+{"state": "what does the traffic look like on my usual route to work", "label": "transport_traffic", "id": 2192}
+{"state": "what is the plan today", "label": "calendar_query", "id": 1325}
+{"state": "add a reminder for april twenty as my bro's birthday", "label": "calendar_set", "id": 1334}
+{"state": "make the lights pink", "label": "iot_hue_lightchange", "id": 829}
+{"state": "what movie can i watch tonight on the theater here in boston", "label": "recommendation_events", "id": 2031}
+{"state": "please book a ticket of rajdhani express train from jaipur", "label": "transport_ticket", "id": 2208}
+{"state": "pause the book", "label": "play_audiobook", "id": 1676}
+{"state": "open stock price for name", "label": "qa_stock", "id": 2493}
+{"state": "send report to consumer service", "label": "social_post", "id": 2683}
+{"state": "start a vacuum cleaner", "label": "iot_cleaning", "id": 52}
+{"state": "from dollar to euro", "label": "qa_currency", "id": 2391}
+{"state": "will i need sunscreen this afternoon", "label": "weather_query", "id": 1040}
+{"state": "history", "label": "general_quirky", "id": 1148}
+{"state": "give me my facebook update every three hours", "label": "social_query", "id": 2607}
+{"state": "please define forensic", "label": "qa_definition", "id": 2231}
+{"state": "begin vacuuming", "label": "iot_cleaning", "id": 996}
+{"state": "where is mary's birthday party being held", "label": "calendar_query", "id": 1417}
+{"state": "what does my facebook feed look like", "label": "social_query", "id": 755}
+{"state": "please play only are rehman's songs", "label": "play_music", "id": 926}
+{"state": "create a new list", "label": "lists_createoradd", "id": 1869}
+{"state": "rahul marriage reminder", "label": "calendar_query", "id": 1564}
+{"state": "i need to set reminder on fifteenth march", "label": "calendar_set", "id": 1438}
+{"state": "clear haircut today", "label": "calendar_remove", "id": 1371}
+{"state": "what is the root of six hundred and twenty five", "label": "qa_maths", "id": 2271}
+{"state": "tell me the weather this week", "label": "weather_query", "id": 21}
+{"state": "i want the music to be saved can you do it for me", "label": "music_likeness", "id": 73}
+{"state": "play creed from my rock playlist", "label": "play_music", "id": 174}
+{"state": "what shops are round here", "label": "recommendation_locations", "id": 2052}
+{"state": "hey robot give me a list of ingredients for welsh rarebit", "label": "cooking_recipe", "id": 1734}
+{"state": "i didn't get the product on time send a tweet to jcpenney", "label": "social_post", "id": 2652}
+{"state": "how much is the british pound", "label": "qa_currency", "id": 2433}
+{"state": "don't speak for an hour", "label": "audio_volume_mute", "id": 1051}
+{"state": "what movies are playing tonight", "label": "recommendation_movies", "id": 2066}
+{"state": "what is my next reminder", "label": "calendar_query", "id": 1202}
+{"state": "tell me about economy and g. d. p. about india versus china", "label": "general_quirky", "id": 2464}
+{"state": "olly tell me the time in g. m. t. plus five", "label": "datetime_convert", "id": 10}
+{"state": "remind me to start getting ready by five p. m. please", "label": "calendar_set", "id": 1247}
+{"state": "where does kate middleton buy her kids clothes", "label": "general_quirky", "id": 2277}
+{"state": "what's the time in sydney now", "label": "datetime_query", "id": 200}
+{"state": "how much will be the world population after twenty years", "label": "general_quirky", "id": 2472}
+{"state": "enter song suggestion", "label": "music_likeness", "id": 839}
+{"state": "olly save all the songs i have listened to more than once", "label": "music_likeness", "id": 627}
+{"state": "need to check my list", "label": "lists_query", "id": 1902}
+{"state": "what time will the soccer match be tonight", "label": "calendar_query", "id": 1370}
+{"state": "let's cook meatballs together", "label": "cooking_recipe", "id": 1756}
+{"state": "start my playlist on i heart radio", "label": "play_radio", "id": 1667}
+{"state": "could you please email john saying i'm on leave", "label": "email_sendemail", "id": 2880}
+{"state": "have i received any emails in the last ten minutes", "label": "email_query", "id": 2762}
+{"state": "can i carry out with this restaurant", "label": "takeaway_query", "id": 625}
+{"state": "tweet a message to suqcom that i am still waiting for my delivery", "label": "social_post", "id": 2686}
+{"state": "you like the song", "label": "music_likeness", "id": 296}
+{"state": "can you play me a rap song on the radio", "label": "play_radio", "id": 1636}
+{"state": "can you make the lights go out", "label": "iot_hue_lightoff", "id": 679}
+{"state": "check my emails for something from name", "label": "email_query", "id": 2747}
+{"state": "play my shuffled playlist please", "label": "play_music", "id": 701}
+{"state": "set event date in calendar with others", "label": "calendar_set", "id": 1539}
+{"state": "turn off the speakers", "label": "audio_volume_mute", "id": 536}
+{"state": "tell me how to cook meatballs", "label": "cooking_recipe", "id": 1757}
+{"state": "give me the details on purchase order", "label": "lists_query", "id": 1940}
+{"state": "power off", "label": "iot_wemo_off", "id": 686}
+{"state": "speak softer please", "label": "audio_volume_down", "id": 589}
+{"state": "is steph curry married", "label": "qa_factoid", "id": 2373}
+{"state": "comfort my ears with arijit singh", "label": "play_music", "id": 1009}
+{"state": "what are pounds worth right now", "label": "qa_currency", "id": 2345}
+{"state": "please read my facebook feed", "label": "social_query", "id": 2629}
+{"state": "tweet mcdonald's down reseda has terrible service", "label": "social_post", "id": 2681}
+{"state": "what is my schedule for the day", "label": "calendar_query", "id": 1543}
+{"state": "do you know math", "label": "qa_maths", "id": 2273}
+{"state": "please search the internet and display the suitable youtube videos for cooking italian foods", "label": "cooking_recipe", "id": 1735}
+{"state": "what is the email address for tessa", "label": "email_querycontact", "id": 2743}
+{"state": "what shops are near me", "label": "recommendation_locations", "id": 2105}
+{"state": "movies with good reviews", "label": "recommendation_movies", "id": 2073}
+{"state": "where did mahatma gandhi born", "label": "qa_factoid", "id": 2501}
+{"state": "what do you do with my data and information", "label": "general_quirky", "id": 1115}
+{"state": "tell me the news about share market ups and downs", "label": "news_query", "id": 871}
+{"state": "how do i book a train ticket online", "label": "transport_query", "id": 2180}
+{"state": "opinion save", "label": "music_likeness", "id": 155}
+{"state": "is it going to rain later", "label": "weather_query", "id": 949}
+{"state": "create a notification reminder for meeting tomorrow", "label": "calendar_set", "id": 1282}
+{"state": "send an email to this contact", "label": "email_sendemail", "id": 2858}
+{"state": "seven years", "label": "play_music", "id": 63}
+{"state": "olly where is my food", "label": "takeaway_query", "id": 339}
+{"state": "play sleepyhead by passion pit", "label": "play_music", "id": 731}
+{"state": "one dolla equals how much inr", "label": "qa_currency", "id": 2421}
+{"state": "remove my dentist's appointment from today's schedule", "label": "calendar_remove", "id": 1881}
+{"state": "is there anything happening on jazz scene around edinburgh", "label": "recommendation_events", "id": 2028}
+{"state": "find gluten free bakery near me", "label": "recommendation_locations", "id": 2101}
+{"state": "alexa play a mi song of rap and rock one after the other", "label": "play_music", "id": 426}
+{"state": "will i need to carry around a brolly today", "label": "weather_query", "id": 768}
+{"state": "olly does shibaru sushi deliver", "label": "takeaway_query", "id": 551}
+{"state": "search to find current local time and time zone", "label": "datetime_query", "id": 840}
+{"state": "can you tell me the recipe to cook pav bhaji", "label": "cooking_recipe", "id": 1739}
+{"state": "what is the definition of the word perpetual", "label": "qa_definition", "id": 2283}
+{"state": "please know that today i had a meeting with george", "label": "general_quirky", "id": 1129}
+{"state": "compose a new email but i got a new address this time brandon at example dot com", "label": "email_sendemail", "id": 2895}
+{"state": "i want to know what supermarket near me has the best price on gluten free bread", "label": "recommendation_locations", "id": 2289}
+{"state": "what does the email say that was sent thirty minutes ago from mom", "label": "email_query", "id": 2854}
+{"state": "when is the next train to glasgow from aberdeen", "label": "transport_query", "id": 2126}
+{"state": "what is the wake up time for my alarm i have set for the flight this weekend", "label": "alarm_query", "id": 664}
+{"state": "plan for tomorrow", "label": "calendar_query", "id": 1324}
+{"state": "can you turn on the radio", "label": "play_radio", "id": 1599}
+{"state": "clear out the problem", "label": "general_quirky", "id": 2671}
+{"state": "how do i get to the train station for a ticket", "label": "transport_query", "id": 2119}
+{"state": "hey order two wings with french fries from the chinese food store", "label": "takeaway_order", "id": 1062}
+{"state": "set alarm at nine am on next sunday", "label": "alarm_set", "id": 968}
+{"state": "remove meeting reminder for tuesday", "label": "calendar_remove", "id": 1330}
+{"state": "set alarm of only monday morning six am", "label": "alarm_set", "id": 292}
+{"state": "can you please play imogen heap", "label": "play_music", "id": 707}
+{"state": "i need to get up at ten tomorrow", "label": "alarm_set", "id": 754}
+{"state": "can you turn up your volume", "label": "audio_volume_up", "id": 230}
+{"state": "show me the latest news from the un", "label": "news_query", "id": 1031}
+{"state": "what was the last movie will smith was in", "label": "qa_factoid", "id": 2326}
+{"state": "can you please add an item to my grocery list", "label": "lists_createoradd", "id": 1872}
+{"state": "what time is it in a city", "label": "datetime_query", "id": 841}
+{"state": "olly there's a good band playing tonight at nine at jazz bar i want to go", "label": "calendar_set", "id": 1208}
+{"state": "turn off overhead light", "label": "iot_hue_lightoff", "id": 697}
+{"state": "ok google play one hundred and six point seven", "label": "play_radio", "id": 1655}
+{"state": "how old is j. k. rowling", "label": "qa_factoid", "id": 2308}
+{"state": "up load all my podcast", "label": "play_podcasts", "id": 1972}
+{"state": "play all order of the green hand from previous week", "label": "play_podcasts", "id": 2024}
+{"state": "when does the next train traveling the city leave here", "label": "transport_query", "id": 2156}
+{"state": "olly cancel all soccer practice alarms", "label": "alarm_remove", "id": 886}
+{"state": "set an alarm for six thirty am", "label": "alarm_set", "id": 805}
+{"state": "please send an email to cassy who is there on my family and friend list", "label": "email_sendemail", "id": 2800}
+{"state": "let me know in two hours that i have to leave for my violin lesson that's at four p. m. at musicworkz", "label": "calendar_set", "id": 1361}
+{"state": "olly book me a ticket to paris on eurostar this weekend", "label": "transport_ticket", "id": 2112}
+{"state": "what do you think", "label": "music_likeness", "id": 295}
+{"state": "who is the singer of song", "label": "music_query", "id": 99}
+{"state": "hey what is the weather like today", "label": "weather_query", "id": 1094}
+{"state": "i want a coffee", "label": "iot_coffee", "id": 218}
+{"state": "will the temperature be higher than forty tomorrow", "label": "weather_query", "id": 800}
+{"state": "describe the new football game rules", "label": "general_quirky", "id": 2478}
+{"state": "olly how long should i boil the eggs", "label": "cooking_recipe", "id": 1715}
+{"state": "where is the car", "label": "audio_volume_up", "id": 565}
+{"state": "please start the vacuum cleaner", "label": "iot_cleaning", "id": 485}
+{"state": "brighten of lights in living room", "label": "iot_hue_lightup", "id": 971}
+{"state": "i feel like jazz right now how about you", "label": "play_music", "id": 44}
+{"state": "please add this email to my contacts", "label": "email_addcontact", "id": 2836}
+{"state": "what time is it in cleveland", "label": "datetime_query", "id": 761}
+{"state": "please give me information on michael jackson", "label": "qa_factoid", "id": 2388}
+{"state": "what time does the first metrolink arrive in the morning", "label": "transport_query", "id": 2179}
+{"state": "it's time for junk food", "label": "takeaway_order", "id": 516}
+{"state": "play bilando", "label": "play_music", "id": 141}
+{"state": "remind me about my schedule for the afternoon", "label": "calendar_set", "id": 1190}
+{"state": "please tweet on dell service for delay services", "label": "social_post", "id": 2666}
+{"state": "ensure i have to get up at six in morning", "label": "alarm_set", "id": 985}
+{"state": "on my to dos remove mop kitchen", "label": "lists_remove", "id": 1925}
+{"state": "please check for new email", "label": "email_query", "id": 2935}
+{"state": "why is the earth round", "label": "general_quirky", "id": 2323}
+{"state": "give me the weather forecast for this week", "label": "weather_query", "id": 781}
+{"state": "make a call to", "label": "email_querycontact", "id": 2845}
+{"state": "can you raise the lights for me please", "label": "iot_hue_lightup", "id": 503}
+{"state": "hey check email", "label": "email_query", "id": 2966}
+{"state": "tell me today's direction", "label": "transport_query", "id": 2155}
+{"state": "write an email for john at gmail dot com", "label": "email_sendemail", "id": 2941}
+{"state": "if a pencil cost four dollars and a book ten dollars cost how much i should pay if i buy two pencil and three book", "label": "qa_maths", "id": 2412}
+{"state": "dollar to euro exchange rate", "label": "qa_currency", "id": 2542}
+{"state": "calculate two multiplied by two", "label": "qa_maths", "id": 2264}
+{"state": "take that off there", "label": "lists_remove", "id": 1901}
+{"state": "i want to reply to bob smith's email", "label": "email_sendemail", "id": 2807}
+{"state": "is there any new information regarding the mexican american border wall", "label": "news_query", "id": 819}
+{"state": "lets have a chat", "label": "general_quirky", "id": 1092}
+{"state": "olly i'm looking for a bar do you know a good one", "label": "recommendation_locations", "id": 2043}
+{"state": "someone play the radio", "label": "play_radio", "id": 1597}
+{"state": "how much is amazon stock", "label": "qa_stock", "id": 2452}
+{"state": "remind this event in future", "label": "calendar_set", "id": 1266}
+{"state": "send an email to mom to tell her wyatt's birthday party is on sunday", "label": "email_sendemail", "id": 2802}
+{"state": "what happened on the walking dead", "label": "news_query", "id": 681}
+{"state": "where i went today", "label": "general_quirky", "id": 1163}
+{"state": "find songs from my big band playlist", "label": "play_music", "id": 893}
+{"state": "music third day", "label": "play_music", "id": 857}
+{"state": "show me recent emails", "label": "email_query", "id": 2757}
+{"state": "is fongs dine in only", "label": "takeaway_query", "id": 777}
+{"state": "play nine hundred and eighty nine the radio station", "label": "play_radio", "id": 1632}
+{"state": "is there anything special going on nearby", "label": "recommendation_events", "id": 2095}
+{"state": "give me the description of a smartphone circuit", "label": "qa_definition", "id": 2514}
+{"state": "what's a good joke", "label": "general_joke", "id": 229}
+{"state": "change the lights to dim", "label": "iot_hue_lightdim", "id": 96}
+{"state": "remind me please", "label": "calendar_set", "id": 1485}
+{"state": "how old is mariah carey", "label": "qa_factoid", "id": 2237}
+{"state": "hey olly turn off the light please", "label": "iot_hue_lightoff", "id": 1044}
+{"state": "please put on my favorite rap music playlist", "label": "play_music", "id": 662}
+{"state": "play podcast for the philadelphia eagles content", "label": "play_podcasts", "id": 1978}
+{"state": "alert me when registration opens", "label": "calendar_set", "id": 1363}
+{"state": "turn off the dining room", "label": "iot_hue_lightoff", "id": 304}
+{"state": "wake me up", "label": "alarm_set", "id": 352}
+{"state": "what is dolly parton's birthday", "label": "qa_factoid", "id": 2408}
+{"state": "cancel my seven am alarm", "label": "alarm_remove", "id": 11}
+{"state": "put meeting with pawel for tomorrow ten am", "label": "calendar_set", "id": 1195}
+{"state": "what is one plus one", "label": "qa_maths", "id": 2253}
+{"state": "what is the first metro to d. c.", "label": "transport_query", "id": 2151}
+{"state": "radio channels", "label": "play_radio", "id": 1626}
+{"state": "remind me that i have a birthday party on the thirtieth", "label": "calendar_set", "id": 1492}
+{"state": "write a reply to my mother's email", "label": "email_sendemail", "id": 2873}
+{"state": "what happens to me if you become sentient", "label": "general_quirky", "id": 1157}
+{"state": "prepare coffee now", "label": "iot_coffee", "id": 744}
+{"state": "what is the time in canada now", "label": "datetime_query", "id": 948}
+{"state": "email donna plans for today", "label": "email_sendemail", "id": 2822}
+{"state": "please play thirteen", "label": "play_music", "id": 335}
+{"state": "what are my available lists", "label": "lists_query", "id": 1900}
+{"state": "alexa remove dinner with mike from my calendar", "label": "calendar_remove", "id": 1377}
+{"state": "describe the heart stone card game", "label": "qa_definition", "id": 2535}
+{"state": "more stock price", "label": "qa_stock", "id": 2551}
+{"state": "set a reminder about tomorrow's meeting at nine am", "label": "calendar_set", "id": 1534}
+{"state": "ticket for delhi", "label": "transport_ticket", "id": 2138}
+{"state": "play atmosphere next", "label": "play_music", "id": 492}
+{"state": "olly play music from the jazz genre", "label": "play_music", "id": 463}
+{"state": "let's play global thermonuclear war", "label": "play_game", "id": 1788}
+{"state": "play the song let it go", "label": "play_music", "id": 1637}
+{"state": "what is elvis favorite ride", "label": "qa_factoid", "id": 2549}
+{"state": "play for me the music by the beatles", "label": "play_music", "id": 989}
+{"state": "let's have the lights blue", "label": "iot_hue_lightchange", "id": 48}
+{"state": "this is a good tune please notate file accordingly", "label": "music_likeness", "id": 672}
+{"state": "what are the events next week", "label": "calendar_query", "id": 1279}
+{"state": "could you please play the f. m. station which plays pop songs", "label": "play_radio", "id": 1640}
+{"state": "turn on vacuum cleaner", "label": "iot_cleaning", "id": 325}
+{"state": "did i leave myself any reminders", "label": "calendar_query", "id": 1422}
+{"state": "olly what are new drama movies opening this weekend", "label": "recommendation_movies", "id": 2055}
+{"state": "latest news on terrorism", "label": "news_query", "id": 300}
+{"state": "what's happening in france today", "label": "news_query", "id": 1122}
+{"state": "what is the dollar price in inr", "label": "qa_currency", "id": 2349}
+{"state": "what movies has emma watson acted in", "label": "qa_factoid", "id": 2447}
+{"state": "please play the notebook audio", "label": "play_audiobook", "id": 1709}
+{"state": "please book train ticket from mumbai to sangli for tomorrow morning", "label": "transport_ticket", "id": 2217}
+{"state": "turn the smart plug on", "label": "iot_wemo_on", "id": 75}
+{"state": "make a new shopping list", "label": "lists_createoradd", "id": 1915}
+{"state": "i need to find a gift what stores are within a one mile radius", "label": "recommendation_locations", "id": 2103}
+{"state": "let me listen the latest news program on radio", "label": "play_radio", "id": 1648}
+{"state": "order one pizza from pizza hut", "label": "takeaway_order", "id": 315}
+{"state": "will it rain tomorrow", "label": "weather_query", "id": 67}
+{"state": "who takes less of duration of time for delivery", "label": "takeaway_query", "id": 965}
+{"state": "start vacuum cleaner", "label": "iot_cleaning", "id": 201}
+{"state": "what is on my to do list today", "label": "lists_query", "id": 1863}
+{"state": "road traffic", "label": "transport_traffic", "id": 2200}
+{"state": "do i have anything going on", "label": "calendar_query", "id": 1315}
+{"state": "next play justin bieber's sorry", "label": "play_music", "id": 196}
+{"state": "i want to hear the latest world news from today", "label": "news_query", "id": 1056}
+{"state": "what is the weather", "label": "weather_query", "id": 56}
+{"state": "what should i watch today", "label": "recommendation_movies", "id": 2089}
+{"state": "do i need a jacket", "label": "weather_query", "id": 823}
+{"state": "open google keep", "label": "lists_query", "id": 1949}
+{"state": "by get marks", "label": "weather_query", "id": 105}
+{"state": "turn my morning alarm on", "label": "alarm_set", "id": 164}
+{"state": "set a reminder for two days prior of the event", "label": "calendar_set", "id": 1389}
+{"state": "radio please", "label": "play_radio", "id": 1666}
+{"state": "can you send the email to the new email id", "label": "email_sendemail", "id": 2901}
+{"state": "what is arnold schwarzenegger's birthday", "label": "qa_factoid", "id": 2343}
+{"state": "please scan the am dial on the radio right now", "label": "play_radio", "id": 1619}
+{"state": "wipe everything on my calendar", "label": "calendar_remove", "id": 1572}
+{"state": "add this to the list", "label": "lists_createoradd", "id": 1868}
+{"state": "make the radio turn on now", "label": "play_radio", "id": 1616}
+{"state": "can you put on the giver", "label": "play_audiobook", "id": 1674}
+{"state": "play music from my rock list", "label": "play_music", "id": 43}
+{"state": "give me the latest political headlines across the world", "label": "news_query", "id": 718}
+{"state": "initiate polling for new email", "label": "email_query", "id": 2798}
+{"state": "show me the available colors of lights", "label": "iot_hue_lightchange", "id": 252}
+{"state": "please retweet this post on twitter", "label": "social_post", "id": 2598}
+{"state": "book train best deal", "label": "transport_ticket", "id": 2166}
+{"state": "summarize week's weather details", "label": "weather_query", "id": 131}
+{"state": "how long will my lunch meeting be on tuesday", "label": "calendar_query", "id": 1429}
+{"state": "respond to my bosses email with the word that i will be in at four in the evening", "label": "email_sendemail", "id": 2848}
+{"state": "i need to know how to make stuffed peppers", "label": "cooking_recipe", "id": 1769}
+{"state": "could you please play temple run game for me", "label": "play_game", "id": 1794}
+{"state": "what does obama do in his day to day life", "label": "general_quirky", "id": 2481}
+{"state": "wooo", "label": "general_quirky", "id": 370}
+{"state": "what's happening around my town", "label": "recommendation_events", "id": 2027}
+{"state": "rock", "label": "play_music", "id": 929}
+{"state": "i got promoted today it feels so good", "label": "general_quirky", "id": 1152}
+{"state": "please play my nineties rap hits", "label": "play_music", "id": 634}
+{"state": "i love this music can you please save this to my dance playlist and remember that i like it", "label": "music_likeness", "id": 523}
+{"state": "notify me when joshua emails me", "label": "email_query", "id": 2972}
+{"state": "how the to do list for today", "label": "lists_query", "id": 1841}
+{"state": "meeting reminders from three to five", "label": "calendar_query", "id": 1482}
+{"state": "show bio of rihana", "label": "qa_factoid", "id": 2430}
+{"state": "play mf doom anything", "label": "play_music", "id": 110}
+{"state": "how to cook spaghetti squash", "label": "cooking_recipe", "id": 1773}
+{"state": "did i get an email from paul", "label": "email_query", "id": 2868}
+{"state": "is it afternoon yet", "label": "datetime_query", "id": 732}
+{"state": "please pull up the wikipedia article on glass blowing", "label": "general_quirky", "id": 2365}
+{"state": "fastest route to turiellos", "label": "transport_query", "id": 2159}
+{"state": "prepare the order as soon as possible", "label": "takeaway_query", "id": 106}
+{"state": "set feeling happy status on facebook", "label": "social_post", "id": 2699}
+{"state": "is there a meeting on my calendar this afternoon", "label": "calendar_query", "id": 1574}
+{"state": "please play clash of clans", "label": "play_game", "id": 1790}
+{"state": "set list", "label": "lists_createoradd", "id": 1942}
+{"state": "where are pyramids located", "label": "qa_factoid", "id": 2428}
+{"state": "what are the latest news headlines", "label": "news_query", "id": 90}
+{"state": "knowledge about food processing", "label": "cooking_recipe", "id": 1730}
+{"state": "delete my meeting for two o'clock p. m. today", "label": "calendar_remove", "id": 1488}
+{"state": "play audiobook of planets", "label": "play_audiobook", "id": 1691}
+{"state": "remind upcoming meeting with eminem", "label": "calendar_set", "id": 1531}
+{"state": "can you track my emotions based on the way i speak", "label": "general_quirky", "id": 2236}
+{"state": "email jerry regarding the meeting", "label": "email_sendemail", "id": 2908}
+{"state": "i can't hear you", "label": "audio_volume_up", "id": 46}
+{"state": "list everything left on my query", "label": "lists_query", "id": 1836}
+{"state": "check email about my job", "label": "email_query", "id": 2785}
+{"state": "play a podcast from my library", "label": "play_podcasts", "id": 1965}
+{"state": "has john sent me an email", "label": "email_query", "id": 2973}
+{"state": "tell me how are the results of assembly elections in delhi going to come out", "label": "news_query", "id": 2270}
+{"state": "what time is my next appointment", "label": "calendar_query", "id": 1404}
+{"state": "can you tell me what flabbergasted means", "label": "qa_definition", "id": 2394}
+{"state": "play pandora nineties dance party", "label": "play_music", "id": 687}
+{"state": "what is the weather going to be like on march twentieth two thousand and seventeen", "label": "weather_query", "id": 924}
+{"state": "what is your age", "label": "general_quirky", "id": 1167}
+{"state": "go back to previous episode of podcast", "label": "play_podcasts", "id": 1989}
+{"state": "remove new year from calendar", "label": "calendar_remove", "id": 1244}
+{"state": "how cold is today", "label": "weather_query", "id": 875}
+{"state": "what all goes into a red velvet cake", "label": "cooking_recipe", "id": 1723}
+{"state": "how old is marian carey", "label": "qa_factoid", "id": 2367}
+{"state": "it's dirty here make some noise", "label": "iot_cleaning", "id": 5}
+{"state": "what time have you set the alarm", "label": "alarm_query", "id": 703}
+{"state": "check my email for any new email from joe", "label": "email_query", "id": 2970}
+{"state": "call yellow cab", "label": "transport_taxi", "id": 2144}
+{"state": "what days do i have booked", "label": "calendar_query", "id": 1580}
+{"state": "unmute after", "label": "audio_volume_up", "id": 117}
+{"state": "baseball scores", "label": "general_quirky", "id": 1138}
+{"state": "please turn the lights off", "label": "iot_hue_lightoff", "id": 975}
+{"state": "please turn the volume down", "label": "audio_volume_down", "id": 276}
+{"state": "what do i have coming up", "label": "calendar_query", "id": 1341}
+{"state": "get rid of my current alarms", "label": "alarm_remove", "id": 683}
+{"state": "will there be a fall in temperature by tonight", "label": "weather_query", "id": 326}
+{"state": "i want to know today's weather", "label": "weather_query", "id": 1069}
+{"state": "what's the latest trump controversy", "label": "news_query", "id": 939}
+{"state": "tell me what the date is today", "label": "datetime_query", "id": 488}
+{"state": "driving time to los angeles", "label": "transport_query", "id": 2202}
+{"state": "play techno music", "label": "play_music", "id": 935}
+{"state": "please schedule a meeting with derrick in haysi at noon", "label": "calendar_set", "id": 1327}
+{"state": "make an order for noodles one pack make it as takeaway order", "label": "takeaway_order", "id": 395}
+{"state": "is there any post from my friend mike in facebook", "label": "social_query", "id": 2613}
+{"state": "play youtube playlist blank", "label": "play_music", "id": 647}
+{"state": "what is the current time", "label": "datetime_query", "id": 69}
+{"state": "please start the coffee pot", "label": "iot_coffee", "id": 1049}
+{"state": "remind me to move so there is no weight gain", "label": "calendar_set", "id": 2266}
+{"state": "search in the web for buying bakeware for muffins", "label": "cooking_recipe", "id": 1779}
+{"state": "what date is it", "label": "calendar_query", "id": 1426}
+{"state": "tweet esurance and tell them they suck", "label": "social_post", "id": 2678}
+{"state": "remove the first alarm", "label": "alarm_remove", "id": 79}
+{"state": "show me any emails received in the last hour", "label": "email_query", "id": 2952}
+{"state": "today i searched all over for my phone and couldn't find it", "label": "general_quirky", "id": 1131}
+{"state": "play a game with me", "label": "play_game", "id": 1784}
+{"state": "i don't have enough money to buy the nintendo switch right now can you please remove it on my amazon wishlist", "label": "lists_remove", "id": 1898}
+{"state": "please alert me to the time", "label": "datetime_query", "id": 934}
+{"state": "are there any alarms currently set", "label": "alarm_query", "id": 1059}
+{"state": "can you create a list for me", "label": "lists_createoradd", "id": 1843}
+{"state": "make the lights off", "label": "iot_hue_lightoff", "id": 519}
+{"state": "add jane's birthday party for tomorrow two p. m. at one hundred and twenty three main on my calendar", "label": "calendar_set", "id": 1476}
+{"state": "play next episode of harry potter by j. k. rowling", "label": "play_audiobook", "id": 1969}
+{"state": "what is the nearest pizza shop", "label": "recommendation_locations", "id": 2240}
+{"state": "what is the us dollar and euro exchange rate", "label": "qa_currency", "id": 2413}
+{"state": "when can we eat", "label": "takeaway_query", "id": 357}
+{"state": "tweet mobile complaint to samsung", "label": "social_post", "id": 2664}
+{"state": "do i have any new email from joe", "label": "email_query", "id": 2971}
+{"state": "can i get take-out from pf changs", "label": "takeaway_query", "id": 169}
+{"state": "remove from my calendar meeting at nine am", "label": "calendar_remove", "id": 1199}
+{"state": "anything interesting going on in the bay area", "label": "recommendation_events", "id": 2071}
+{"state": "did angelina jolie leave brad pitt", "label": "qa_factoid", "id": 2518}
+{"state": "which song is this one", "label": "music_query", "id": 793}
+{"state": "show meetings", "label": "calendar_set", "id": 1557}
+{"state": "don't let me forget to buy a gift for my sister", "label": "calendar_set", "id": 1428}
+{"state": "please add supervision to my calendar", "label": "calendar_set", "id": 1415}
+{"state": "anything on your mind", "label": "general_quirky", "id": 1136}
+{"state": "play f. m.", "label": "play_radio", "id": 1609}
+{"state": "send email to joe at a. o. l. dot com", "label": "email_sendemail", "id": 2792}
+{"state": "change the bedroom lights to green", "label": "iot_hue_lightchange", "id": 95}
+{"state": "please add my pay days", "label": "calendar_set", "id": 1314}
+{"state": "where does sophia vergara live", "label": "qa_factoid", "id": 2537}
+{"state": "what times do my alarms go off", "label": "alarm_query", "id": 274}
+{"state": "make march eighteen a repeating appointment for pearl's birthday", "label": "calendar_set", "id": 1453}
+{"state": "tweet kohls about the cleanliness of their store", "label": "social_post", "id": 2655}
+{"state": "please start vacuum cleaner", "label": "iot_cleaning", "id": 122}
+{"state": "where is the nearest gas station", "label": "recommendation_locations", "id": 2157}
+{"state": "what movies are going around me", "label": "recommendation_movies", "id": 2039}
+{"state": "tell me if global warming is true", "label": "general_quirky", "id": 2508}
+{"state": "create an email for my company worker with my recently saved documents", "label": "email_sendemail", "id": 2948}
+{"state": "set a reminder up next month to get my oil changed", "label": "calendar_set", "id": 1219}
+{"state": "lower volume by fifty percent", "label": "audio_volume_down", "id": 291}
+{"state": "add new email address and send email", "label": "email_sendemail", "id": 2840}
+{"state": "beep when i get an email from john", "label": "email_query", "id": 2899}
+{"state": "report weather for thirty three thousand seven hundred and seventy four", "label": "weather_query", "id": 563}
+{"state": "will you mark that i am busy for an event tomorrow at two p. m.", "label": "calendar_set", "id": 1490}
+{"state": "what news has happened on c. n. n. today", "label": "news_query", "id": 256}
+{"state": "play pride and prejudice", "label": "play_audiobook", "id": 1687}
+{"state": "how much is one dollar in pounds", "label": "qa_currency", "id": 2580}
+{"state": "new list", "label": "lists_createoradd", "id": 1903}
+{"state": "tell me about alarms", "label": "alarm_query", "id": 644}
+{"state": "traffic report", "label": "transport_traffic", "id": 2221}
+{"state": "i need an email to be sent to comcastcom about my service issues", "label": "email_sendemail", "id": 2859}
+{"state": "book a first class ticket in the next train to miami", "label": "transport_ticket", "id": 2141}
+{"state": "alexa start from my last session of joes book", "label": "play_audiobook", "id": 1701}
+{"state": "please slow down volume of speaker", "label": "audio_volume_down", "id": 226}
+{"state": "what is the weather this friday", "label": "weather_query", "id": 390}
+{"state": "play let me love you by ariana grande", "label": "play_music", "id": 142}
+{"state": "tweet complain at comcast", "label": "social_post", "id": 2674}
+{"state": "email chelsea", "label": "email_sendemail", "id": 2712}
+{"state": "turn off my wifi", "label": "iot_wemo_off", "id": 711}
+{"state": "please find the radio station currently playing howard stern", "label": "play_radio", "id": 1642}
+{"state": "i want to see the next podcast available", "label": "play_podcasts", "id": 2020}
+{"state": "i would like a cheeseburger", "label": "cooking_recipe", "id": 1760}
+{"state": "have i received any emails since noon", "label": "email_query", "id": 2897}
+{"state": "what is the make up of the chair", "label": "qa_factoid", "id": 2547}
+{"state": "please set the brightness of lightness appropriately in kitchen", "label": "iot_hue_lightup", "id": 970}
+{"state": "please turn my speakers on google", "label": "audio_volume_up", "id": 815}
+{"state": "what is today's forecast for berlin", "label": "weather_query", "id": 49}
+{"state": "erase all events from my calendar", "label": "calendar_remove", "id": 1501}
+{"state": "play the next episode of a podcast", "label": "play_podcasts", "id": 1976}
+{"state": "what's euro u. s. d. right now", "label": "qa_currency", "id": 2538}
+{"state": "searching information online", "label": "general_quirky", "id": 1155}
+{"state": "play my summer jams playlist", "label": "play_music", "id": 259}
+{"state": "put on", "label": "play_radio", "id": 1610}
+{"state": "am i going to be able to mow the grass this evening", "label": "weather_query", "id": 726}
+{"state": "have i need to take a sun glass", "label": "weather_query", "id": 952}
+{"state": "add meeting reminder for sunday with my parents in law", "label": "calendar_set", "id": 1193}
+{"state": "i need to talk to mom", "label": "general_quirky", "id": 2269}
+{"state": "please remind me to go to the post office", "label": "calendar_set", "id": 1427}
