@@ -17,20 +17,31 @@ curl localhost:8084/health   # kev-9b
 curl localhost:8090/health   # qwen-7b (LLM baseline)
 ```
 
-## Datasets
+## Layout
 
-```sh
-python3 scripts/fetch_data.py   # -> data/<name>/{options.json,calibration.jsonl,test.jsonl}, 50/50 split, seed 0
+```
+cmd/<step>/        small programs, each writes output/<step>/*.jsonl
+cmd/eval-<step>/   read output/, write output/eval/*.json and paper/*.gen.tex
+pkg/datasets/      embedded datasets (*.jsonl, *.options.json) + dataset.go
+pkg/systemone/     /v1/systemone client
+pkg/metrics/       one metric per file (accuracy, f1, ece, brier, flip, latency)
+pkg/records/       shared JSONL record format for output/
+pkg/methods/       permutation averaging, tournament, adaptive tournament
+pkg/conformal/     threshold selection on the calibration split
+paper/             article (.tex hand-written, *.gen.tex generated)
 ```
 
-| name | source | rows | options |
-|---|---|---|---|
-| emotion | dair-ai/emotion test | 2000 | 6 |
-| xnli | facebook/xnli en test | 5010 | 3 |
-| massive | mteb/amazon_massive_intent en test | 2974 | 59 |
-| banking77 | mteb/banking77 test | 3076 | 77 |
-| clinc150 | DeepPavlov/clinc150 test (out-of-scope rows skipped) | 4500 | 150 |
-| bfcl | BFCL v3 simple + live_simple (tool pool as options) | 658 | 453 |
+## Reproduce
+
+```sh
+make models     # download GGUF files
+make up         # docker compose, wait for /health
+make data       # datasets -> pkg/datasets
+make baseline   # one call per example, all options -> output/baseline
+make diagnose-k # k options (gold + distractors), sorted/reversed -> output/diagnose-k
+make tournament # single / permute / tournament / adaptive on k=150 and k=255 -> output/tournament
+make eval       # -> output/eval/*.json, paper/*.gen.tex
+```
 
 ## Models
 

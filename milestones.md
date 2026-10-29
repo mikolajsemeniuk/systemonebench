@@ -1,20 +1,14 @@
 ## Milestones
 
 * copy pilot scripts and outputs from scratchpad into repo (`pilot/`)
+* run diagnose-k on all models (make diagnose-k)
+* run tournament grid on all models (make tournament) — done; rerun 8 Kev BFCL files with -workers 1 (timeouts)
 * download Kev-0.8B and Kev-9B BF16 GGUF (see README)
-* init Go module
-* implement dataset loading in Go
-* implement /v1/systemone client in Go (save full probabilities)
-* implement baseline: single call with all options
-* run diagnosis: accuracy / ECE / flip rate vs number of options (k = 3, 6, 12, 24, 59, 77, 150)
 * run diagnosis: accuracy / flip rate vs option length (tokens) and with/without descriptions
-* run diagnosis: flip rate on reversed and shuffled order
-* implement permutation averaging (R shuffles, mean probabilities)
-* implement fixed tournament (groups of G, winner per group, final)
-* implement adaptive tournament (threshold ε, all options with p ≥ ε pass, repeat until ≤ G, final)
-* implement conformal selection of ε on calibration split (gold survives all rounds ≥ 1 − α)
+* conformal selection of ε — done: pkg/conformal (pick on half A, certify on half B; survival is not monotone in ε), cmd/calibrate, cmd/eval-calibrate; make calibrate running (CLINC150 done, BFCL pending)
+* chain variant (final p × product of round p) — done; on CLINC150 Kev still below single (kev-9b 0.762 g24 vs 0.792), Laya unchanged; Kev needs permute, not tournament
 * implement label-free ε variant (agreement with expensive tournament instead of gold)
-* implement metrics in Go (accuracy, macro-F1, ECE, Brier, flip rate, survival rate)
+* implement survival rate metric (gold survives tournament) — done: pkg/metrics/survival.go
 * implement cost measurement in Go (calls per decision, latency p50/p95, J/decision)
 * run grid: G × R × α for Laya and Kev on all datasets
 * verify empirical survival ≥ 1 − α on test split
