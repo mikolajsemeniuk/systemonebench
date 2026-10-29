@@ -110,3 +110,15 @@ func examples(file string) []Example {
 
 	return out
 }
+
+// WithoutDescriptions returns the dataset with option descriptions removed and
+// "-nodesc" appended to the name (tests how much the descriptions matter).
+func WithoutDescriptions(ds Dataset) Dataset {
+	out := ds
+	out.Name = ds.Name + "-nodesc"
+	out.Options = nil
+	for _, o := range ds.Options {
+		out.Options = append(out.Options, Option{Name: o.Name})
+	}
+	return out
+}

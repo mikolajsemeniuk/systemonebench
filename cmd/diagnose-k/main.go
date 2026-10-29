@@ -30,11 +30,15 @@ func main() {
 	seed := flag.Int64("seed", 0, "distractor sampling seed")
 	workers := flag.Int("workers", 4, "concurrent requests")
 	out := flag.String("out", "output", "output directory")
+	nodesc := flag.Bool("nodesc", false, "send option names only, drop descriptions (dataset name gets -nodesc)")
 	flag.Parse()
 
 	ds, ok := datasets.ByName(*name)
 	if !ok {
 		log.Fatalf("unknown dataset %q", *name)
+	}
+	if *nodesc {
+		ds = datasets.WithoutDescriptions(ds)
 	}
 	exs := ds.Test
 	if *limit > 0 && *limit < len(exs) {

@@ -53,6 +53,7 @@ baseline:
 diagnose-k:
 	go run ./cmd/diagnose-k -model laya -url http://localhost:8081 -dataset clinc150
 	go run ./cmd/diagnose-k -model laya -url http://localhost:8081 -dataset bfcl
+	go run ./cmd/diagnose-k -model laya -url http://localhost:8081 -dataset bfcl -nodesc
 	go run ./cmd/diagnose-k -model kev-0.8b -url http://localhost:8082 -dataset clinc150
 	go run ./cmd/diagnose-k -model kev-0.8b -url http://localhost:8082 -dataset bfcl
 	go run ./cmd/diagnose-k -model kev-4b -url http://localhost:8083 -dataset clinc150
@@ -82,6 +83,11 @@ tournament:
 	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method adaptive -g 12 -eps 0.1
 	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method chain -g 12
 	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method chain -g 24
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method single -nodesc
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method permute -r 8 -nodesc
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method tournament -g 8 -nodesc
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method tournament -g 24 -nodesc
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset bfcl -k 255 -method adaptive -g 12 -eps 0.05 -nodesc
 	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -method single
 	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -method permute -r 4
 	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -method permute -r 8
@@ -161,6 +167,38 @@ calibrate:
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 12 -split test
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 12 -split calibration
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 12 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split calibration
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split test
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split test
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split test
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split calibration
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split test
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 24 -split test
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 24 -split test
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 24 -split calibration
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 24 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split calibration
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split test
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split test
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split test
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split calibration
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split test
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 48 -split test
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 48 -split test
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split calibration
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split test
 
 # 8. aggregate output/ into output/eval/*.json and paper/*.gen.tex
 eval:
