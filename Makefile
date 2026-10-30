@@ -167,32 +167,32 @@ calibrate:
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split calibration
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split test
-	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split calibration
-	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split test
-	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split calibration
-	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split test
-	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split calibration
-	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split test
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split calibration
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 24 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 24 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split calibration
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split test
-	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split calibration
-	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split test
-	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split calibration
-	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split test
-	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split calibration
-	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split test
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split calibration
-	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split test
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset clinc150 -k 150 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -k 150 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset clinc150 -k 150 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset clinc150 -k 150 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset bfcl -k 255 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset bfcl -k 255 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
