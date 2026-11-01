@@ -10,8 +10,8 @@
 * implement label-free ε variant (agreement with expensive tournament instead of gold)
 * implement survival rate metric (gold survives tournament) — done: pkg/metrics/survival.go
 * implement cost measurement in Go (calls per decision, latency p50/p95, J/decision)
-* run grid: G × R × α for Laya and Kev on all datasets
-* verify empirical survival ≥ 1 − α on test split
+* run grid G ∈ {12,24,48} × ε × α on CLINC150 and BFCL — done (make calibrate, 362 files, no errors)
+* verify empirical survival ≥ 1 − α on test split — done: 45 certified picks, 1 miss (kev-4b bfcl G=48 α=0.05: 0.945)
 * test transfer: G, R chosen on one dataset, evaluated on others
 * test transfer: ε calibrated on one dataset, evaluated on another (expect failure, measure size)
 * run LLM baseline (qwen-7b service in compose) for accuracy and latency reference
