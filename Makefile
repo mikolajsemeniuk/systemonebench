@@ -1,9 +1,9 @@
 # Reproduce the experiment step by step: make models up data baseline eval
 # Each step writes files; cmd/* -> output/ -> cmd/eval-* -> paper/*.gen.tex
 
-.PHONY: all models up down data baseline diagnose-k tournament calibrate eval test clean
+.PHONY: all models up down data baseline diagnose-k tournament calibrate llm plots eval test clean
 
-all: data baseline diagnose-k tournament calibrate eval
+all: data baseline diagnose-k tournament calibrate llm eval plots
 
 # 1. download GGUF models into models/
 models:
@@ -200,12 +200,24 @@ calibrate:
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 
-# 8. aggregate output/ into output/eval/*.json and paper/*.gen.tex
+# 8. LLM reference baseline (chat completion with all options in the prompt)
+llm:
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset clinc150 -k 12
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset clinc150 -k 150
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset bfcl -k 12
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset bfcl -k 255
+
+# 9. aggregate output/ into output/eval/*.json and paper/*.gen.tex
 eval:
 	go run ./cmd/eval-baseline
 	go run ./cmd/eval-diagnose-k
 	go run ./cmd/eval-tournament
 	go run ./cmd/eval-calibrate
+	go run ./cmd/eval-llm
+
+# 10. pgfplots figures from output/eval/*.json -> paper/plots/*.gen.tex
+plots:
+	go run ./cmd/plots
 
 test:
 	go vet ./... && go test ./...

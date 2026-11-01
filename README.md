@@ -39,8 +39,11 @@ make up         # docker compose, wait for /health
 make data       # datasets -> pkg/datasets
 make baseline   # one call per example, all options -> output/baseline
 make diagnose-k # k options (gold + distractors), sorted/reversed -> output/diagnose-k
-make tournament # single / permute / tournament / adaptive on k=150 and k=255 -> output/tournament
-make eval       # -> output/eval/*.json, paper/*.gen.tex
+make tournament # single / permute / tournament / adaptive / chain on k=150 and k=255 -> output/tournament
+make calibrate  # adaptive tournament over eps grid, G in {12,24,48}, calibration + test split -> output/calibrate
+make llm        # LLM reference (qwen-7b chat completion with all options in the prompt) -> output/llm
+make eval       # -> output/eval/*.json, paper/*.gen.tex (tables)
+make plots      # -> paper/plots/*.gen.tex (pgfplots figures)
 ```
 
 ## Models
