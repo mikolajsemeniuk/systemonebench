@@ -78,8 +78,28 @@ func main() {
 		}
 	}
 
+	// Laya on BFCL with and without descriptions
+	nodesc := map[string][]xy{}
+	for _, r := range diag {
+		if r.Model == "laya" && (r.Dataset == "bfcl" || r.Dataset == "bfcl-nodesc") {
+			nodesc[r.Dataset] = append(nodesc[r.Dataset], xy{float64(r.K), r.Accuracy})
+		}
+	}
+	write(filepath.Join(*out, "accuracy-laya-bfcl-nodesc-vs-k.gen.tex"), lines(nodesc, "number of options $k$", "Accuracy (Laya)", "xmode=log, log basis x=2"))
+
 	var tour []tournamentRow
 	read(filepath.Join(*in, "tournament.json"), &tour)
+	for _, ds := range []string{"clinc150", "bfcl"} {
+		acc, ece := map[string][]xy{}, map[string][]xy{}
+		for _, r := range tour {
+			if r.Dataset == ds && !strings.HasPrefix(r.Method, "chain") {
+				acc[r.Model] = append(acc[r.Model], xy{r.Calls, r.Accuracy})
+				ece[r.Model] = append(ece[r.Model], xy{r.Calls, r.ECE})
+			}
+		}
+		write(filepath.Join(*out, fmt.Sprintf("accuracy-vs-calls-%s.gen.tex", ds)), lines(acc, "calls per decision", "Accuracy", "xmode=log"))
+		write(filepath.Join(*out, fmt.Sprintf("ece-vs-calls-%s.gen.tex", ds)), lines(ece, "calls per decision", "ECE", "xmode=log"))
+	}
 	for _, ds := range []string{"clinc150", "bfcl"} {
 		series := map[string][]xy{}
 		labels := map[string][]string{}
@@ -143,7 +163,7 @@ func write(path, tex string) {
 // lines draws one line per series, sorted by x.
 func lines(series map[string][]xy, xlabel, ylabel, extra string) string {
 	var b strings.Builder
-	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend pos=outer north east, grid=major, width=0.7\\linewidth]\n", xlabel, ylabel, extra)
+	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend pos=south west, legend style={font=\\scriptsize}, label style={font=\\small}, tick label style={font=\\scriptsize}, grid=major, width=\\plotwidth, height=0.72\\plotwidth]\n", xlabel, ylabel, extra)
 	for _, name := range keys(series) {
 		pts := series[name]
 		sort.Slice(pts, func(i, j int) bool { return pts[i].X < pts[j].X })
@@ -160,7 +180,7 @@ func lines(series map[string][]xy, xlabel, ylabel, extra string) string {
 // scatter draws one mark set per series with a label at each point.
 func scatter(series map[string][]xy, labels map[string][]string, xlabel, ylabel, extra string) string {
 	var b strings.Builder
-	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend pos=outer north east, grid=major, width=0.7\\linewidth, nodes near coords, every node near coord/.append style={font=\\tiny, anchor=west}, point meta=explicit symbolic]\n", xlabel, ylabel, extra)
+	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend pos=south west, legend style={font=\\scriptsize}, label style={font=\\small}, tick label style={font=\\scriptsize}, grid=major, width=\\plotwidth, height=0.72\\plotwidth, nodes near coords, every node near coord/.append style={font=\\tiny, anchor=west, rotate=20}, point meta=explicit symbolic]\n", xlabel, ylabel, extra)
 	for _, name := range keys(series) {
 		b.WriteString("\\addplot+[only marks, mark=*] coordinates {")
 		for i, p := range series[name] {

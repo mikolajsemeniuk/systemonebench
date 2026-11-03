@@ -17,6 +17,6 @@
 * run LLM baseline (qwen-7b) — done: CLINC150 k=150 0.792 / 939 ms, BFCL k=255 0.733 / 7.6 s
 * generate plots — done (cmd/plots, 40 pgfplots figures)
 * generate result tables — done (paper/*.gen.tex)
-* write article — skeleton in paper/main.tex with TODO notes per section; text to write
+* write article — full draft in paper/main.tex (29 pages, 83 cited references, 50 figures and tables); to do: proofread, abstract polish, venue formatting
 * clean latency for CLINC150 rows (one model, one worker) — optional
 * copy pilot scripts into pilot/ — pending
