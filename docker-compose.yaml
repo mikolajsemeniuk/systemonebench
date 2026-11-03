@@ -37,4 +37,4 @@ services:
   qwen-7b:
     <<: *server
     ports: ["8090:8080"]
-    command: -m /models/Qwen2.5-7B-Instruct-Q4_K_M.gguf -ngl 99 -c 16384
+    command: -m /models/Qwen2.5-7B-Instruct-Q4_K_M.gguf -ngl 99 -c 65536
