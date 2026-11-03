@@ -1,7 +1,7 @@
 # Reproduce the experiment step by step: make models up data baseline eval
 # Each step writes files; cmd/* -> output/ -> cmd/eval-* -> paper/*.gen.tex
 
-.PHONY: all models up down data baseline diagnose-k tournament calibrate llm plots eval test clean
+.PHONY: all models up down data baseline diagnose-k tournament calibrate llm plots eval paper test clean
 
 all: data baseline diagnose-k tournament calibrate llm eval plots
 
@@ -214,10 +214,15 @@ eval:
 	go run ./cmd/eval-tournament
 	go run ./cmd/eval-calibrate
 	go run ./cmd/eval-llm
+	go run ./cmd/eval-transfer
 
 # 10. pgfplots figures from output/eval/*.json -> paper/plots/*.gen.tex
 plots:
 	go run ./cmd/plots
+
+# 11. compile the article (needs latexmk, pgfplots, natbib)
+paper:
+	cd paper && latexmk -pdf -interaction=nonstopmode main.tex
 
 test:
 	go vet ./... && go test ./...

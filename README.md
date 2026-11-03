@@ -44,6 +44,7 @@ make calibrate  # adaptive tournament over eps grid, G in {12,24,48}, calibratio
 make llm        # LLM reference (qwen-7b chat completion with all options in the prompt) -> output/llm
 make eval       # -> output/eval/*.json, paper/*.gen.tex (tables)
 make plots      # -> paper/plots/*.gen.tex (pgfplots figures)
+make paper      # -> paper/main.pdf
 ```
 
 ## Models

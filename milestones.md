@@ -12,9 +12,11 @@
 * implement cost measurement in Go (calls per decision, latency p50/p95, J/decision)
 * run grid G ∈ {12,24,48} × ε × α on CLINC150 and BFCL — done (make calibrate, 362 files, no errors)
 * verify empirical survival ≥ 1 − α on test split — done: 45 certified picks, 1 miss (kev-4b bfcl G=48 α=0.05: 0.945)
-* test transfer: G, R chosen on one dataset, evaluated on others
-* test transfer: ε calibrated on one dataset, evaluated on another (expect failure, measure size)
-* run LLM baseline (qwen-7b service in compose) for accuracy and latency reference
-* generate plots (accuracy/ECE vs k, Pareto cost vs accuracy, survival vs α, flip vs R)
-* generate result tables
-* write article
+* test transfer: G, R chosen on one dataset, evaluated on others — done from tournament grid: G=24 best for both datasets, permute best for Kev on both
+* test transfer: ε calibrated on one dataset, evaluated on another — done (cmd/eval-transfer): 23/46 certified ε hold on the other dataset; towards easier task yes, towards CLINC150 no
+* run LLM baseline (qwen-7b) — done: CLINC150 k=150 0.792 / 939 ms, BFCL k=255 0.733 / 7.6 s
+* generate plots — done (cmd/plots, 40 pgfplots figures)
+* generate result tables — done (paper/*.gen.tex)
+* write article — skeleton in paper/main.tex with TODO notes per section; text to write
+* clean latency for CLINC150 rows (one model, one worker) — optional
+* copy pilot scripts into pilot/ — pending
