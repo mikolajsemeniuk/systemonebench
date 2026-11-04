@@ -135,7 +135,7 @@ func summary(rows []Row) string {
 		{"permute-r8", "permute $R=8$"},
 		{"tournament-g24", "tournament $G=24$"},
 		{"adaptive-g12-eps0p05", "adaptive $G=12$, $\\varepsilon=0.05$"},
-		{"chain-g24-eps2", "chain $G=24$"},
+		{"chain-g24-eps0p1", "chain $G=24$, $\\varepsilon=0.1$"},
 	}
 	models := []string{"laya", "kev-0.8b", "kev-4b", "kev-9b"}
 	get := func(model, ds, method string) (Row, bool) {
