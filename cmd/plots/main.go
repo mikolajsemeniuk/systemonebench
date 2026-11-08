@@ -179,14 +179,36 @@ func lines(series map[string][]xy, xlabel, ylabel, extra string) string {
 
 // scatter draws one mark set per series with a label at each point.
 func scatter(series map[string][]xy, labels map[string][]string, xlabel, ylabel, extra string) string {
-	var b strings.Builder
-	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend pos=south west, legend style={font=\\scriptsize}, label style={font=\\small}, tick label style={font=\\scriptsize}, grid=major, width=\\plotwidth, height=0.72\\plotwidth, nodes near coords, every node near coord/.append style={font=\\tiny, anchor=west, rotate=20}, point meta=explicit symbolic]\n", xlabel, ylabel, extra)
-	for _, name := range keys(series) {
-		b.WriteString("\\addplot+[only marks, mark=*] coordinates {")
-		for i, p := range series[name] {
-			fmt.Fprintf(&b, " (%s,%.4f) [%s]", num(p.X), p.Y, esc(labels[name][i]))
+	colors := map[string]string{"laya": "black", "kev-0.8b": "blue", "kev-4b": "orange", "kev-9b": "red"}
+	families := []struct{ prefix, mark, label string }{
+		{"single", "*", "single"},
+		{"permute", "square*", "permute"},
+		{"tournament", "triangle*", "tournament"},
+		{"adaptive", "diamond*", "adaptive"},
+		{"chain", "o", "chain"},
+	}
+	family := func(method string) int {
+		for i, f := range families {
+			if strings.HasPrefix(method, f.prefix) {
+				return i
+			}
 		}
-		fmt.Fprintf(&b, " };\n\\addlegendentry{%s}\n", esc(name))
+		return 0
+	}
+	var b strings.Builder
+	fmt.Fprintf(&b, "\\begin{tikzpicture}\n\\begin{axis}[xlabel={%s}, ylabel={%s}, %s, legend style={at={(0.98,0.03)}, anchor=south east, legend columns=3, font=\\scriptsize, draw=gray!50}, label style={font=\\small}, tick label style={font=\\scriptsize}, grid=major, width=\\plotwidth, height=0.55\\plotwidth]\n", xlabel, ylabel, extra)
+	for _, name := range keys(series) {
+		color := colors[name]
+		if color == "" {
+			color = "gray"
+		}
+		fmt.Fprintf(&b, "\\addlegendimage{only marks, mark=*, %s}\n\\addlegendentry{%s}\n", color, esc(name))
+		for i, p := range series[name] {
+			fmt.Fprintf(&b, "\\addplot[only marks, mark=%s, mark size=2.2pt, %s, forget plot] coordinates { (%s,%.4f) };\n", families[family(labels[name][i])].mark, color, num(p.X), p.Y)
+		}
+	}
+	for _, f := range families {
+		fmt.Fprintf(&b, "\\addlegendimage{only marks, mark=%s, black}\n\\addlegendentry{%s}\n", f.mark, f.label)
 	}
 	b.WriteString("\\end{axis}\n\\end{tikzpicture}\n")
 	return b.String()
