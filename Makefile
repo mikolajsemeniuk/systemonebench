@@ -319,6 +319,9 @@ energy:
 	go run ./cmd/energy -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -limit 100
 	go run ./cmd/energy -model kev-4b -url http://localhost:8083 -dataset clinc150 -limit 100
 	go run ./cmd/energy -model kev-9b -url http://localhost:8084 -dataset clinc150 -limit 100
+	go run ./cmd/energy -model laya -url http://localhost:8081 -dataset clinc150 -limit 100 -method tournament -g 24
+	go run ./cmd/energy -model laya -url http://localhost:8081 -dataset clinc150 -limit 100 -method tournament -g 12
+	go run ./cmd/energy -model kev-9b -url http://localhost:8084 -dataset clinc150 -limit 100 -method tournament -g 24
 
 # 9. aggregate output/ into output/eval/*.json and paper/*.gen.tex
 eval:

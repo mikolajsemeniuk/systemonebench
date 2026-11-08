@@ -9,11 +9,13 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"math/rand"
 	"os"
 	"path/filepath"
 	"time"
 
 	"github.com/mikolajsemeniuk/systemonebench/pkg/datasets"
+	"github.com/mikolajsemeniuk/systemonebench/pkg/methods"
 	"github.com/mikolajsemeniuk/systemonebench/pkg/metrics"
 	"github.com/mikolajsemeniuk/systemonebench/pkg/systemone"
 )
@@ -22,7 +24,9 @@ import (
 type Summary struct {
 	Model         string  `json:"model"`
 	Dataset       string  `json:"dataset"`
+	Method        string  `json:"method"` // single or tournament-g<G>
 	N             int     `json:"n"`
+	Calls         int     `json:"calls"` // total model calls over the run
 	DurationS     float64 `json:"duration_s"`
 	IdleWatts     float64 `json:"idle_watts"`    // mean power before any request
 	MeanWatts     float64 `json:"mean_watts"`    // mean power during the run
@@ -35,7 +39,10 @@ func main() {
 	model := flag.String("model", "laya", "model name (used in output file name)")
 	url := flag.String("url", "http://localhost:8081", "llama-server base URL")
 	name := flag.String("dataset", "emotion", "dataset name")
-	limit := flag.Int("limit", 100, "number of examples (sequential, one call each)")
+	limit := flag.Int("limit", 100, "number of examples (sequential)")
+	method := flag.String("method", "single", "single or tournament")
+	g := flag.Int("g", 24, "group size for -method tournament")
+	seed := flag.Int64("seed", 0, "shuffle seed for the tournament")
 	idleS := flag.Int("idle", 5, "seconds to measure idle GPU power before the run")
 	interval := flag.Duration("interval", 200*time.Millisecond, "nvidia-smi poll interval")
 	out := flag.String("out", "output", "output directory")
@@ -61,21 +68,40 @@ func main() {
 	client := systemone.New(*url)
 	sampler := metrics.StartPowerSampler(*interval)
 	start := time.Now()
-	n := 0
+	n, calls := 0, 0
 	for _, ex := range exs {
-		if _, err := client.Choice(ex.State, ds.Instructions, ds.Options); err != nil {
+		ask := func(o []datasets.Option) (map[string]float64, error) {
+			res, err := client.Choice(ex.State, ds.Instructions, o)
+			return res.Probabilities, err
+		}
+		var res methods.Result
+		var err error
+		switch *method {
+		case "single":
+			res, err = methods.Single(ask, ds.Options)
+		case "tournament":
+			res, err = methods.Tournament(ask, ds.Options, *g, rand.New(rand.NewSource(*seed*7_919+int64(ex.ID))))
+		default:
+			log.Fatalf("unknown method %q", *method)
+		}
+		if err != nil {
 			log.Printf("call failed, skipping: %v", err)
 			continue
 		}
 		n++
+		calls += res.Calls
 	}
 	duration := time.Since(start)
 	samples := sampler.Stop()
 
 	total := metrics.JoulesTrapezoid(samples)
 	active := total - idleWatts*duration.Seconds()
+	tag := *method
+	if *method == "tournament" {
+		tag = fmt.Sprintf("tournament-g%d", *g)
+	}
 	s := Summary{
-		Model: *model, Dataset: ds.Name, N: n,
+		Model: *model, Dataset: ds.Name, Method: tag, N: n, Calls: calls,
 		DurationS: duration.Seconds(), IdleWatts: idleWatts,
 		MeanWatts: metrics.MeanWatts(samples), TotalJoules: total,
 		ActiveJoules: active,
@@ -84,12 +110,12 @@ func main() {
 		s.JoulesPerCall = active / float64(n)
 	}
 
-	path := filepath.Join(*out, "energy", fmt.Sprintf("%s.%s.json", *model, ds.Name))
+	path := filepath.Join(*out, "energy", fmt.Sprintf("%s.%s.%s.json", *model, ds.Name, tag))
 	if err := writeJSON(path, s); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("%s %s: n=%d idle=%.1fW mean=%.1fW active=%.1fJ -> %.3f J/decision\n",
-		s.Model, s.Dataset, s.N, s.IdleWatts, s.MeanWatts, s.ActiveJoules, s.JoulesPerCall)
+	fmt.Printf("%s %s %s: n=%d calls=%d idle=%.1fW mean=%.1fW active=%.1fJ -> %.3f J/decision\n",
+		s.Model, s.Dataset, s.Method, s.N, s.Calls, s.IdleWatts, s.MeanWatts, s.ActiveJoules, s.JoulesPerCall)
 }
 
 func writeJSON(path string, v any) error {
