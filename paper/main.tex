@@ -437,6 +437,14 @@ Qwen2.5-7B & chat, $k=150$ & 0.794 & 1 & 681 & 273 & 5 GB \\
 
 Table~\ref{tab:cost} puts the main configurations side by side in cost. Three things matter for a deployment. \emph{Calls} are what a serving stack has to schedule; the tournament's calls are independent within a round and can be batched or sent in parallel, which we did not exploit (our harness sends them sequentially per example). \emph{Tokens per call} determine latency for the decoder models: a \kev{} request with 150 intents is about 600 tokens of prompt and a group of 12 about 80, so a 16-call tournament for \kev{} costs about as many prompt tokens as two single calls, not sixteen. \emph{Memory} decides how many replicas fit on one accelerator: eighteen \laya{} replicas take the memory of one \kev{}-9B. The 8 calls of the \laya{} tournament take 86~ms at the median because each call takes about 10~ms; the single call at $k=150$ takes 28~ms, most of it tokenization of the 150 options.
 
+\paragraph{Energy.} Latency and GPU memory are proxies for the two costs an operator actually pays: electricity and accelerator-hours. We measure GPU power draw directly with \texttt{nvidia-smi} (\texttt{cmd/energy}), sampled every 200\,ms while each model answers 100 CLINC150 examples ($k=150$) sequentially with one request at a time, and subtract the idle draw measured for 5\,s before the run (10--14\,W with all five servers loaded) to isolate the energy attributable to decisions.
+\begin{table}[h]\centering\small
+\input{energy.gen.tex}
+\caption{GPU energy per decision on CLINC150 ($k=150$), 100 examples, one request at a time (GB10). Idle is the draw before the run; J/decision is the integrated draw above idle divided by the number of examples; J/call divides by the number of model calls.}
+\label{tab:energy}
+\end{table}
+Table~\ref{tab:energy} gives the numbers. One \laya{} call costs 0.84\,J and one \kev{}-9B call 14.4\,J, a ratio of 17, larger than the latency ratio of 10 because the 9B model also draws more power while it runs (66\,W against 33\,W above a similar idle). The headline configuration, \laya{} with the $G=24$ tournament, costs 1.87\,J per decision: 8 calls at 0.23\,J each, since a call with 24 options is cheaper than one with 150. That is 7.7$\times$ less energy than one call of \kev{}-9B for 5.6 more points of accuracy. The same tournament on \kev{}-9B costs 27\,J, twice the single call, which is one more reason not to run it there. Scaled to a million decisions, \laya{} with the tournament uses about 0.5\,kWh and \kev{}-9B alone about 4\,kWh.
+
 \paragraph{Choosing a configuration.} The procedure we recommend to a caller with a new task and a few hundred labelled examples:
 \begin{enumerate}
 \item Measure single-call accuracy at the full $k$ and at $k=G$ for $G\in\{12,24,48\}$ (three short runs).
