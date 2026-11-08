@@ -313,6 +313,13 @@ llm:
 	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset massive -k 59
 	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset banking77 -k 77
 
+# 8b. GPU power draw (J/decision), GPU machine only, needs nvidia-smi
+energy:
+	go run ./cmd/energy -model laya -url http://localhost:8081 -dataset clinc150 -limit 100
+	go run ./cmd/energy -model kev-0.8b -url http://localhost:8082 -dataset clinc150 -limit 100
+	go run ./cmd/energy -model kev-4b -url http://localhost:8083 -dataset clinc150 -limit 100
+	go run ./cmd/energy -model kev-9b -url http://localhost:8084 -dataset clinc150 -limit 100
+
 # 9. aggregate output/ into output/eval/*.json and paper/*.gen.tex
 eval:
 	go run ./cmd/eval-baseline
@@ -321,6 +328,7 @@ eval:
 	go run ./cmd/eval-calibrate
 	go run ./cmd/eval-llm
 	go run ./cmd/eval-transfer
+	go run ./cmd/eval-energy
 
 # 10. pgfplots figures from output/eval/*.json -> paper/plots/*.gen.tex
 plots:
