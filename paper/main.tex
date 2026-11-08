@@ -20,7 +20,7 @@
 \maketitle
 
 \begin{abstract}
-System~1 decision models answer a multiple-choice question in one forward pass: given a state and a list of named options they return a probability for every option. They are served behind one HTTP endpoint and are meant to replace a large language model (LLM) wherever a fast, cheap, calibrated choice is needed. Real choice problems, however, often have many options: 77 banking intents, 150 assistant intents, hundreds of tools in an agent. We measure what happens to four open models (\laya{}, 421M encoder; \kev{}-0.8B/4B/9B, decoder-based pointer models) when the number of options $k$ grows from 3 to 255, on six datasets. Accuracy falls, the answer becomes sensitive to the order of the options (\laya{} changes 62\% of its answers at $k=150$ when the list is reversed), and the returned confidence stops meaning anything (expected calibration error up to 0.75). \laya{} collapses between $k=24$ and $k=59$ because it shares a fixed 192-token budget among all options. We then study three inference-time repairs that need no training: permutation averaging, tournament querying (ask about groups of $G$ options, send the winners to a final) and an adaptive tournament with a pass threshold $\eps$. For the adaptive tournament we give a split-calibration procedure that picks $\eps$ so that the correct option survives to the final with probability at least $1-\alpha$, and we verify the certificate on held-out data: 44 of 45 certified choices hold. Tournament querying lifts \laya{} on CLINC150 ($k=150$) from 0.53 to 0.85 accuracy with 8 calls and 86~ms, above a single call of \kev{}-9B (0.79, 274~ms) and of Qwen2.5-7B-Instruct (0.79, 273~ms). The same tournament lowers \kev{}'s accuracy, because errors compound over rounds and the final consists of hard negatives; for \kev{} permutation averaging is the right tool (+3--4 points). A simple rule, tournament accuracy $\approx$ product of per-round accuracies, predicts both outcomes. We release the Go harness, the data splits and all raw outputs.
+System~1 decision models answer a multiple-choice question in one forward pass: given a state and a list of named options they return a probability for every option. They are served behind one HTTP endpoint and are meant to replace a large language model (LLM) wherever a fast, cheap, calibrated choice is needed. Real choice problems, however, often have many options: 77 banking intents, 150 assistant intents, hundreds of tools in an agent. We measure what happens to four open models (\laya{}, 421M encoder; \kev{}-0.8B/4B/9B, decoder-based pointer models) when the number of options $k$ grows from 3 to 255, on six datasets. Accuracy falls, the answer becomes sensitive to the order of the options (\laya{} changes 62\% of its answers at $k=150$ when the list is reversed), and the returned confidence stops meaning anything (expected calibration error up to 0.75). \laya{} collapses between $k=24$ and $k=59$ because it shares a fixed 192-token budget among all options. We then study three inference-time repairs that need no training: permutation averaging, tournament querying (ask about groups of $G$ options, send the winners to a final) and an adaptive tournament with a pass threshold $\eps$. For the adaptive tournament we give a split-calibration procedure that picks $\eps$ so that the correct option survives to the final with probability at least $1-\alpha$, and we verify the certificate on held-out data: 61 of 63 certified choices hold. Tournament querying lifts \laya{} on CLINC150 ($k=150$) from 0.53 to 0.85 accuracy with 8 calls and 86~ms, above a single call of \kev{}-9B (0.79, 274~ms) and of Qwen2.5-7B-Instruct (0.79, 273~ms). The same tournament lowers \kev{}'s accuracy, because errors compound over rounds and the final consists of hard negatives; for \kev{} permutation averaging is the right tool (+3--4 points). A simple rule, tournament accuracy $\approx$ product of per-round accuracies, predicts both outcomes. On two further intent tasks (MASSIVE, 59 options; Banking77, 77 options) the tournament again repairs \laya{} (+12 and +26 points) without overtaking \kev{}, exactly as the rule predicts from \laya{}'s lower per-group accuracy there, and for \kev{} it leaves accuracy within 2 points while cutting the calibration error by up to 5$\times$. We release the Go harness, the data splits and all raw outputs.
 \end{abstract}
 
 \section{Introduction}
@@ -33,10 +33,10 @@ The endpoint accepts up to 255 options. Real tasks use that room: Banking77 has 
 
 \paragraph{Contributions.}
 \begin{enumerate}
-\item \textbf{A diagnosis across models, tasks and option counts.} We measure accuracy, order sensitivity (flip rate when the list is reversed) and calibration (ECE, Brier) for four models on six datasets with $k$ from 3 to 255 options, with and without option descriptions (Section~\ref{sec:diagnosis}). All metrics worsen monotonically with $k$. \laya{} is the best or equal model up to $k=24$ at 15--23~ms per call and collapses between $k=24$ and $k=59$; we trace the collapse to its fixed token budget per request, not to the descriptions.
-\item \textbf{Tournament querying.} We study three ways of asking the same question with several calls: permutation averaging, a tournament over groups of $G$ options, an adaptive tournament where every option with probability at least $\eps$ passes a round, and a chained variant that multiplies probabilities across rounds (Section~\ref{sec:method}). On CLINC150 the tournament lifts \laya{} from 0.53 to 0.85 at 8 calls, which is more accurate and 3$\times$ faster than one call of the 9B model, with 18$\times$ less memory (Section~\ref{sec:results}).
-\item \textbf{A certified pass threshold.} We show that the survival of the correct option is not monotone in $\eps$, so standard conformal risk control \citep{angelopoulos2022crc} does not apply directly, and we give a split-calibration procedure that is valid without monotonicity. On held-out data 44 of 45 certified thresholds meet their target (Section~\ref{sec:guarantee}).
-\item \textbf{When the tournament helps and when it hurts.} The tournament helps an encoder with a token budget and hurts decoder-based pointer models, whose per-round errors compound. The rule ``tournament accuracy $\approx$ product of per-round accuracies'' predicts both (Section~\ref{sec:discussion}). For the pointer models permutation averaging is the better repair.
+\item \textbf{A diagnosis across models, tasks and option counts.} We measure accuracy, order sensitivity (flip rate when the list is reversed) and calibration (ECE, Brier) for four models on six datasets with $k$ from 3 to 255 options, with and without option descriptions (Section~\ref{sec:diagnosis}). All metrics worsen monotonically with $k$ on every dataset. On CLINC150 and BFCL \laya{} is the best or equal model up to $k=24$ at 15--23~ms per call and collapses between $k=24$ and $k=59$; on MASSIVE and Banking77 it trails every \kev{} model at every $k$. We trace the collapse to its fixed token budget per request, not to the descriptions.
+\item \textbf{Tournament querying.} We study three ways of asking the same question with several calls: permutation averaging, a tournament over groups of $G$ options, an adaptive tournament where every option with probability at least $\eps$ passes a round, and a chained variant that multiplies probabilities across rounds (Section~\ref{sec:method}). On CLINC150 the tournament lifts \laya{} from 0.53 to 0.85 at 8 calls, which is more accurate and 3$\times$ faster than one call of the 9B model, with 18$\times$ less memory (Section~\ref{sec:results}). On MASSIVE and Banking77 the same tournament lifts \laya{} by 12 and 26 points but not above \kev{}, and for \kev{} it trades no accuracy for a 3--5$\times$ lower calibration error.
+\item \textbf{A certified pass threshold.} We show that the survival of the correct option is not monotone in $\eps$, so standard conformal risk control \citep{angelopoulos2022crc} does not apply directly, and we give a split-calibration procedure that is valid without monotonicity. On held-out data 61 of 63 certified thresholds, over four datasets, meet their target (Section~\ref{sec:guarantee}).
+\item \textbf{When the tournament helps and when it hurts.} The tournament helps an encoder with a token budget and hurts decoder-based pointer models, whose per-round errors compound. The rule ``tournament accuracy $\approx$ product of per-round accuracies'' predicts both, and predicts the size of the gain on the two further datasets within a few points (Section~\ref{sec:discussion}). For the pointer models permutation averaging is the better repair.
 \end{enumerate}
 
 Everything is reproducible from one \texttt{Makefile}: a Go harness downloads the datasets, drives the servers, writes one JSON line per decision and generates every table and figure in this paper from those files.
@@ -142,7 +142,7 @@ Table~\ref{tab:baseline} shows the plain use of the models: one call, all option
 \begin{figure}[h]\centering
 \input{plots/accuracy-clinc150-vs-k.gen.tex}\hfill
 \input{plots/accuracy-bfcl-vs-k.gen.tex}
-\caption{Accuracy of one call vs number of options $k$ (gold + $k-1$ random distractors). Left: CLINC150, 500 test examples. Right: BFCL, 329 test examples. \laya{} (black) is best or equal up to $k=24$ and collapses between 24 and 59.}
+\caption{Accuracy of one call vs number of options $k$ (gold + $k-1$ random distractors). Left: CLINC150, 500 test examples. Right: BFCL, 329 test examples. On these two datasets \laya{} (black) is best or equal up to $k=24$ and collapses between 24 and 59.}
 \label{fig:acc-vs-k}
 \end{figure}
 \begin{figure}[h]\centering
@@ -162,12 +162,40 @@ Figures~\ref{fig:acc-vs-k}--\ref{fig:ece-vs-k} sweep $k$ on CLINC150 and BFCL; T
 
 \paragraph{Every metric worsens monotonically with $k$, for every model.} On CLINC150, \kev{}-9B goes from 0.970 at $k=3$ to 0.792 at $k=150$, its flip rate from 0.01 to 0.17 and its ECE from 0.04 to 0.18. The smaller \kev{} models follow the same curve lower down. There is no $k$ beyond which a model is ``stable''; the question is only how fast it decays.
 
-\paragraph{\laya{} is the best small-$k$ model and the worst large-$k$ model.} Up to $k=24$ \laya{} is on top on CLINC150 (0.942 at $k=24$ against 0.886--0.910 for \kev{}) at 15--23~ms per call, against 300--1\,100~ms for \kev{}-4B/9B. Between $k=24$ and $k=59$ it loses 15 points (0.942 to 0.790), and by $k=150$ it is at 0.532 with a flip rate of 0.62: more than half of its answers depend on which end of the list the gold option sits. At $k=255$ on BFCL it answers 0.195 and flips 0.87 of its answers.
+\paragraph{On CLINC150 and BFCL \laya{} is the best small-$k$ model and the worst large-$k$ model.} Up to $k=24$ \laya{} is on top on CLINC150 (0.942 at $k=24$ against 0.886--0.910 for \kev{}) at 15--23~ms per call, against 300--1\,100~ms for \kev{}-4B/9B. Between $k=24$ and $k=59$ it loses 15 points (0.942 to 0.790), and by $k=150$ it is at 0.532 with a flip rate of 0.62: more than half of its answers depend on which end of the list the gold option sits. At $k=255$ on BFCL it answers 0.195 and flips 0.87 of its answers.
 
 \paragraph{The collapse is the token budget, not the descriptions.} One might think \laya{} fails on BFCL because 255 function descriptions do not fit. We re-ran the sweep with the descriptions removed (\texttt{bfcl-nodesc}, Table~\ref{tab:diagnose}): the numbers are the same within noise at every $k$ (0.553 vs 0.550 at $k=59$, 0.195 vs 0.195 at $k=255$). At $k=59$ the budget is 3 tokens per option, and function names such as \texttt{calculate\_triangle\_area} are longer than that: the names themselves are being truncated. The descriptions are already gone at $k=12$ and the model still scores 0.87--0.91 there.
 
+\subsection{Two more intent datasets}\label{sec:diagnosis-more}
+To check that the sweep is not specific to CLINC150 and BFCL we repeated it on MASSIVE ($k$ up to 59) and Banking77 ($k$ up to 77), 500 test examples each (Figures~\ref{fig:acc-vs-k-more}--\ref{fig:ece-vs-k-more}, numbers in Table~\ref{tab:diagnose}).
+
+\begin{figure}[h]\centering
+\input{plots/accuracy-massive-vs-k.gen.tex}\hfill
+\input{plots/accuracy-banking77-vs-k.gen.tex}
+\caption{Accuracy of one call vs $k$. Left: MASSIVE. Right: Banking77. \laya{} (black) is below every \kev{} model at every $k$.}
+\label{fig:acc-vs-k-more}
+\end{figure}
+\begin{figure}[h]\centering
+\input{plots/flip-massive-vs-k.gen.tex}\hfill
+\input{plots/flip-banking77-vs-k.gen.tex}
+\caption{Flip rate vs $k$ on MASSIVE (left) and Banking77 (right).}
+\label{fig:flip-vs-k-more}
+\end{figure}
+\begin{figure}[h]\centering
+\input{plots/ece-massive-vs-k.gen.tex}\hfill
+\input{plots/ece-banking77-vs-k.gen.tex}
+\caption{ECE vs $k$ on MASSIVE (left) and Banking77 (right).}
+\label{fig:ece-vs-k-more}
+\end{figure}
+
+\paragraph{The decay with $k$ repeats.} Accuracy falls and flip rate rises with $k$ for every model on both datasets. \kev{}-9B goes from 0.962 to 0.730 on MASSIVE ($k=3$ to 59) and from 0.988 to 0.888 on Banking77 ($k=3$ to 77). \laya{} goes from 0.894 to 0.428 and from 0.940 to 0.380, and at the largest $k$ it flips 0.57 and 0.50 of its answers with an ECE of 0.50 and 0.60.
+
+\paragraph{\laya{}'s small-$k$ lead does not repeat.} On these two datasets \laya{} is behind every \kev{} model already at $k=3$ (MASSIVE 0.894 against 0.950--0.964; Banking77 0.940 against 0.986--0.990), and the gap widens: at $k=24$ it scores 0.606 on MASSIVE and 0.744 on Banking77, against 0.728--0.832 and 0.920--0.942 for \kev{}. So ``\laya{} is safe up to 24 options'' is a property of CLINC150 and BFCL, not of the model. The safe group size has to be measured per task; the sweep of this section is the tool for that. A possible reason, which we did not test, is that the distractors here are closer to the gold option: Banking77 is one domain, while a random CLINC150 distractor usually comes from another of its ten domains.
+
+\paragraph{Calibration separates the \kev{} sizes.} On Banking77 \kev{}-9B keeps an ECE of 0.02--0.04 over the whole range, while \kev{}-0.8B rises from 0.03 to 0.17 with almost the same accuracy (0.866 against 0.888 at $k=77$). On MASSIVE no model stays calibrated: ECE at $k=59$ is 0.13--0.22 for \kev{}.
+
 \subsection{What the diagnosis implies}
-A caller with 150 options and \laya{} has three choices: accept 0.53 accuracy and a confidence that means nothing, switch to a model ten times larger and fifty times slower, or never show \laya{} more than about 24 options at a time. The rest of the paper is about the third choice.
+A caller with 150 options and \laya{} has three choices: accept 0.53 accuracy and a confidence that means nothing, switch to a model twenty times larger and ten times slower, or never show \laya{} more than about 24 options at a time (fewer on tasks like MASSIVE, where the sweep puts the safe size lower). The rest of the paper is about the third choice.
 
 \section{Method: tournament querying}\label{sec:method}
 
@@ -287,6 +315,36 @@ Table~\ref{tab:summary} and Figure~\ref{fig:pareto} contain the main comparison;
 
 \paragraph{\kev{} on BFCL: the tournament is neutral to slightly positive.} \kev{}-9B goes from 0.815 (single) to 0.842 with $G=24$ and 0.848 with $R=8$; \kev{}-4B from 0.790 to 0.830 ($G=24$) and 0.821 ($R=8$). The difference to CLINC150 is in the distractors: CLINC150's 150 intents form 10 domains of 15 near-synonyms, so the finalists of a tournament are the hard negatives of the gold intent; BFCL's distractors are random functions from unrelated domains, so the final is as easy as the first round.
 
+\subsection{MASSIVE and Banking77}\label{sec:results-more}
+\begin{table}[h]\centering\small
+\input{tournament-summary-more.gen.tex}
+\caption{Selected methods per model on MASSIVE ($k=59$) and Banking77 ($k=77$), 500 test examples each (bold: best accuracy per model and dataset). Latencies were measured with 4 concurrent examples on a shared GPU and are upper bounds.}
+\label{tab:summary-more}
+\end{table}
+
+\begin{figure}[h]\centering
+\input{plots/pareto-massive.gen.tex}\hfill
+\input{plots/pareto-banking77.gen.tex}
+\caption{Accuracy vs latency (p50) for every method and model. Left: MASSIVE, $k=59$. Right: Banking77, $k=77$.}
+\label{fig:pareto-more}
+\end{figure}
+\begin{figure}[h]\centering
+\input{plots/accuracy-vs-calls-massive.gen.tex}\hfill
+\input{plots/accuracy-vs-calls-banking77.gen.tex}\\
+\input{plots/ece-vs-calls-massive.gen.tex}\hfill
+\input{plots/ece-vs-calls-banking77.gen.tex}
+\caption{Accuracy (top) and ECE (bottom) against calls per decision on MASSIVE (left) and Banking77 (right), chain omitted. For \kev{} the accuracy lines are flat and the ECE lines fall with every tournament; for \laya{} both improve.}
+\label{fig:acc-calls-more}
+\end{figure}
+
+The two datasets where \laya{} has no small-$k$ lead (Section~\ref{sec:diagnosis-more}) are the test of whether the tournament is a \laya{}-on-CLINC150 artefact. Table~\ref{tab:summary-more} and Figures~\ref{fig:pareto-more}--\ref{fig:acc-calls-more} give the answer.
+
+\paragraph{\laya{}: the tournament repairs the collapse, and the rule says by how much.} On MASSIVE a single call scores 0.426 (ECE 0.499); the adaptive and chain tournaments with $G=12$ score 0.546 (ECE 0.08--0.14). On Banking77 a single call scores 0.380 (ECE 0.598) and the chain with $G=12$ 0.636 (ECE 0.27). Permutation averaging again does nothing (0.440 and 0.384): every call still shows 59 or 77 options to a 192-token budget. The gains are smaller than on CLINC150 because the per-group accuracy is lower: from Table~\ref{tab:diagnose}, $a_{12}=0.728$ on MASSIVE and $0.846$ on Banking77 against $0.96$ on CLINC150. Two elimination rounds and a final give $0.728^2\cdot 0.73\approx0.39$ to $0.728^2\approx0.53$ on MASSIVE and $0.846^2\cdot 0.89\approx0.64$ on Banking77; the measured 0.546 and 0.636 sit at the upper end of those ranges. The repaired \laya{} stays below one call of \kev{}-9B (0.730, 0.886) and of Qwen2.5-7B (0.698, 0.676; Table~\ref{tab:llm}) on MASSIVE, and on Banking77 it is 4 points below the LLM and 25 below \kev{}. So the 150-intent result does not generalise as ``small model beats large model''; it generalises as ``the tournament turns an unusable \laya{} into a usable one, and $a_G$ tells in advance whether usable means competitive''.
+
+\paragraph{\kev{}: accuracy unchanged, calibration repaired.} For every \kev{} model and both datasets the tournament, adaptive and chain variants stay within 2 points of the single call (\kev{}-9B: 0.730 vs 0.672--0.694 on MASSIVE is the one exception, a loss of 4--6 points, as on CLINC150; Banking77: 0.886 vs 0.868--0.894). Permutation averaging is again the safe choice for accuracy (\kev{}-4B MASSIVE 0.692 to 0.762, \kev{}-9B Banking77 0.886 to 0.894). What the tournament changes is the confidence: \kev{}-4B's ECE on MASSIVE falls from 0.216 (single) and 0.283 ($R=8$) to 0.042 (chain $G=12$); \kev{}-0.8B's on Banking77 from 0.172 to 0.032 (chain $G=24$); \kev{}-9B's on Banking77 from 0.035 to 0.018 ($G=24$). Permutation averaging makes calibration worse on MASSIVE for every \kev{} model (averaged probabilities over 59 options are over-confident in the same way), so a caller who needs both the best argmax and a usable confidence has to choose, or run the permutations for the argmax and one tournament for the confidence.
+
+\paragraph{Chain is the best or equal variant.} Across the 13 model$\times$dataset pairs where it was run (all but \kev{} on BFCL), the chain with $G=12$ or $G=24$ is the most accurate, or tied most accurate, tournament variant in 11. Its ECE is within 0.05 of the plain tournament's at the same $G$ in 24 of 26 pairs, often far better (\kev{}-0.8B on CLINC150, $G=12$: 0.273 to 0.055), and worse by 0.08 in one (\laya{} on Banking77, $G=24$). Multiplying the round probabilities keeps the evidence of the early rounds that the plain tournament throws away.
+
 \subsection{The survival guarantee}\label{sec:guarantee}
 \begin{figure}[h]\centering
 \input{plots/survival-kev-4b-clinc150-adaptive-g12.gen.tex}\hfill
@@ -307,20 +365,21 @@ Table~\ref{tab:summary} and Figure~\ref{fig:pareto} contain the main comparison;
 
 Figure~\ref{fig:survival-eps} shows the non-monotonicity that motivates the split procedure. For \kev{}-4B on CLINC150 with $G=12$, survival on the calibration split is 0.856 at $\eps=0.001$ (113 calls per decision), 0.954 at $\eps=0.05$ (21 calls) and 0.746 at $\eps=0.5$ (16 calls). \laya{} is closer to monotone but has a ceiling: in about 6\% of the examples it assigns the gold option a probability below 0.001 inside a group of 12, and no threshold recovers those.
 
-Table~\ref{tab:calibrate} lists the certified configurations. Of the 45 (model, dataset, $G$, $\alpha$) combinations that were certified on half $B$, 44 meet the target on the test split. The one miss is \kev{}-4B on BFCL with $G=48$ at $\alpha=0.05$, with test survival 0.945 against the target 0.95; with $n_B=165$ a miss of this size is within what the guarantee allows. The rejections are informative too: \laya{} on CLINC150 at $G=12$ and $\alpha=0.1$ picked $\eps=0.3$ on $A$, $B$ refused it, and the test survival at $\eps=0.3$ is 0.854, below 0.90. Without the second half the caller would have shipped a threshold that fails.
+Table~\ref{tab:calibrate} lists the certified configurations. Of the 63 (model, dataset, $G$, $\alpha$) combinations that were certified on half $B$ over the four datasets ($G\in\{12,24,48\}$ on CLINC150 and BFCL, $G=12$ on MASSIVE and Banking77), 61 meet the target on the test split. The two misses are \kev{}-4B on BFCL with $G=48$ at $\alpha=0.05$ (test survival 0.945 against 0.95) and \kev{}-0.8B on MASSIVE with $G=12$ at $\alpha=0.05$ (0.928 against 0.95); with $n_B=165$ and $n_B=250$ misses of this size are within what the guarantee allows, and both are the tightest target on the hardest row of their dataset. The rejections are informative too: \laya{} on CLINC150 at $G=12$ and $\alpha=0.1$ picked $\eps=0.3$ on $A$, $B$ refused it, and the test survival at $\eps=0.3$ is 0.854, below 0.90. Without the second half the caller would have shipped a threshold that fails.
 
 Three practical rules come out of Figure~\ref{fig:survival-calls} and Table~\ref{tab:calibrate}.
 \begin{itemize}
 \item \textbf{Prefer large groups.} At $G=24$ and $G=48$ the certified $\eps$ is 0.5 (the plain tournament) in most rows, with 7--12 calls per decision. Fewer rounds means fewer chances to lose the gold option and fewer calls.
 \item \textbf{Small $\eps$ only buys tight $\alpha$ at small $G$.} With $G=12$, $\alpha=0.05$ needs $\eps=0.1$ and about 28 calls on BFCL for every \kev{} model; with $G=24$ the plain tournament ($\eps=0.5$, 12 calls) is certified for \kev{}-4B and \kev{}-9B.
-\item \textbf{The guarantee is bounded by the model.} \laya{} on BFCL cannot be certified below $\alpha=0.2$ at any $G$, and on CLINC150 not below $\alpha=0.1$. The procedure says so instead of pretending.
+\item \textbf{The guarantee is bounded by the model.} \laya{} on BFCL cannot be certified below $\alpha=0.2$ at any $G$, on CLINC150 not below $\alpha=0.1$, on Banking77 only at $\alpha=0.2$, and on MASSIVE not at all: its per-group accuracy of 0.73 loses the gold option too often for any $\eps$ to reach 80\% survival. The procedure says so instead of pretending.
+\item \textbf{Where one call is good, the certificate is cheap.} On Banking77 every \kev{} model is certified at $\alpha=0.1$ with $\eps=0.5$, the plain tournament, at 8 calls (test survival 0.962--0.968); on MASSIVE $\alpha=0.1$ needs $\eps=0.2$--$0.3$ and $\alpha=0.05$ is reached only by \kev{}-0.8B, and then narrowly.
 \end{itemize}
 
 \subsection{Does $\eps$ transfer between tasks?}
 {\scriptsize\captionof{table}{An $\eps$ certified on one dataset applied to the other. ``Holds'' means the target test survival is at least $1-\alpha$.}\label{tab:transfer}
 \input{transfer.gen.tex}}
 
-Table~\ref{tab:transfer} applies every certified $\eps$ to the other dataset. Of 46 certified thresholds, 23 hold on the other task. The direction decides: a threshold certified on CLINC150 holds on BFCL for every \kev{} model, because BFCL's random distractors are easier, and a threshold certified on BFCL fails on CLINC150 in most rows. \laya{} transfers in neither direction except at the loose target $\alpha=0.2$. The conclusion is that $\eps$ must be calibrated per task. This costs a few hundred labelled examples and, for \laya{}, minutes of compute.
+Table~\ref{tab:transfer} applies every certified $\eps$ to every other dataset. Of 116 (threshold, target) pairs, 68 hold. The direction decides, and the order of the datasets by difficulty explains it: a threshold certified on CLINC150 holds elsewhere in 24 of 28 pairs, because CLINC150's near-synonym distractors make its $\eps$ the most conservative; a threshold certified on MASSIVE holds on BFCL and Banking77 in 14 of 14 pairs, one certified on Banking77 holds on BFCL and MASSIVE in only 6 of 14, and both fail on CLINC150 in 13 of 14; thresholds certified on BFCL hold on Banking77 (9 of 9) and fail on CLINC150 in 20 of 28. \laya{} transfers in 4 of 10 pairs, all at the loose target $\alpha=0.2$. The conclusion is that $\eps$ must be calibrated per task. This costs a few hundred labelled examples and, for \laya{}, minutes of compute.
 
 \subsection{An LLM as reference}
 \begin{table}[h]\centering\small
@@ -329,7 +388,7 @@ Table~\ref{tab:transfer} applies every certified $\eps$ to the other dataset. Of
 \label{tab:llm}
 \end{table}
 
-Table~\ref{tab:llm} gives the natural reference point. With 12 options the LLM is essentially perfect (0.98 on both tasks) at 90--190~ms. With 150 options it scores 0.794 at 273~ms, the same accuracy and latency as one call of \kev{}-9B and 5 points below \laya{} with a tournament at three times the latency. With 255 function descriptions in the prompt it scores 0.733 at 1.9~s p50, below every \kev{} configuration. The LLM also degrades with $k$, for the same reasons the decision models do, but it has no probability to report and no budget that a tournament could restore.
+Table~\ref{tab:llm} gives the natural reference point. With 12 options the LLM is essentially perfect (0.98 on both tasks) at 90--190~ms. With 150 options it scores 0.794 at 273~ms, the same accuracy and latency as one call of \kev{}-9B and 5 points below \laya{} with a tournament at three times the latency. With 255 function descriptions in the prompt it scores 0.733 at 1.9~s p50, below every \kev{} configuration. On MASSIVE (59 options) it scores 0.698 at 557~ms and on Banking77 (77 options) 0.676 at 728~ms: below one call of \kev{}-9B on both (0.730, 0.886), above \laya{} with a tournament on MASSIVE (0.546) and 4 points above it on Banking77 (0.636). The LLM also degrades with $k$, for the same reasons the decision models do, but it has no probability to report and no budget that a tournament could restore.
 
 \subsection{Option descriptions}
 \begin{table}[h]\centering\small
@@ -390,18 +449,18 @@ For \laya{} on CLINC150 step 1 takes under a minute and step 3 about ten minutes
 
 \paragraph{One rule for both outcomes.} The tournament helped \laya{} by 32 points on CLINC150 and hurt \kev{}-9B by 6 points on the same data. Section~\ref{sec:why}'s rule explains both: the tournament is worth it when the model's accuracy on a group of $G$ is high enough that $a_G^{\,r}$ exceeds the single-call accuracy by a margin that survives a final of hard negatives. For \laya{} at $G=12$, $a_G=0.96$ against a single-call accuracy of 0.53; for \kev{}-9B, $a_G=0.94$ against 0.79. The rule gives a caller a cheap test: measure accuracy at $k=G$ on a few hundred examples, compare $a_G^{\,r}$ with the accuracy at full $k$, and decide. It also says what to try when the tournament loses: permutation averaging, which never shows the model fewer options but removes the order effect, and which gave every \kev{} model its best result.
 
-\paragraph{Small model plus tournament against large model.} The headline comparison is \laya{} with $G=24$ (0.848, 8 calls, 86~ms, 0.9~GB) against \kev{}-9B with one call (0.792, 274~ms, 16.4~GB) and Qwen2.5-7B (0.794, 273~ms, 5~GB). For an intent classifier with 150 intents, the encoder with a tournament is the better product on every axis. For tool selection with long descriptions it is not, and the per-round accuracy tells in advance which case one is in.
+\paragraph{Small model plus tournament against large model.} The headline comparison is \laya{} with $G=24$ (0.848, 8 calls, 86~ms, 0.9~GB) against \kev{}-9B with one call (0.792, 274~ms, 16.4~GB) and Qwen2.5-7B (0.794, 273~ms, 5~GB). For an intent classifier with 150 intents, the encoder with a tournament is the better product on every axis. For tool selection with long descriptions it is not, nor on MASSIVE and Banking77, where \laya{}'s per-group accuracy is 0.73--0.85 instead of 0.96 and the tournament ends at 0.55--0.64. The per-round accuracy, measured on a few hundred examples at $k=G$, tells in advance which case one is in, and Section~\ref{sec:results-more} shows that it predicts the tournament's accuracy within a few points.
 
 \paragraph{What the certificate buys.} A caller who needs ``the right option must be among the finalists 95\% of the time'' gets a threshold, a cost in calls and a yes/no answer on whether the target is achievable with this model. The 44/45 agreement on test data is the empirical side of the guarantee. The split costs half the calibration data for certification, which is why some picks are rejected; a larger calibration set, or a fixed-sequence test over several candidate $\eps$ \citep{angelopoulos2021ltt}, would reduce that waste.
 
-\paragraph{Confidence.} Every tournament variant improves ECE, often by an order of magnitude (\laya{} CLINC150: 0.449 to 0.023). This is a side effect of showing the model few options: the probabilities of a group of 12 are informative, those of a list of 150 are not. Callers who use the confidence field to route hard cases to a human or an LLM \citep{geifman2017selective,mozannar2020defer,chen2023frugalgpt,cab2025} get a usable signal only from the tournament.
+\paragraph{Confidence.} Every tournament variant improves ECE, often by an order of magnitude (\laya{} CLINC150: 0.449 to 0.023). This is a side effect of showing the model few options: the probabilities of a group of 12 are informative, those of a list of 150 are not. Callers who use the confidence field to route hard cases to a human or an LLM \citep{geifman2017selective,mozannar2020defer,chen2023frugalgpt,cab2025} get a usable signal only from the tournament. For \kev{} this is the tournament's main value: on MASSIVE and Banking77 it leaves the argmax where it was and cuts ECE from 0.13--0.22 to 0.02--0.05, while permutation averaging, which gives the best argmax, leaves ECE at 0.14--0.28.
 
-\paragraph{Limitations.} The tournament experiments use two datasets, and the \kev{} result on CLINC150 depends on the structure of its distractors; other tasks with near-synonym labels should be checked. We evaluate the \texttt{llama.cpp} GGUF ports, not the original PyTorch checkpoints. Latencies are single-request measurements on one accelerator and do not include batching across the calls of a round, which a production server would use; the \kev{} tournament rows on BFCL were measured under load and are upper bounds. One seed was used for splits, distractors and shuffles. We did not tune the group size per model beyond $\{8,12,24,48\}$.
+\paragraph{Limitations.} The tournament experiments use four intent and tool datasets, all English and all with short option names; tasks with long free-text options, or where the state rather than the option list carries the length, were not tested. The \kev{} loss on CLINC150 and MASSIVE depends on the structure of the distractors (near-synonyms within a domain), and we did not vary the distractor sampling. The MASSIVE and Banking77 latencies were measured under load. We evaluate the \texttt{llama.cpp} GGUF ports, not the original PyTorch checkpoints. Latencies are single-request measurements on one accelerator and do not include batching across the calls of a round, which a production server would use; the \kev{} tournament rows on BFCL were measured under load and are upper bounds. One seed was used for splits, distractors and shuffles. We did not tune the group size per model beyond $\{8,12,24,48\}$.
 
 \paragraph{Future work.} Three extensions follow directly. First, the tournament's calls within a round are independent and could be issued as one batched request, which would turn the 8-call \laya{} tournament into a single round-trip of a few tens of milliseconds. Second, a label-free certificate, using agreement with an expensive reference tournament instead of the gold label, would let the threshold be set on unlabelled traffic. Third, the per-round accuracy $a_G$ could be estimated from the model's own confidence on the first round, which would make the choice between tournament and permutation averaging automatic. The chain variant, which recovered most of the tournament's loss for \kev{} and gave \laya{} its best accuracy, deserves a proper weighting study: the product of round probabilities is only one of several ways to combine evidence across rounds, and a learned or temperature-scaled combination \citep{guo2017calibration,kumar2019verified} may close more of the gap for the \kev{} models.
 
 \section{Conclusion}
-A System~1 decision model asked one question with 150 options gives a worse answer, a less stable answer and a meaningless confidence than the same model asked thirteen questions with 12 options each. For an encoder with a fixed token budget the difference is the difference between unusable and the best available system; for a decoder-based pointer model the tournament is the wrong repair and permutation averaging the right one, and a product-of-rounds rule tells the two cases apart in advance. The adaptive tournament's pass threshold can be certified from a few hundred labelled examples so that the correct option survives to the final with a chosen probability, and the certificate holds on held-out data. All of this happens on the client side with the public endpoint, and the harness that produced every number in this paper is released with it.
+A System~1 decision model asked one question with 150 options gives a worse answer, a less stable answer and a meaningless confidence than the same model asked thirteen questions with 12 options each. For an encoder with a fixed token budget the difference is the difference between unusable and the best available system; for a decoder-based pointer model the tournament is the wrong repair for accuracy and the right one for confidence, permutation averaging the reverse, and a product-of-rounds rule tells the cases apart in advance, on four datasets. The adaptive tournament's pass threshold can be certified from a few hundred labelled examples so that the correct option survives to the final with a chosen probability, and the certificate holds on held-out data. All of this happens on the client side with the public endpoint, and the harness that produced every number in this paper is released with it.
 
 \section*{Reproducibility}
 The repository contains the Go harness (\texttt{cmd/} programs, one per step), the embedded datasets with the exact splits, the Docker Compose file for the five servers, a \texttt{Makefile} whose targets \texttt{data}, \texttt{baseline}, \texttt{diagnose-k}, \texttt{tournament}, \texttt{calibrate}, \texttt{llm}, \texttt{eval}, \texttt{plots} and \texttt{paper} regenerate every file, table and figure, and the raw per-decision outputs.
@@ -459,6 +518,18 @@ The repository contains the Go harness (\texttt{cmd/} programs, one per step), t
 \input{plots/survival-vs-calls-kev-4b-bfcl.gen.tex}
 \input{plots/survival-vs-calls-kev-9b-bfcl.gen.tex}
 \caption{Test survival vs calls per decision, one line per $G$, for every model and dataset.}
+\end{figure}
+
+\begin{figure}[h]\centering
+\input{plots/survival-laya-massive-adaptive-g12.gen.tex}
+\input{plots/survival-kev-0.8b-massive-adaptive-g12.gen.tex}
+\input{plots/survival-kev-4b-massive-adaptive-g12.gen.tex}\\
+\input{plots/survival-kev-9b-massive-adaptive-g12.gen.tex}
+\input{plots/survival-laya-banking77-adaptive-g12.gen.tex}
+\input{plots/survival-kev-0.8b-banking77-adaptive-g12.gen.tex}\\
+\input{plots/survival-kev-4b-banking77-adaptive-g12.gen.tex}
+\input{plots/survival-kev-9b-banking77-adaptive-g12.gen.tex}
+\caption{MASSIVE ($k=59$) and Banking77 ($k=77$), $G=12$: survival vs $\eps$ for the four models.}
 \end{figure}
 
 \section{Request format}

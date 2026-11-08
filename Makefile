@@ -60,6 +60,14 @@ diagnose-k:
 	go run ./cmd/diagnose-k -model kev-4b -url http://localhost:8083 -dataset bfcl
 	go run ./cmd/diagnose-k -model kev-9b -url http://localhost:8084 -dataset clinc150
 	go run ./cmd/diagnose-k -model kev-9b -url http://localhost:8084 -dataset bfcl
+	go run ./cmd/diagnose-k -model laya -url http://localhost:8081 -dataset massive
+	go run ./cmd/diagnose-k -model laya -url http://localhost:8081 -dataset banking77
+	go run ./cmd/diagnose-k -model kev-0.8b -url http://localhost:8082 -dataset massive
+	go run ./cmd/diagnose-k -model kev-0.8b -url http://localhost:8082 -dataset banking77
+	go run ./cmd/diagnose-k -model kev-4b -url http://localhost:8083 -dataset massive
+	go run ./cmd/diagnose-k -model kev-4b -url http://localhost:8083 -dataset banking77
+	go run ./cmd/diagnose-k -model kev-9b -url http://localhost:8084 -dataset massive
+	go run ./cmd/diagnose-k -model kev-9b -url http://localhost:8084 -dataset banking77
 
 # 6. methods on the full option set: clinc150 (k=150) and bfcl (k=255), test split, 500 examples
 tournament:
@@ -148,6 +156,86 @@ tournament:
 	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -method adaptive -g 12 -eps 0.1
 	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -method chain -g 12
 	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -method chain -g 24
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method single
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method permute -r 4
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method permute -r 8
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method tournament -g 8
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method tournament -g 12
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method tournament -g 24
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method chain -g 12
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset massive -k 59 -method chain -g 24
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method single
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method permute -r 4
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method permute -r 8
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method tournament -g 8
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method tournament -g 12
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method tournament -g 24
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method chain -g 12
+	go run ./cmd/tournament -model laya -url http://localhost:8081 -dataset banking77 -k 77 -method chain -g 24
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method single
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method permute -r 4
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method permute -r 8
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method tournament -g 8
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method tournament -g 12
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method tournament -g 24
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method chain -g 12
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -method chain -g 24
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method single
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method permute -r 4
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method permute -r 8
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method tournament -g 8
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method tournament -g 12
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method tournament -g 24
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method chain -g 12
+	go run ./cmd/tournament -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -method chain -g 24
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method single
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method permute -r 4
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method permute -r 8
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method tournament -g 8
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method tournament -g 12
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method tournament -g 24
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method chain -g 12
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -method chain -g 24
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method single
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method permute -r 4
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method permute -r 8
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method tournament -g 8
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method tournament -g 12
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method tournament -g 24
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method chain -g 12
+	go run ./cmd/tournament -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -method chain -g 24
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method single
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method permute -r 4
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method permute -r 8
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method tournament -g 8
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method tournament -g 12
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method tournament -g 24
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method chain -g 12
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -method chain -g 24
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method single
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method permute -r 4
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method permute -r 8
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method tournament -g 8
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method tournament -g 12
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method tournament -g 24
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.05
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method adaptive -g 12 -eps 0.1
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method chain -g 12
+	go run ./cmd/tournament -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -method chain -g 24
 
 # 7. conformal: adaptive tournament over an eps grid on calibration and test split
 calibrate:
@@ -199,6 +287,22 @@ calibrate:
 	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset bfcl -k 255 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset bfcl -k 255 -g 48 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset massive -k 59 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset massive -k 59 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset massive -k 59 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset massive -k 59 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset massive -k 59 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset banking77 -k 77 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model laya -url http://localhost:8081 -dataset banking77 -k 77 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-0.8b -url http://localhost:8082 -dataset banking77 -k 77 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-4b -url http://localhost:8083 -dataset banking77 -k 77 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -g 12 -split calibration -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
+	go run ./cmd/calibrate -model kev-9b -url http://localhost:8084 -dataset banking77 -k 77 -g 12 -split test -eps 0.01,0.02,0.05,0.1,0.2,0.3,0.5
 
 # 8. LLM reference baseline (chat completion with all options in the prompt)
 llm:
@@ -206,6 +310,8 @@ llm:
 	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset clinc150 -k 150
 	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset bfcl -k 12
 	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset bfcl -k 255
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset massive -k 59
+	go run ./cmd/llm -model qwen-7b -url http://localhost:8090 -dataset banking77 -k 77
 
 # 9. aggregate output/ into output/eval/*.json and paper/*.gen.tex
 eval:

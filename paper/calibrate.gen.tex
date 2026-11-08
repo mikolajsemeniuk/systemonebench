@@ -8,6 +8,18 @@ Dataset & Model & Method & $\alpha$ & $\varepsilon$ & Certified & Test survival 
 Dataset & Model & Method & $\alpha$ & $\varepsilon$ & Certified & Test survival & Acc & Calls \\
 \midrule
 \endhead
+banking77 & kev-0.8b & adaptive-g12 & 0.05 & 0.500 & no & 0.962 & 0.860 & 8.0 \\
+banking77 & kev-0.8b & adaptive-g12 & 0.10 & 0.500 & yes & 0.962 & 0.860 & 8.0 \\
+banking77 & kev-0.8b & adaptive-g12 & 0.20 & 0.500 & yes & 0.962 & 0.860 & 8.0 \\
+banking77 & kev-4b & adaptive-g12 & 0.01 & 0.050 & no & 0.986 & 0.872 & 10.6 \\
+banking77 & kev-4b & adaptive-g12 & 0.05 & 0.500 & no & 0.968 & 0.864 & 8.0 \\
+banking77 & kev-4b & adaptive-g12 & 0.10 & 0.500 & yes & 0.968 & 0.864 & 8.0 \\
+banking77 & kev-4b & adaptive-g12 & 0.20 & 0.500 & yes & 0.968 & 0.864 & 8.0 \\
+banking77 & kev-9b & adaptive-g12 & 0.01 & 0.020 & no & 0.980 & 0.892 & 13.9 \\
+banking77 & kev-9b & adaptive-g12 & 0.05 & 0.500 & no & 0.964 & 0.884 & 8.0 \\
+banking77 & kev-9b & adaptive-g12 & 0.10 & 0.500 & yes & 0.964 & 0.884 & 8.0 \\
+banking77 & kev-9b & adaptive-g12 & 0.20 & 0.500 & yes & 0.964 & 0.884 & 8.0 \\
+banking77 & laya & adaptive-g12 & 0.20 & 0.500 & yes & 0.846 & 0.616 & 8.0 \\
 bfcl & kev-0.8b & adaptive-g12 & 0.05 & 0.100 & yes & 0.960 & 0.763 & 28.5 \\
 bfcl & kev-0.8b & adaptive-g12 & 0.10 & 0.200 & yes & 0.939 & 0.769 & 25.9 \\
 bfcl & kev-0.8b & adaptive-g12 & 0.20 & 0.300 & yes & 0.875 & 0.754 & 25.1 \\
@@ -74,5 +86,14 @@ clinc150 & laya & adaptive-g24 & 0.05 & 0.500 & no & 0.954 & 0.838 & 8.0 \\
 clinc150 & laya & adaptive-g24 & 0.10 & 0.500 & yes & 0.954 & 0.838 & 8.0 \\
 clinc150 & laya & adaptive-g24 & 0.20 & 0.500 & yes & 0.954 & 0.838 & 8.0 \\
 clinc150 & laya & adaptive-g48 & 0.20 & 0.500 & yes & 0.804 & 0.734 & 5.0 \\
+massive & kev-0.8b & adaptive-g12 & 0.05 & 0.050 & yes & 0.928 & 0.614 & 8.2 \\
+massive & kev-0.8b & adaptive-g12 & 0.10 & 0.200 & yes & 0.914 & 0.596 & 6.0 \\
+massive & kev-0.8b & adaptive-g12 & 0.20 & 0.500 & yes & 0.838 & 0.588 & 6.0 \\
+massive & kev-4b & adaptive-g12 & 0.05 & 0.050 & no & 0.970 & 0.690 & 8.2 \\
+massive & kev-4b & adaptive-g12 & 0.10 & 0.300 & yes & 0.916 & 0.678 & 6.0 \\
+massive & kev-4b & adaptive-g12 & 0.20 & 0.500 & yes & 0.874 & 0.682 & 6.0 \\
+massive & kev-9b & adaptive-g12 & 0.05 & 0.050 & no & 0.954 & 0.674 & 8.2 \\
+massive & kev-9b & adaptive-g12 & 0.10 & 0.300 & yes & 0.912 & 0.680 & 6.0 \\
+massive & kev-9b & adaptive-g12 & 0.20 & 0.500 & yes & 0.892 & 0.684 & 6.0 \\
 \bottomrule
 \end{longtable}

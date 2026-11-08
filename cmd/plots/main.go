@@ -58,7 +58,7 @@ func main() {
 
 	var diag []diagnoseRow
 	read(filepath.Join(*in, "diagnose-k.json"), &diag)
-	for _, ds := range []string{"clinc150", "bfcl"} {
+	for _, ds := range []string{"clinc150", "bfcl", "massive", "banking77"} {
 		for _, m := range []struct {
 			name, label string
 			y           func(diagnoseRow) float64
@@ -89,7 +89,7 @@ func main() {
 
 	var tour []tournamentRow
 	read(filepath.Join(*in, "tournament.json"), &tour)
-	for _, ds := range []string{"clinc150", "bfcl"} {
+	for _, ds := range []string{"clinc150", "bfcl", "massive", "banking77"} {
 		acc, ece := map[string][]xy{}, map[string][]xy{}
 		for _, r := range tour {
 			if r.Dataset == ds && !strings.HasPrefix(r.Method, "chain") {
@@ -100,7 +100,7 @@ func main() {
 		write(filepath.Join(*out, fmt.Sprintf("accuracy-vs-calls-%s.gen.tex", ds)), lines(acc, "calls per decision", "Accuracy", "xmode=log"))
 		write(filepath.Join(*out, fmt.Sprintf("ece-vs-calls-%s.gen.tex", ds)), lines(ece, "calls per decision", "ECE", "xmode=log"))
 	}
-	for _, ds := range []string{"clinc150", "bfcl"} {
+	for _, ds := range []string{"clinc150", "bfcl", "massive", "banking77"} {
 		series := map[string][]xy{}
 		labels := map[string][]string{}
 		for _, r := range tour {
